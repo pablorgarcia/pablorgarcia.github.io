@@ -35,13 +35,13 @@ p {
   line-height: 1.8;
 }
 
-em {
-  font-weight: 700;
-}
-
 strong {
   font-weight: 700;
   color: #424242;
+}
+
+em {
+  font-weight: 700;
 }
 
 time {
@@ -72,8 +72,7 @@ time::selection {
 }
 
 
-
-/*
+/* * * * * * * * * * * * * * * * * * *
  * Structure
  */
 
@@ -99,13 +98,8 @@ ul li {
 }
 
 ul li a {
-  display: block;
-  margin-right: 1em;
+  margin-right: 1.56em;
 }
-/*
-svg:hover {
-  fill: #ff0000;
-}*/
 
 
 @media (min-width: 768px) and (min-height: 630px){
