@@ -1,0 +1,136 @@
+
+* { padding: 0; margin: 0; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #616161;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #424242;
+  line-height: 2;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1;
+  color: #212121;
+  text-transform: uppercase;
+  letter-spacing: -0.058em;
+  word-spacing: 0.07em;
+}
+
+p {
+  font-size: 1.25em;
+  margin-bottom: 0.27em;
+  line-height: 1.8;
+}
+
+em {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+  color: #424242;
+}
+
+time {
+  font-size: .9em;
+  line-height: 3;
+}
+
+h1::selection,
+p::selection {
+  color: #4DD0E1;
+}
+h2::selection,
+strong::selection {
+  color: #E0F7FA;
+}
+em::selection,
+time::selection {
+  color: #B2EBF2;
+}
+
+h1::selection,
+h2::selection,
+p::selection,
+strong::selection,
+em::selection,
+time::selection {
+  background-color: #424242;
+}
+
+
+
+/*
+ * Structure
+ */
+
+body{
+  max-width: 56.25em;
+}
+
+header {
+  margin-left: 4.16666667%;
+  padding: 3em 0 2em;
+}
+
+section {
+  margin: 0 8% 0 4.16666667%;
+}
+
+footer {
+  margin: 4em 8% 6em 4.16666667%;
+}
+
+ul li {
+  display: inline-flex;
+}
+
+ul li a {
+  display: block;
+  margin-right: 1em;
+}
+/*
+svg:hover {
+  fill: #ff0000;
+}*/
+
+
+@media (min-width: 768px) and (min-height: 630px){
+
+  header,
+  section,
+  footer {
+    margin: 0 4.8em 0 5.4em;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 4.4em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  p {
+    font-size: 1.375em;
+  }
+
+}
