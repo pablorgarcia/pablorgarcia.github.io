@@ -4,40 +4,67 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #616161;
+  color: #455A64;
+  background-color: #ECEFF1;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #424242;
-  line-height: 2;
-}
-
+h1,
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: 700;
-  line-height: 1;
-  color: #212121;
   text-transform: uppercase;
   letter-spacing: -0.058em;
   word-spacing: 0.07em;
 }
 
+h1 {
+  color: #263238;
+  line-height: 2;
+}
+
+h2 {
+  color: #37474F;
+  line-height: 1;
+}
+
+a {
+  font-weight: 400;
+  color: #0288D1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a:hover {
+  color: #4DC1F6;
+  -o-transition: all .5s ease-out, .1s ease-in;
+  -ms-transition: all .5s ease-out, .1s ease-in;
+  -moz-transition: all .5s ease-out, .1s ease-in;
+  -webkit-transition: all .5s ease-out, .1s ease-in;
+  transition: all .5s ease-out, .1s ease-in;
+}
+
+a img {
+  vertical-align: text-bottom;
+}
+
 p {
   font-size: 1.25em;
-  margin-bottom: 0.27em;
-  line-height: 1.8;
+  line-height: 1.7;
+}
+
+p:nth-child(2),
+p:nth-child(5),
+p:nth-child(6) {
+  margin-bottom: 1.25em;
 }
 
 strong {
   font-weight: 700;
-  color: #424242;
+  color: #37474F;
 }
 
 em {
@@ -47,23 +74,28 @@ em {
 time {
   font-size: .9em;
   line-height: 3;
+  color: #607D8B;
 }
 
+
 h1::selection,
-p::selection {
-  color: #4DD0E1;
-}
 h2::selection,
+a::selection,
 strong::selection {
   color: #E0F7FA;
 }
-em::selection,
+p::selection,
 time::selection {
+  color: #4DD0E1;
+}
+em::selection {
   color: #B2EBF2;
 }
 
 h1::selection,
 h2::selection,
+a::selection,
+img::selection,
 p::selection,
 strong::selection,
 em::selection,
@@ -86,45 +118,27 @@ header {
 }
 
 section {
-  margin: 0 8% 0 4.16666667%;
+  margin: 0 8% 10em 4.16666667%;
 }
 
-footer {
-  margin: 4em 8% 6em 4.16666667%;
-}
-
-ul li {
-  display: inline-flex;
-}
-
-ul li a {
-  margin-right: 1.56em;
-}
 
 
 @media (min-width: 780px) and (min-height: 700px) {
 
   header,
-  section,
-  footer {
+  section {
     margin: 0 4.8em 0 5.4em;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 4.4em;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 2.8em;
   }
 
   p {
     font-size: 1.375em;
+    line-height: 1.9;
+  }
+
+  p:nth-child(2),
+  p:nth-child(5),
+  p:nth-child(6) {
+    margin-bottom: 1.375em;
   }
 
 }
