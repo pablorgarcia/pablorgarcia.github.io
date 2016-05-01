@@ -31,3 +31,15 @@ var currentDate = month[ currentMonth ] + ' ' + currentYear;
 // Paint the attribute and the text
 timeTag.setAttribute('datatime', attDate);
 timeTag.textContent = currentDate;
+
+/* * * * * * * * * * * * * * * * * * * * * 
+ * Change the color style just on night
+ */
+
+var hour = date.getHours();
+if(hour < 5 || hour > 19) {
+  var link = document.createElement('link');
+  link.setAttribute('rel', 'stylesheet');
+  link.setAttribute('href', 'css/night.min.css');
+  document.head.appendChild(link); 
+}

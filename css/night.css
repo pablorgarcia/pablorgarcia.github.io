@@ -1,0 +1,46 @@
+
+body {
+  color: #6FC3DF;
+  background-color: #0C141F;
+}
+
+h1,
+time {
+  color: #DF740C;
+}
+
+h2,
+strong {
+  color: #FFE64D;
+}
+
+a {
+  color: #E6FFFF;
+}
+
+a:hover {
+  color: #fff;
+}
+
+
+h1::selection,
+h2::selection,
+a::selection,
+p::selection,
+strong::selection,
+em::selection,
+time::selection {
+  color: #000;
+}
+
+h1::selection,
+h2::selection,
+a::selection,
+img::selection,
+p::selection,
+strong::selection,
+em::selection,
+time::selection {
+  background-color: #fff;
+}
+
