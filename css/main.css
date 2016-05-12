@@ -11,21 +11,18 @@ body {
   background-color: #ECEFF1;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 1.7em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.058em;
   word-spacing: 0.07em;
-}
-
-h1 {
   color: #263238;
   line-height: 2;
 }
 
 h2 {
+  word-spacing: 0.07em;
   color: #37474F;
   line-height: 1;
 }
@@ -47,13 +44,10 @@ a:hover {
   transition: all .5s ease-out, .1s ease-in;
 }
 
-a img {
-  vertical-align: text-bottom;
-}
-
 p {
   font-size: 1.25em;
   line-height: 1.7;
+  letter-spacing: -0.02em;
 }
 
 p:nth-child(2),
@@ -75,6 +69,15 @@ time {
   font-size: .9em;
   line-height: 3;
   color: #607D8B;
+}
+
+footer {
+  background-color: #263238;
+  color: #CFD8DC;
+}
+
+footer h1 {
+  color: #90A4AE;
 }
 
 
@@ -108,8 +111,8 @@ time::selection {
  * Structure
  */
 
-body{
-  max-width: 56.25em;
+header {
+  
 }
 
 header {
@@ -118,27 +121,43 @@ header {
 }
 
 section {
-  margin: 0 8% 10em 4.16666667%;
+  margin: 0 8% 4em 4.16666667%;
+}
+
+footer {
+  padding: 1em 8% 2em 4.16666667%;
+}
+
+img {
+  display: none;
 }
 
 
 
 @media (min-width: 780px) and (min-height: 700px) {
 
-  header,
-  section {
-    margin: 0 4.8em 0 5.4em;
-  }
-
   p {
+    max-width: 30.25em;
     font-size: 1.375em;
     line-height: 1.9;
   }
 
   p:nth-child(2),
-  p:nth-child(5),
-  p:nth-child(6) {
+  p:nth-child(4),
+  p:nth-child(5) {
     margin-bottom: 1.375em;
   }
+
+  header {
+    margin-left: 7.166667%;
+  }
+
+  section {
+    margin: 0 8% 4em 7.166667%;
+  }
+
+  footer {
+    padding: 3em 8% 2em 7.166667%;
+  } 
 
 }
