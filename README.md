@@ -1,2 +1,2 @@
 # pablerashow.github.io
-My personal web site. Just a simple presentation card.
+My personal website. Just a simple presentation card.
