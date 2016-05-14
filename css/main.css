@@ -1,4 +1,3 @@
-
 * { padding: 0; margin: 0; }
 
 body {
@@ -112,12 +111,8 @@ time::selection {
  */
 
 header {
-  
-}
-
-header {
   margin-left: 4.16666667%;
-  padding: 3em 0 2em;
+  padding: 3em 0;
 }
 
 section {
