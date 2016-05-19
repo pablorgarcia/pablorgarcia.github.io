@@ -1,5 +1,51 @@
 
 /* * * * * * * * * * * * * * * * * * * * * 
+ * We will change the LinkdeIn URL to redirect to the user language
+ */
+var idiomaNavegador = '';
+
+if (navigator.language) {
+  idiomaNavegador = navigator.language;
+} else {
+  idiomaNavegador = navigator.browserLanguage;
+}
+/*
+switch (idiomaNavegador) {
+  case "en" : window.location="/es/index.html";
+  break;
+  case "pt" : window.location="/pt/index.html";
+  break;
+  default : window.location="/index.html";
+}
+*/
+
+
+// RegExp to get the browser language
+var en = /^en-/;
+var pt = /^pt-/;
+var es = /^es-/;
+
+function getLanguageBrowser( string ) {
+
+  if( pt.test(string) ) {
+    return console.log('portugues');
+  } else if( es.test(string) ) {
+    return console.log('español');
+  } else {
+    return console.log('ingles');
+  }
+
+}
+
+var userLang = navigator.language || navigator.userLanguage; 
+alert ("The language is: " + userLang);
+
+getLanguageBrowser( userLang );
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * 
  * We will show the month and current year
  */
 
@@ -32,10 +78,13 @@ var currentDate = month[ currentMonth ] + ' ' + currentYear;
 timeTag.setAttribute('datatime', attDate);
 timeTag.textContent = currentDate;
 
+
+
+
 /* * * * * * * * * * * * * * * * * * * * * 
  * Change the color style just on night
  */
-
+/*
 var hour = date.getHours();
 if(hour < 5 || hour > 19) {
   var link = document.createElement('link');
@@ -43,3 +92,4 @@ if(hour < 5 || hour > 19) {
   link.setAttribute('href', 'css/night.min.css');
   document.head.appendChild(link); 
 }
+*/
