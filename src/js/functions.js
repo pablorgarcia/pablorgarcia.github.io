@@ -33,7 +33,7 @@ var removeAminClass = function() {
   heading1.removeAttribute('class');
   heading2.removeAttribute('class');
   for(var n=0; n<3; n++) { anchor[n].removeAttribute('class'); }
-  anchor[0].classList.add('highlight');
+  anchor[2].classList.add('highlight');
 }
 
 
