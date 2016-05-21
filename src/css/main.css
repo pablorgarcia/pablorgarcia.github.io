@@ -33,6 +33,23 @@ section {
   display: block;
 }
 
+footer {
+  width: 90%;
+  display: table-footer-group;
+  text-align: left;
+}
+
+footer ul {
+  border-top: 1px solid #ccc;
+  line-height: 2em;
+  cursor: pointer;
+  margin-top: 3.5em;
+}
+
+footer li {
+  display: inline-flex;
+}
+
 li { display: block; }
 
 h1 {
@@ -61,13 +78,16 @@ a {
   padding: 0.625em 0.5em;
   margin: 0.5em;
   min-width: 4em;
-  display: block;
+  display: inline-table;
   outline: none;
 
   -webkit-transition: color 250ms, background-color 250ms;
   -moz-transition: color 250ms, background-color 250ms;
   -o-transition: color 250ms, background-color 250ms;
   transition: color 250ms, background-color 250ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 
@@ -116,6 +136,9 @@ a:before {
   -moz-transition: color 250ms;
   -o-transition: color 250ms;
   transition: color 250ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 p:nth-child(2), p:nth-child(4) { margin-bottom: 1.25em; }
@@ -135,6 +158,9 @@ li:nth-child(3) { display: block; }
   -moz-transition: padding 60ms, background-color 100ms, color 100ms;
   -o-transition: padding 60ms, background-color 100ms, color 100ms;
   transition: padding 60ms, background-color 100ms, color 100ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 .highlight:hover {
@@ -149,10 +175,25 @@ li:nth-child(3) { display: block; }
 .anim-headings,
 .anim-link {
   will-change: top, opacity;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+  -o-animation-name: slidein;
   animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -o-animation-direction: normal;
   animation-direction: normal;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .anim-headings { animation-duration: 2s; }
@@ -186,6 +227,11 @@ li:nth-child(3) { display: block; }
   h1 { font-size: 3.5em; }
   h2 { font-size: 1.9em; }
   li { display: inline-block; }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+  }
 }
 
 
