@@ -29,6 +29,12 @@
 [data-icon]:hover:before { color: #FF4081; }
 .highlight:hover:before { color: #fff; }
 
+[data-icon='&#xe006']:before {
+  vertical-align: text-top;
+}
+
+
+/* OJO: NO ESTOY USANDO ESTOS ESTILOS.
 [class^='icon-']:before,
 [class*=' icon-']:before {
   font-family: 'icons' !important;
@@ -71,4 +77,4 @@
 }
 .icon-right:before {
   content: '\e004';
-}
+}*/
