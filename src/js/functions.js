@@ -4,43 +4,48 @@ var heading1 = document.getElementsByTagName('h1')[0];
 var heading2 = document.getElementsByTagName('h2')[0];
 // Array of HTML links
 var anchor = document.getElementsByTagName('a');
+// HTML Footer
+var footer = document.getElementsByTagName('footer')[0];
+
 
 /* * * * * * * * * * * * * * * * * * * * * 
- * We will ...
+ * We will start the site enter animation.
  */
 
 var init = function() {
   setTimeout(opacityToTags, 0);
   setTimeout(animToH1, 1000);
   setTimeout(animToH2, 3700);
-  setTimeout(animToAboutLink, 6400);
-  setTimeout(animToLinkeLink, 6700);
-  setTimeout(animToEmailLink, 7000);
-  setTimeout(removeAminClass, 7500);
-} 
+  setTimeout(animToLinkeLink, 6400);
+  setTimeout(animToEmailLink, 6700);
+  setTimeout(animToAboutLink, 7000);
+  setTimeout(animToFooter, 7400);
+  setTimeout(removeAminClass, 7900);
+};
 
 var opacityToTags = function() {
   heading1.classList.add('opacity');
   heading2.classList.add('opacity');
   for(var n=0; n<3; n++) { anchor[n].classList.add('opacity'); }
-}
-var animToH1 = function() { return heading1.classList.add('anim-headings'); }
-var animToH2 = function() { return heading2.classList.add('anim-headings'); }
-var animToAboutLink = function() { return anchor[0].classList.add('anim-link'); }
-var animToLinkeLink = function() { return anchor[1].classList.add('anim-link'); }
-var animToEmailLink = function() { return anchor[2].classList.add('anim-link'); }
+  footer.classList.add('opacity');
+};
+var animToH1 = function() { return heading1.classList.add('anim-headings'); };
+var animToH2 = function() { return heading2.classList.add('anim-headings'); };
+var animToLinkeLink = function() { return anchor[0].classList.add('anim-link'); };
+var animToEmailLink = function() { return anchor[1].classList.add('anim-link'); };
+var animToAboutLink = function() { return anchor[2].classList.add('anim-link'); };
+var animToFooter = function() { return footer.classList.add('anim-link'); };
 var removeAminClass = function() {
   heading1.removeAttribute('class');
   heading2.removeAttribute('class');
   for(var n=0; n<3; n++) { anchor[n].removeAttribute('class'); }
   anchor[2].classList.add('highlight');
-}
-
-
+  footer.removeAttribute('class');
+};
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
- * We will ...
+ * We will animate to go another external URL
  */
 
 function linkCliked( event ) {
@@ -50,8 +55,12 @@ function linkCliked( event ) {
   for(var i=0; i<3; i++) { anchor[i].classList.add('anim-link-down'); }
   this.removeAttribute('class');
   this.classList.add('active');
+  setTimeout(externalURL(this.href), 600);
 }
 
+function externalURL( url ) { location.href = url; }
+
+function internalURL() {}
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
