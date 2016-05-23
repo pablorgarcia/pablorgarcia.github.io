@@ -44,10 +44,10 @@ http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-s
 <header>
   <h1>Pablo García</h1>
   <h2>Software Developer at Sao Paulo City Hall</h2>
-  <ul><li><a href="http://linkedin.com/in/PabloGarciaDeveloper" data-icon="&#xe000;">LinkedIn</a></li><li><a href="mailto:pablerashow@gmail.com" data-icon="&#xe007;">E-mail</a></li><li><a href="#about-me" data-icon="&#xe004;" class="highlight">About me</span></a></li></ul>
+  <ul><li><a href="http://linkedin.com/in/PabloGarciaDeveloper" data-icon="&#xe000;">LinkedIn</a></li><li><a href="mailto:pablerashow@gmail.com" data-icon="&#xe007;">E-mail</a></li><li><a href="#about-me" data-icon="&#xe004;" class="highlight-button">About me</span></a></li></ul>
 </header>
 
-<section class="none">
+<section id="about-me">
   <p>Hello, I'm from Madrid, Spain and currently living in Brazil.</p>
   <p>I'm working full time to developing new products for improve the productivity of Sao Paulo government.</p>
   <p>I mainly code with <strong>Python</strong> and <strong>JavaScript</strong> for frontend/backend development.</p>
@@ -59,14 +59,25 @@ http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-s
 
 <footer>
   <ul data-icon="&#xe006;">
-    <!--li>Portugués</li-->
-    <li>English</li>
-    <!--li>Español</li-->
+    <li value="en" class="active">English</li>
+    <li value="es">Español</li>
+    <li value="pt">Portugués</li>
   </ul>
+  <!--label data-icon="&#xe006;">Language:
+  <datalist id="language">
+    <select>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="pt">Portugués</option>
+    </select>
+  </datalist>
+  </label-->
 </footer>
+
+
 
 <script src="src/js/functions.js"></script>
 <script src="src/js/listeners.js"></script>
-<script src="src/js/analytics.js"></script>
+<script async src="src/js/analytics.js"></script>
 </body>
 </html>
