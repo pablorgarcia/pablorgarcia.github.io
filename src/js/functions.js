@@ -4,6 +4,8 @@ var heading1 = document.getElementsByTagName('h1')[0];
 var heading2 = document.getElementsByTagName('h2')[0];
 // Array of HTML links
 var anchor = document.getElementsByTagName('a');
+// About-text section
+var about_text = document.getElementById('about-me');
 // HTML Footer
 var footer = document.getElementsByTagName('footer')[0];
 
@@ -39,7 +41,7 @@ var removeAminClass = function() {
   heading1.removeAttribute('class');
   heading2.removeAttribute('class');
   for(var n=0; n<3; n++) { anchor[n].removeAttribute('class'); }
-  anchor[2].classList.add('highlight');
+  anchor[2].classList.add('highlight-button');
   footer.removeAttribute('class');
 };
 
@@ -49,18 +51,25 @@ var removeAminClass = function() {
  */
 
 function linkCliked( event ) {
+  alert('dentro');
   event.preventDefault();
+  alert('ya');
   heading1.classList.add('anim-link-down');
   heading2.classList.add('anim-link-down');
   for(var i=0; i<3; i++) { anchor[i].classList.add('anim-link-down'); }
   this.removeAttribute('class');
   this.classList.add('active');
+  anchor[2].classList.add('highlight-button');
   setTimeout(externalURL(this.href), 600);
 }
 
 function externalURL( url ) { location.href = url; }
 
-function internalURL() {}
+function internalURL( event ) {
+  alert('ssss');
+  event.preventDefault();
+  alert('?');
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
