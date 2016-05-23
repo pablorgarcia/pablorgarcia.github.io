@@ -3,6 +3,13 @@
 a = 1em > padding = 0.625em
 */
 
+
+/*
+ RESET MOMENTANEO:
+ CUANDO ESTÉ DEFINIDO EL HTML Y EL JS HAY QUE CAMBIAR EL '*'
+ Y COLOCAR TODOS LAS ETIQUETAS USADAS EN EL HTML.
+ El CSS será más eficiente.
+*/
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
 html { width: 100%; height: 100%; }
@@ -30,7 +37,7 @@ header {
 section {
   width: 100%;
   max-width: 42.25em;
-  display: block;
+  display: table-row-group;
 }
 
 footer {
@@ -41,14 +48,14 @@ footer {
 
 footer ul {
   border-top: 1px solid #ccc;
-  line-height: 2em;
+  line-height: 1;
   cursor: pointer;
   margin-top: 3.5em;
+  padding: 0.625em 0.5em;
+  min-width: 4em;
 }
 
-footer li {
-  display: inline-flex;
-}
+footer li { display: none; }
 
 li { display: block; }
 
@@ -91,7 +98,8 @@ a {
   transition-timing-function: ease;
 }
 
-p, p a {
+p,
+p a {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.4em;
@@ -124,36 +132,14 @@ time {
   display: block;
 }
 
-h1::selection { color: #388E3C; }
-h2::selection { color: #FFEB3B; }
-a::selection { color: #536DFE; }
-a:hover {
-  background-color: rgba(153, 153, 153, 0.2);
-  color: #FF4081;
-}
-a:before {
-  -webkit-transition: color 250ms;
-  -moz-transition: color 250ms;
-  -o-transition: color 250ms;
-  transition: color 250ms;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-p:nth-child(2), p:nth-child(4) { margin-bottom: 1.25em; }
-li:nth-child(3) { display: block; }
 
-.none { display: none; }
-.opacity { opacity: 0; }
-.active { color: #FF4081; }
-.highlight {
-  display: inline-flex;
+.highlight-button {
+  display: inline-table;
   margin-top: 2.5em;
-  border: 0.14em solid #0288D1;
   border-radius: 3px;
-  color: #0288D1;
-
+  background-color: #0288D1;
+  color: #fff;
+  padding-right: 1em;
   -webkit-transition: padding 60ms, background-color 100ms, color 100ms;
   -moz-transition: padding 60ms, background-color 100ms, color 100ms;
   -o-transition: padding 60ms, background-color 100ms, color 100ms;
@@ -163,11 +149,21 @@ li:nth-child(3) { display: block; }
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-.highlight:hover {
-  background-color: #0288D1;
+.highlight-button:hover {
+  background-color: #03A9F4;
   color: #fff;
-  padding: 0.625em 1em;
 }
+
+
+.none { display: none; }
+.opacity { opacity: 0; }
+li a.active { color: #FF4081; }
+footer ul:hover {
+  background-color: rgba(153, 153, 153, 0.2);
+  color: #FF4081;
+}
+footer li.active { display: inline-flex; }
+
 
 /*
  * Animation DOMContentLoaded
@@ -198,7 +194,6 @@ li:nth-child(3) { display: block; }
 }
 .anim-headings { animation-duration: 2s; }
 .anim-link { animation-duration: 0.5s; }
-
 .anim-link-down {
   will-change: opacity;
   animation-duration: 0.6s;
@@ -208,6 +203,28 @@ li:nth-child(3) { display: block; }
   animation-timing-function: easeInOut;
   animation-fill-mode: forwards;
 }
+
+
+h1::selection { color: #388E3C; }
+h2::selection { color: #FFEB3B; }
+a::selection { color: #536DFE; }
+a:hover {
+  background-color: rgba(153, 153, 153, 0.2);
+  color: #FF4081;
+}
+a:before {
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -o-transition: color 250ms;
+  transition: color 250ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+header li:nth-child(3) { display: block; }
+p:nth-child(2), p:nth-child(4) { margin-bottom: 1.25em; }
+
 
 @keyframes slidein {
   0% { position: relative; top: 30px; }
@@ -233,9 +250,3 @@ li:nth-child(3) { display: block; }
     left: 5%;
   }
 }
-
-
-
-
-
-
