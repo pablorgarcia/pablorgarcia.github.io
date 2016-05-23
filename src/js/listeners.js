@@ -16,3 +16,9 @@ http://lea.verou.me/2011/05/change-url-hash-without-page-jump/
 
 
 //about_text.addEventListener('click', internalURL, false);
+
+// Analytics LinkedIn clicado
+anchor[0].addEventListener(
+  'click',
+  _gaq.push([‘_trackEvent‘,‘LinkedIn’,’clickado’]),
+  false);
