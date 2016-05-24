@@ -1,13 +1,14 @@
-
+// HTML header
+var header = document.getElementsByTagName('header')[0];
+// HTML section
+var section = document.getElementsByTagName('section')[0];
+// HTML Footer
+var footer = document.getElementsByTagName('footer')[0];
 // HTML Headings
 var heading1 = document.getElementsByTagName('h1')[0];
 var heading2 = document.getElementsByTagName('h2')[0];
 // Array of HTML links
 var anchor = document.getElementsByTagName('a');
-// About-text section
-var about_text = document.getElementById('about-me');
-// HTML Footer
-var footer = document.getElementsByTagName('footer')[0];
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
@@ -15,14 +16,15 @@ var footer = document.getElementsByTagName('footer')[0];
  */
 
 var init = function() {
-  setTimeout(opacityToTags, 0);
-  setTimeout(animToH1, 1000);
-  setTimeout(animToH2, 3700);
-  setTimeout(animToLinkeLink, 6400);
-  setTimeout(animToEmailLink, 6700);
-  setTimeout(animToAboutLink, 7000);
-  setTimeout(animToFooter, 7400);
-  setTimeout(removeAminClass, 7900);
+  section.classList.add('none');
+  opacityToTags();
+  setTimeout(animToH1, 800);
+  setTimeout(animToH2, 2600);
+  setTimeout(animToLinkeLink, 4600);
+  setTimeout(animToEmailLink, 5100);
+  setTimeout(animToAboutLink, 5600);
+  setTimeout(animToFooter, 6000);
+  setTimeout(removeAminClass, 6400);
 };
 
 var opacityToTags = function() {
@@ -36,7 +38,7 @@ var animToH2 = function() { return heading2.classList.add('anim-headings'); };
 var animToLinkeLink = function() { return anchor[0].classList.add('anim-link'); };
 var animToEmailLink = function() { return anchor[1].classList.add('anim-link'); };
 var animToAboutLink = function() { return anchor[2].classList.add('anim-link'); };
-var animToFooter = function() { return footer.classList.add('anim-link'); };
+var animToFooter = function() { return footer.classList.add('anim-footer'); };
 var removeAminClass = function() {
   heading1.removeAttribute('class');
   heading2.removeAttribute('class');
@@ -51,24 +53,27 @@ var removeAminClass = function() {
  */
 
 function linkCliked( event ) {
-  alert('dentro');
   event.preventDefault();
-  alert('ya');
   heading1.classList.add('anim-link-down');
   heading2.classList.add('anim-link-down');
   for(var i=0; i<3; i++) { anchor[i].classList.add('anim-link-down'); }
   this.removeAttribute('class');
   this.classList.add('active');
   anchor[2].classList.add('highlight-button');
-  setTimeout(externalURL(this.href), 600);
+  if( event === anchor[2]) { setTimeout(internalURL(), 600); }
+  else { setTimeout(externalURL(this.href), 600); }
 }
 
 function externalURL( url ) { location.href = url; }
 
-function internalURL( event ) {
-  alert('ssss');
-  event.preventDefault();
-  alert('?');
+function internalURL() {
+  section.classList.add('none');
+  header.removeAttribute('class');
+}
+
+function backToHome() {
+  section.classList.add('none');
+  header.removeAttribute('class');
 }
 
 
@@ -105,4 +110,3 @@ var currentDate = month[ currentMonth ] + ' ' + currentYear;
 // Paint the attribute and the text
 timeTag.setAttribute('datatime', attDate);
 timeTag.textContent = currentDate;
-
