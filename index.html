@@ -21,9 +21,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#388E3C">
 <meta name="msapplication-navbutton-color" content="#388E3C">
 <title>Pablo García: Software Developer at Sao Paulo City Hall</title>
-<link rel="stylesheet" href="src/css/fonts.min.css">
-<link rel="stylesheet" href="src/css/icons.css">
 
+<!-- combinar los archivos CSS al terminarlos, para que esté optimizado -->
+<link rel="stylesheet" href="src/css/fonts.min.css">
+<link rel="stylesheet" href="src/css/material-icons.css">
 <link rel="stylesheet" href="src/css/main.css">
 
 <link rel="shortcut icon" href="icons/favicon.ico">
@@ -44,40 +45,37 @@ http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-s
 <header>
   <h1>Pablo García</h1>
   <h2>Software Developer at Sao Paulo City Hall</h2>
-  <ul><li><a href="http://linkedin.com/in/PabloGarciaDeveloper" data-icon="&#xe000;">LinkedIn</a></li><li><a href="mailto:pablerashow@gmail.com" data-icon="&#xe007;">E-mail</a></li><li><a href="#about-me" data-icon="&#xe004;" class="highlight-button">About me</span></a></li></ul>
+  <ul><li><a href="http://linkedin.com/in/PabloGarciaDeveloper"><i class="material-icons">person_pin</i>LinkedIn</a></li><li><a href="mailto:pablerashow@gmail.com"><i class="material-icons">contact_mail</i>E-mail</a></li><li><a href="#about-me" class="highlight-button"><i class="material-icons">fingerprint</i>About me</a></li></ul>
 </header>
 
-<section id="about-me" class="none">
+<section id="about-me">
+  <h2>About me</h2>
   <p>Hello, I'm from Madrid, Spain and currently living in Brazil.</p>
   <p>I'm working full time to developing new products for improve the productivity of Sao Paulo government.</p>
   <p>I mainly code with <strong>Python</strong> and <strong>JavaScript</strong> for frontend/backend development.</p>
   <p>Nowadays I'm playing with <em>React</em>, <em>Angular</em> and <em>Backbone</em>.</p>
-  <p>I don’t bite. Honestly. I like hearing from people so say hi. You can write me in English, Portuguese or Spanish on <a href="http://linkedin.com/PabloGarciaDeveloper" data-icon="&#xe000;">linkedIn</a> or <a href="mailto:pablerashow@gmail.com" data-icon="&#xe007;">mail</a>.</p>
+  <p>I don’t bite. Honestly. I like hearing from people so say hi. You can write me in English, Portuguese or Spanish on <a href="http://linkedin.com/PabloGarciaDeveloper">linkedIn</a> or <a href="mailto:pablerashow@gmail.com">mail</a>.</p>
   <p>Cheers!</p>
   <time></time>
+  <a href="#home"><i class="material-icons">navigate_before</i>Back to home</a>
 </section>
 
 <footer>
-  <ul data-icon="&#xe006;">
-    <li value="en" class="active">English</li>
-    <li value="es">Español</li>
-    <li value="pt">Portugués</li>
+  <ul>
+    <li class="active"><i class="material-icons">language</i></li>
+    <li class="active">English</li>
+    <li>Español</li>
+    <li>Portugués</li>
   </ul>
-  <!--label data-icon="&#xe006;">Language:
-  <datalist id="language">
-    <select>
-      <option value="en">English</option>
-      <option value="es">Español</option>
-      <option value="pt">Portugués</option>
-    </select>
-  </datalist>
-  </label-->
 </footer>
 
 
-
+<!-- https://developers.google.com/speed/docs/insights/BlockingJS#InlineJS -->
+<!-- http://www.googleessimple.com/page-speed-insights.html -->
+<!-- http://www.googleessimple.com/aplazar-carga-javascript.html -->
+<!-- http://www.googleessimple.com/utilizar-javascript-en-linea.html -->
+<script async src="src/js/analytics.js"></script>
 <script src="src/js/functions.js"></script>
 <script src="src/js/listeners.js"></script>
-<script async src="src/js/analytics.js"></script>
 </body>
 </html>
