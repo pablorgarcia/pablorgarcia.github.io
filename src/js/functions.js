@@ -1,7 +1,5 @@
 // HTML header
 var header = document.getElementsByTagName('header')[0];
-// HTML section
-var section = document.getElementsByTagName('section')[0];
 // HTML Footer
 var footer = document.getElementsByTagName('footer')[0];
 // HTML Headings
@@ -16,7 +14,6 @@ var anchor = document.getElementsByTagName('a');
  */
 
 var init = function() {
-  section.classList.add('none');
   opacityToTags();
   setTimeout(animToH1, 800);
   setTimeout(animToH2, 2600);
@@ -54,59 +51,15 @@ var removeAminClass = function() {
 
 function linkCliked( event ) {
   event.preventDefault();
+  event = false;
   heading1.classList.add('anim-link-down');
   heading2.classList.add('anim-link-down');
   for(var i=0; i<3; i++) { anchor[i].classList.add('anim-link-down'); }
   this.removeAttribute('class');
   this.classList.add('active');
   anchor[2].classList.add('highlight-button');
-  if( event === anchor[2]) { setTimeout(internalURL(), 600); }
-  else { setTimeout(externalURL(this.href), 600); }
+  setTimeout(externalURL(this.href), 600);
 }
 
 function externalURL( url ) { location.href = url; }
 
-function internalURL() {
-  section.classList.add('none');
-  header.removeAttribute('class');
-}
-
-function backToHome() {
-  section.classList.add('none');
-  header.removeAttribute('class');
-}
-
-
-/* * * * * * * * * * * * * * * * * * * * * 
- * We will show the month and current year
- */
-
-// Get the element where we are goint to paint the date
-var timeTag = document.getElementsByTagName('time')[0];
-// Created the months strings
-var month = [''];
-month[0] = 'January';
-month[1] = 'February';
-month[2] = 'March';
-month[3] = 'April';
-month[4] = 'March';
-month[5] = 'June';
-month[6] = 'July';
-month[7] = 'August';
-month[8] = 'September';
-month[9] = 'October';
-month[10] = 'November';
-month[11] = 'December';
-// New obj Date and get the month and year
-var date = new Date();
-var currentMonth = date.getMonth();
-var currentYear = date.getFullYear();
-// Constructing the format to show it
-var space = '';
-if(currentMonth < 10) { space = '-0'; }
-else { space = '-'; }
-var attDate = currentYear + space + currentMonth;
-var currentDate = month[ currentMonth ] + ' ' + currentYear;
-// Paint the attribute and the text
-timeTag.setAttribute('datatime', attDate);
-timeTag.textContent = currentDate;
