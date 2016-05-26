@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', init, false);
 for(var i=0; i<3; i++) { anchor[i].addEventListener('click', linkCliked, false); }
 
 // Back to Home link
-anchor[5].addEventListener('click', backToHome, false);
+//anchor[5].addEventListener('click', backToHome, false);
 
 /* ERROR: "_gaq is not defined"
 // Analytics: LinkedIn clicado
