@@ -51,6 +51,7 @@ var removeAminClass = function() {
 
 function linkCliked( event ) {
   event.preventDefault();
+  trackButton(event);
   event = false;
   heading1.classList.add('anim-link-down');
   heading2.classList.add('anim-link-down');
@@ -63,10 +64,4 @@ function linkCliked( event ) {
 
 function externalURL( url ) { location.href = url; }
 
-
 function trackButton(e) { ga('send', 'event', 'link', 'click', e.textContent); };
-/*
-function trackLinkedIn() {
-  ga('send', 'event', 'link', 'click', 'LinkedIn');
-}
-*/
