@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', init, false);
 
 // First LinkedIn, E-mail and About me links
-for(var i=0; i<3; i++) { anchor[i].addEventListener('click', linkCliked, false); }
+for(var i=0; i<3; i++) { anchor[i].addEventListener('click', cliked, false); }
 // onclick="ga('send', 'event', 'link','click', 'Download clicado');"
 
 // Back to Home link

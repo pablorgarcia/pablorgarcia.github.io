@@ -49,7 +49,7 @@ var removeAminClass = function() {
  * We will animate to go another external URL
  */
 
-function linkCliked( event ) {
+var cliked = function( event ) {
   event.preventDefault();
   trackButton(event);
   event = false;
