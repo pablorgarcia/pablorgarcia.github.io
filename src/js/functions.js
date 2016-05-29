@@ -63,3 +63,10 @@ function linkCliked( event ) {
 
 function externalURL( url ) { location.href = url; }
 
+
+function trackButton(e) { ga('send', 'event', 'link', 'click', e.textContent); };
+/*
+function trackLinkedIn() {
+  ga('send', 'event', 'link', 'click', 'LinkedIn');
+}
+*/

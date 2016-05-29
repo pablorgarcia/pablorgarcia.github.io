@@ -2,15 +2,15 @@
 // The init function to do the animation control
 document.addEventListener('DOMContentLoaded', init, false);
 
-// Firsts LinkedIn, E-mail and About me links
+// First LinkedIn, E-mail and About me links
 for(var i=0; i<3; i++) { anchor[i].addEventListener('click', linkCliked, false); }
 
 // Back to Home link
 //anchor[5].addEventListener('click', backToHome, false);
 
+anchor[0].addEventListener('click', trackButton, false);
 /* ERROR: "_gaq is not defined"
 // Analytics: LinkedIn clicado
-anchor[0].addEventListener('click', ga('send', 'event', 'link', 'click', 'LinkedIn'), false);
 anchor[0].addEventListener('click', _gaq.push(['_trackEvent','LinkedIn','clickado']), false);
 // Analytics: Email clicado
 anchor[1].addEventListener('click', _gaq.push(['_trackEvent','Email','clickado']), false);
