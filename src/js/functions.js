@@ -1,5 +1,5 @@
 // HTML header
-var header = document.getElementsByTagName('header')[0];
+//var header = document.getElementsByTagName('header')[0];
 // HTML Footer
 var footer = document.getElementsByTagName('footer')[0];
 // HTML Headings
@@ -52,7 +52,6 @@ var removeAminClass = function() {
 var cliked = function( event ) {
   event.preventDefault();
   trackButton(event);
-  event = false;
   heading1.classList.add('anim-link-down');
   heading2.classList.add('anim-link-down');
   for(var i=0; i<3; i++) { anchor[i].classList.add('anim-link-down'); }
@@ -65,3 +64,14 @@ var cliked = function( event ) {
 function externalURL( url ) { location.href = url; }
 
 function trackButton(e) { ga('send', 'event', 'link', 'click', e.textContent); };
+
+
+/* * * * * * * * * * * * * * * * * * * * * 
+ * We will animate the footer links
+ */
+
+function blue() {
+  footer.children[0].classList.add('anim-footer-list'); // ul
+//  footer.children[0].children[i].add('open'); // li
+//  footer.children[0].children[0].children[0].style.color = "blue"; // a
+}
