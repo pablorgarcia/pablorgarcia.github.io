@@ -19,7 +19,7 @@ var prt = /^pt/i; // portuguese language
 
 var init = function() {
   // We show the correct language
-  language();
+//  language();
   // We opacity the DOM tag elements for start the animation 
   opacityToTags();
   // We start the home animation 
