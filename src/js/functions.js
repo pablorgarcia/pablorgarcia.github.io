@@ -7,6 +7,11 @@ var heading1 = document.getElementsByTagName('h1')[0];
 var heading2 = document.getElementsByTagName('h2')[0];
 // Array of HTML links
 var anchor = document.getElementsByTagName('a');
+// language
+var lang = navigator.language || navigator.userLanguage;
+var esp = /^es/i; // spanish language
+var prt = /^pt/i; // portuguese language
+var x = [/^pt/i, /^es/i];
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
@@ -14,7 +19,11 @@ var anchor = document.getElementsByTagName('a');
  */
 
 var init = function() {
+  // We show the correct language
+  language();
+  // We opacity the DOM tag elements for start the animation 
   opacityToTags();
+  // We start the home animation 
   setTimeout(animToH1, 800);
   setTimeout(animToH2, 2600);
   setTimeout(animToLinkeLink, 4600);
@@ -75,3 +84,19 @@ function blue() {
 //  footer.children[0].children[i].add('open'); // li
 //  footer.children[0].children[0].children[0].style.color = "blue"; // a
 }
+
+
+// We will to check the browser language for redirect to portuguese or spanish from english
+function language() {
+  var es = esp.exec(lang);
+  var pt = prt.exec(lang);
+
+  if(lang === pt) {
+    return location.href='http://pablerashow.github.io/pt/index.html';
+  } else if (lang === es) {
+    return location.href='http://pablerashow.github.io/es/index.html';
+  }
+
+}
+
+

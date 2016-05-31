@@ -13,7 +13,5 @@ for(var i=0; i<3; i++) { anchor[i].addEventListener('click', cliked, false); }
 //footer.addEventListener('mouseenter', red);
 footer.addEventListener('click', blue, false);
 //footer.addEventListener('onmouseover', red);
-
-
 // meter eventos Touch
 //http://www.w3schools.com/jsref/dom_obj_event.asp
