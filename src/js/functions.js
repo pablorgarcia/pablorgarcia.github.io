@@ -11,7 +11,6 @@ var anchor = document.getElementsByTagName('a');
 var lang = navigator.language || navigator.userLanguage;
 var esp = /^es/i; // spanish language
 var prt = /^pt/i; // portuguese language
-var x = [/^pt/i, /^es/i];
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
@@ -91,12 +90,10 @@ function language() {
   var es = esp.exec(lang);
   var pt = prt.exec(lang);
 
-  if(lang === pt) {
+  if(lang == pt) {
     return location.href='http://pablerashow.github.io/pt/index.html';
-  } else if (lang === es) {
+  } else if (lang == es) {
     return location.href='http://pablerashow.github.io/es/index.html';
   }
 
 }
-
-
