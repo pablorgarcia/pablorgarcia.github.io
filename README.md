@@ -5,9 +5,10 @@ _My personal website. Just a simple presentation card._
 [](http://d2.alternativeto.net/dist/icons/javascript_18251.png?width=64&height=64&mode=crop&upscale=false)
 **Created with pure JavaScript and CSS**
 
-Results of PageSpeed Insights at 10/08/2016:
-- SmartPhone: 81/100
+Results of PageSpeed Insights at 11/08/2016:
+- SmartPhone: 91/100
 - Computer: 100/100
+The result on SmartPhone isn't 100/100 because GitHub Pages can't edit the browser cache.
 
 If you want to have your own site version, would be great y motivador make a fork in the project. I'd love to read your version.
 
