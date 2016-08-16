@@ -1,0 +1,7 @@
+.image-profile {
+  background-image: url('../../images/pablerashow180x180.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}

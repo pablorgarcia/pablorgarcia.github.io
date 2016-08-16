@@ -24,6 +24,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  color: #CB77A9;
   padding-right: 0.5em;
   font-feature-settings: 'liga'; /* Support for IE. */
   text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
