@@ -7,13 +7,12 @@ body {
   font-size: 100%; 
   font-family: Georgia, Times, serif;
   font-style: normal;
-  line-height: 1.5;/*
-  color: #403E3F;
-  background-color: #FFFAFD;*/
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0 1em;
+  padding: 0 2em;
+  text-align: justify;
 }
 
 header {
