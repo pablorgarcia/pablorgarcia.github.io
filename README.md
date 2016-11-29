@@ -6,9 +6,10 @@ _My personal website. Just a simple presentation card._
 **Created with pure JavaScript and CSS**
 
 Results of PageSpeed Insights at 11/08/2016:
-- SmartPhone: 91/100
-- Computer: 100/100
-The result on SmartPhone isn't 100/100 because GitHub Pages can't edit the browser cache.
+- SmartPhone speed: 84/100
+- SmartPhone user experience: 100/100
+- Desk computer speed: 92/100
+The result on SmartPhone speed isn't 100/100 because GitHub Pages can't edit the browser cache, among other things like to split the main CSS between your external call and the HTML head.
 
 If you want to have your own site version, would be great y motivador make a fork in the project. I'd love to read your version.
 
