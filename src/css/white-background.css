@@ -1,0 +1,34 @@
+
+/* White background */
+body { background-color: #FFFAFD; }
+
+h1 { color: #2F2829; }
+
+section,
+footer { border-top: solid 1px #7D6768; }
+
+p { color: #4F4747; }
+
+figure {
+  border-left: 1px solid #867879;
+  color: #6A5455;
+}
+
+h2,
+time { color: #413939; }
+
+article:nth-child(2) { border-top: solid 1px #7D6768; }
+
+
+a {
+  color: #687882;
+  border: solid 1px #9B7C7C;
+}
+a:hover { background-color: #D2E9F7; }
+
+
+@media (min-height: 700px) and (min-width: 650px) {
+
+  article:nth-child(2) { border-top: none; }
+
+}

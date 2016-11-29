@@ -1,30 +1,20 @@
 
 'use strict';
 
+var bgJS = document.createElement('script');
+bgJS.setAttribute('src', 'src/js/currentBackground.js');
+
 var asyncJS = document.createElement('script');
 asyncJS.setAttribute('src', 'src/js/asyncCSS.js');
 asyncJS.setAttribute('async', '');
-
-var cssImage = document.createElement('link');
-cssImage.rel = 'stylesheet';
-cssImage.href = 'src/css/image-profile.css';
 
 var cssFonts = document.createElement('link');
 cssFonts.rel = 'stylesheet';
 cssFonts.href = 'src/css/fonts.css';
 
-var cssIcons = document.createElement('link');
-cssIcons.rel = 'stylesheet';
-cssIcons.href = 'src/css/material-icons.css';
-
-var iLinkedin = document.createElement('i');
-iLinkedin.setAttribute('class', 'material-icons');
-iLinkedin.textContent = 'person_pin';
-
-var iMail = document.createElement('i');
-iMail.setAttribute('class', 'material-icons');
-iMail.textContent = 'contact_mail';
-
+var cssImage = document.createElement('link');
+cssImage.rel = 'stylesheet';
+cssImage.href = 'src/css/image-profile.css';
 
 
 var userAgent = navigator.userAgent.toLowerCase();
@@ -36,18 +26,14 @@ var aMail = document.getElementsByTagName('a')[1];
 
 // Preguntamos cual es el cliente del navegador
 if (userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|webos|wos)/i) !== -1) {
-  // Cargamos un JS asincrono que cargará los CSS de imagen y fuente cuando estemos en mobile
+  // Cargamos un JS asincrono que cargará los CSS de imagen y fuente cuando estemos en mobile para que la carga sea óptima
   body.appendChild(asyncJS);
 
 } else {
 
   // Cargamos con JS los siguientes CSS
-  head.appendChild(cssImage);
+  body.appendChild(bgJS);
   head.appendChild(cssFonts);
-  head.appendChild(cssIcons);
-
-  // Construimos los iconos dentro de los enlaces
-  aLinkedIn.insertBefore(iLinkedin, aLinkedIn.firstChild);
-  aMail.insertBefore(iMail, aMail.firstChild);
+  head.appendChild(cssImage);
 
 }

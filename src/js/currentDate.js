@@ -40,5 +40,5 @@ time.setAttribute('datatime', attDate);
 time.textContent = currentDate;
 
 // Append the <time> element to the HTML
-var section = document.getElementsByTagName('section')[0];
-section.appendChild(time);
+var footer = document.getElementsByTagName('footer')[0];
+footer.appendChild(time);
