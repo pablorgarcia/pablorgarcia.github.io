@@ -19,9 +19,6 @@ time { color: #413939; }
 
 article:nth-child(2) { border-top: solid 1px #7D6768; }
 
-a { color: #687882; }
-a:hover { background-color: #D2E9F7; }
-
 .image-profile {
   background-image: url('../../images/pablerashow180x180-white.jpg');
   background-position: left;

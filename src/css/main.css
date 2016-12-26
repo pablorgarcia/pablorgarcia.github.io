@@ -93,8 +93,8 @@ a {
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #2F2829;
+  color: #38382D;
+  background-color: #73C74E;
   cursor: pointer;
   padding: .58em .8em;
   margin-top: .6em;
@@ -110,8 +110,7 @@ a {
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-a:hover { background-color: rgba(99,99,99,0.20); }
-a:active { color: #FF4081; }
+a:hover { background-color: #87EA5C; }
 
 article:nth-child(2) p {
   margin: 0;
