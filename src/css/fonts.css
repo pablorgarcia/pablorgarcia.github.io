@@ -32,3 +32,7 @@ h1, h2,
 a, time {
   font-family: 'Open Sans', sans-serif;
 }
+
+h2, a, time {
+  letter-spacing: -0.09em;
+}
