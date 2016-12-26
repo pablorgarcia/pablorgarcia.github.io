@@ -29,8 +29,8 @@ var currentYear = date.getFullYear();
 var space = '';
 if (currentMonth < 10) { space = '-0'; }
 else { space = '-'; }
-var attDate = currentYear + space + currentMonth;
 var currentDate = currentDate = month[ currentMonth ] + ' ' + currentYear;
+var attDate = currentYear + space + ++currentMonth;
 
 // Create the <time> element
 var time = document.createElement('time');
