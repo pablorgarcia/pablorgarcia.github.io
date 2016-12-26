@@ -19,10 +19,7 @@ time { color: #53605D; }
 
 article:nth-child(2) { border-top: solid 1px #102124; }
 
-a {
-  color: #C0BDA8;
-  border: solid 1px #9EC0C0;
-}
+a { color: #C0BDA8; }
 a:hover { background-color: #FFFEF7; }
 
 @media (min-height: 700px) and (min-width: 650px) {

@@ -93,12 +93,12 @@ a {
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  color: #7F245A;
-  border: solid 1px gray;
+  color: #fff;
+  background-color: #2F2829;
   cursor: pointer;
-  padding: 0.24em 0.3em;
+  padding: .58em .8em;
   margin-top: .6em;
-  min-width: 4em;
+  width: 7em;
   display: inline-block;
   outline: none;
   -webkit-transition: color 250ms, background-color 250ms;

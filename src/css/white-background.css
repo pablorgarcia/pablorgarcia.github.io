@@ -20,10 +20,7 @@ time { color: #413939; }
 article:nth-child(2) { border-top: solid 1px #7D6768; }
 
 
-a {
-  color: #687882;
-  border: solid 1px #9B7C7C;
-}
+a { color: #687882; }
 a:hover { background-color: #D2E9F7; }
 
 
