@@ -1,5 +1,3 @@
-/* Reset */
-html, body, header, section, footer, ul, li, h1, h2, a, i, p, figure, blockquote, figcaption, em, time { box-sizing: border-box; padding: 0; margin: 0; }
 /* Main Styles */
 html { width: 100%; height: 100%; }
 
@@ -193,12 +191,3 @@ blockquote::selection { color: #8AA690; }
 figcaption::selection,
 time::selection { color: #6BCC62; }
 
-
-
-
-
-/*
-
-http://paletton.com/#uid=5580u0k2ljc6hnI3vhb50fr6wdx
-
-*/
