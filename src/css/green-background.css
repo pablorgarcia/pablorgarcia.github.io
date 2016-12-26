@@ -22,6 +22,13 @@ article:nth-child(2) { border-top: solid 1px #102124; }
 a { color: #009108; }
 a:hover { background-color: #FF3385; }
 
+.image-profile {
+  background-image: url('../../images/pablerashow180x180-green.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media (min-height: 700px) and (min-width: 650px) {
 
   article:nth-child(2) { border-top: none; }
