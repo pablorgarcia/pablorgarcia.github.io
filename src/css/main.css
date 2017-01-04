@@ -10,26 +10,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0 2em;
-  text-align: justify;
 }
 
 header {
   max-width: 43.750em;
-  margin: 8em auto 2em;
+  margin: 8em auto 24px;
 }
 
 section,
 footer {
   max-width: 43.750em;
-  padding: 2em 0;
+  padding: 24px 0;
   margin: 0 auto;
   border-top: solid 1px #7D6768;
 }
 
-article:nth-child(1) { padding-bottom: 2em; }
+article:nth-child(1) { padding-bottom: 24px; }
 
 article:nth-child(2) {
-  padding: 2em 0;
+  padding: 24px 0;
   border-top: solid 1px #7D6768;
 }
 
@@ -56,19 +55,18 @@ time {
 p {
   font-size: 1.6em;
   font-weight: 400;
-  margin-bottom: 1.25em;
+  margin-bottom: 24px;
   color: #4F4747;
 }
 p:last-child { margin: 0; }
 
 footer p {
   font-size: 1.4em;
-  margin-bottom: 1.25em;
 }
 
 figure {
   padding: 0 1.4em;
-  margin-bottom: 1.25em;
+  margin-bottom: 24px;
   border-left: 1px solid #867879;
   color: #6A5455;
   letter-spacing: 0.01em;
