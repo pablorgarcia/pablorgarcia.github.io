@@ -184,7 +184,7 @@ a::selection { color: #000; }
 
 p::selection, span::selection, em::selection { color: darkmagenta; }
 
-blockquote::selection { color: #8AA690; }
+blockquote::selection { color: #980808; }
 figcaption::selection,
 time::selection { color: #980808; }
 
