@@ -4,9 +4,6 @@ body { background-color: #000; }
 
 h1 { color: #c0c4c3; }
 
-section,
-footer { border-top: solid 1px #363b34; }
-
 p { color: #4F4747; }
 
 figure {
@@ -17,8 +14,6 @@ figure {
 h2,
 time { color: #b0b5af; }
 
-article:nth-child(2) { border-top: solid 1px #363b34; }
-
 a { color: #687882; }
 a:hover { background-color: #343A3D; }
 
@@ -27,10 +22,4 @@ a:hover { background-color: #343A3D; }
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-@media (min-height: 700px) and (min-width: 650px) {
-
-  article:nth-child(2) { border-top: none; }
-
 }

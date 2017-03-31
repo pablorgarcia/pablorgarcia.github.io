@@ -4,9 +4,6 @@ body { background-color: #001317; }
 
 h1 { color: #D4DCCD; }
 
-section,
-footer { border-top: solid 1px #102124; }
-
 p { color: #6b7474; }
 
 figure {
@@ -16,8 +13,6 @@ figure {
 
 h2,
 time { color: #53605D; }
-
-article:nth-child(2) { border-top: solid 1px #102124; }
 
 a {
   color: #FF1978;
@@ -33,10 +28,4 @@ a:hover {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-@media (min-height: 700px) and (min-width: 650px) {
-
-  article:nth-child(2) { border-top: none; }
-
 }

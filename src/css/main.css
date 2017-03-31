@@ -5,7 +5,7 @@ body {
   font-size: 100%; 
   font-family: Georgia, Times, serif;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.45;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,40 +23,31 @@ footer {
   max-width: 43.750em;
   padding: 2em 0;
   margin: 0 auto;
-  border-top: solid 1px #7D6768;
 }
 
 article:nth-child(1) { padding-bottom: 2em; }
 
-article:nth-child(2) {
-  padding: 2em 0;
-  border-top: solid 1px #7D6768;
-}
+article:nth-child(2) { padding: 2em 0; }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
   color: #2F2829;
 }
 
 h2,
 time {
-  font-size: 1em;
+  font-size: 1.32em;
   font-weight: 700;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  line-height: .9;
   color: #413939;
   margin-top: 0.3em;
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.31em;
   font-weight: 400;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   color: #4F4747;
 }
 p:last-child { margin: 0; }
@@ -68,18 +59,18 @@ footer p {
 
 figure {
   padding: 0 1.4em;
-  margin-bottom: 1.25em;
+  margin: 3em 0;
   border-left: 1px solid #867879;
   color: #6A5455;
-  letter-spacing: 0.01em;
 }
 
 blockquote { margin: 0; }
 
 blockquote,
 figcaption {
-  font-size: 1.6em;
+  font-size: 1.31em;
   font-weight: 300;
+  font-style: italic;
 }
 figcaption:before {
   content: "— ";
@@ -88,17 +79,16 @@ figcaption:before {
 
 a {
   font-weight: 700;
-  font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1.12em;
   line-height: 1;
   text-decoration: none;
-  text-transform: uppercase;
   color: #38382D;
   background-color: #73C74E;
   cursor: pointer;
   padding: .58em .8em;
   margin-top: .6em;
-  width: 7em;
+  width: 7.7em;
+  text-align: center;
   display: inline-block;
   outline: none;
   -webkit-transition: color 250ms, background-color 250ms;
@@ -115,12 +105,6 @@ a:hover { background-color: #87EA5C; }
 article:nth-child(2) p {
   margin: 0;
   font-size: 1em;
-  padding: 0 1em;
-}
-
-article:nth-child(2) h2 {
-  margin: 1em 0 .4em;
-  padding: 0 1em;
 }
 
 time {
@@ -149,28 +133,10 @@ time {
     border: none;
   }
 
-  article:nth-child(2) h2:nth-child(1) {
-    position: relative;
-    right: -100%;
-    margin: 0;
-    padding: 0;
-    writing-mode:tb-rl;
-    white-space: nowrap;
-    display: block;
-    width: 1px;
-    height: 1px;
-    /*
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);*/
-  }
-
   article:nth-child(2) h2,
   article:nth-child(2) p { text-align: center; }
 
-  .image-profile { margin: 0 auto; }
+  .image-profile { margin: 0 auto 1.25em; }
 
 }
 

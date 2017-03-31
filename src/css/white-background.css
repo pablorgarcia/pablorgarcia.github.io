@@ -4,9 +4,6 @@ body { background-color: #FFFAFD; }
 
 h1 { color: #2F2829; }
 
-section,
-footer { border-top: solid 1px #7D6768; }
-
 p { color: #4F4747; }
 
 figure {
@@ -17,17 +14,9 @@ figure {
 h2,
 time { color: #413939; }
 
-article:nth-child(2) { border-top: solid 1px #7D6768; }
-
 .image-profile {
   background-image: url('../../images/pablerashow180x180-white.jpg');
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-@media (min-height: 700px) and (min-width: 650px) {
-
-  article:nth-child(2) { border-top: none; }
-
 }
