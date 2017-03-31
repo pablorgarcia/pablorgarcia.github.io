@@ -10,30 +10,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0 2em;
+  text-align: justify;
 }
 
 header {
   max-width: 43.750em;
-  margin: 8em auto 24px;
+  margin: 8em auto 2em;
 }
 
 section,
 footer {
   max-width: 43.750em;
-  padding: 24px 0;
+  padding: 2em 0;
   margin: 0 auto;
 }
 
-article:nth-child(1) { padding-bottom: 24px; }
+article:nth-child(1) { padding-bottom: 2em; }
 
-<<<<<<< HEAD
 article:nth-child(2) { padding: 2em 0; }
-=======
-article:nth-child(2) {
-  padding: 24px 0;
-  border-top: solid 1px #7D6768;
-}
->>>>>>> origin/master
 
 h1 {
   font-size: 2em;
@@ -53,26 +47,19 @@ time {
 p {
   font-size: 1.31em;
   font-weight: 400;
-<<<<<<< HEAD
   margin-bottom: 1em;
-=======
-  margin-bottom: 24px;
->>>>>>> origin/master
   color: #4F4747;
 }
 p:last-child { margin: 0; }
 
 footer p {
   font-size: 1.4em;
+  margin-bottom: 1.25em;
 }
 
 figure {
   padding: 0 1.4em;
-<<<<<<< HEAD
   margin: 3em 0;
-=======
-  margin-bottom: 24px;
->>>>>>> origin/master
   border-left: 1px solid #867879;
   color: #6A5455;
 }
@@ -156,16 +143,16 @@ time {
 /*
  * Changing the color text selected
  */
-h1::selection { color: #490898; }
-h2::selection { color: #A20855; }
+h1::selection { color: #1D4C35; }
+h2::selection { color: #2B9863; }
 h2 span::selection { color: #4A2B59; }
 
 i::selection { color: #72CDD4; }
-a::selection { color: #000; }
+a::selection { color: #30C0CB; }
 
-p::selection, span::selection, em::selection { color: darkmagenta; }
+p::selection, span::selection, em::selection { color: #996059; }
 
-blockquote::selection { color: #980808; }
+blockquote::selection { color: #8AA690; }
 figcaption::selection,
-time::selection { color: #980808; }
+time::selection { color: #6BCC62; }
 
