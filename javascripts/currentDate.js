@@ -40,5 +40,8 @@ time.setAttribute('datatime', attDate);
 time.textContent = currentDate;
 
 // Append the <time> element to the HTML
-var footer = document.getElementsByTagName('footer')[0];
-footer.appendChild(time);
+var lastElementMain = document.getElementById('elDate');
+//var lastElementMain = document.getElementsByTagName('main')[0].lastElementChild;
+lastElementMain.appendChild(time);
+
+//<time datatime="2018-04">April 2018</time>

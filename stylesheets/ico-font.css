@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ico-font";
+  src:url("../images/fonts/ico-font.eot");
+  src:url("../images/fonts/ico-font.eot?#iefix") format("embedded-opentype"),
+    url("../images/fonts/ico-font.woff") format("woff"),
+    url("../images/fonts/ico-font.ttf") format("truetype"),
+    url("../images/fonts/ico-font.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "ico-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ico-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e00d";
+}
+.icon-codepen:before {
+  content: "\e013";
+}
+.icon-linkedin:before {
+  content: "\e000";
+}
+.icon-pin:before {
+  content: "\e001";
+}
+.icon-language:before {
+  content: "\e006";
+}
+.icon-globe:before {
+  content: "\e005";
+}
+.icon-right:before {
+  content: "\e004";
+}
+.icon-ios-arrow-back:before {
+  content: "\e008";
+}
+.icon-close-round:before {
+  content: "\e003";
+}
+.icon-social-nodejs:before {
+  content: "\e007";
+}
+.icon-social-angular-outline:before {
+  content: "\e009";
+}
+.icon-social-html5-outline:before {
+  content: "\e00a";
+}
+.icon-social-css3-outline:before {
+  content: "\e00b";
+}
+.icon-fork-repo:before {
+  content: "\e002";
+}
