@@ -153,6 +153,8 @@ Disabled text: 26% #000000
 
 .extra-info { display: none; }
 
+#elGreeting { padding: 2rem 0; }
+
 #elDate {
   display: block;
   padding-top: 1rem;

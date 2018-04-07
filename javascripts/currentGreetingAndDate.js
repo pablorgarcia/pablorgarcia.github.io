@@ -11,18 +11,23 @@ var currentHour = date.getHours();
  * We will show the current greeting that is expected depending on the time of day
  */
 
-// hour
+// Create the <p> element
+var pGreeting = document.createElement('p');
+
+// Adding the attribute and the text on <p> element
 if (currentHour < 6) {
-  console.log("son menos de las 6");
+  pGreeting.textContent = "Welcome. Are you sleepless?";
 } else if (currentHour < 12) {
-  console.log("son menos de las 12");
+  pGreeting.textContent = "Good Morning";
 } else if (currentHour < 18) {
-  console.log("son menos de las 18");
+  pGreeting.textContent = "Good afternoon";
 } else {
-  console.log("son menos de las 24");
+  pGreeting.textContent = "Good evening";
 }
 
-
+// Append the <time> element to the HTML
+var idGreeting = document.getElementById('elGreeting');
+idGreeting.appendChild(pGreeting);
 
 
 /* * * * * * * * * * * * * * * * * * * * * 
@@ -54,11 +59,10 @@ var attDate = currentYear + space + ++currentMonth;
 // Create the <time> element
 var time = document.createElement('time');
 
-// Paint the attribute and the text on <time> element
+// Adding the attribute and the text on <time> element
 time.setAttribute('datatime', attDate);
 time.textContent = currentDate;
 
 // Append the <time> element to the HTML
 var lastElementMain = document.getElementById('elDate');
 lastElementMain.appendChild(time);
-
