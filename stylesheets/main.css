@@ -178,7 +178,7 @@ Disabled text: 26% #000000
   h2 {
     font-size: 2.4vw;
     text-align: left;
-    line-height: 24px;
+    line-height: 2rem;
     display: inline-block;
     vertical-align: middle;
   }
