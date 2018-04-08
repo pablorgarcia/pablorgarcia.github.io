@@ -9,9 +9,9 @@ var dict = {
     }
   },
   es: {
-    head: "..."
+    main: "..."
   },
   pt: {
-    head: "..."
+    main: "..."
   }
 }
