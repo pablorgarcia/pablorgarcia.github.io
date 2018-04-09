@@ -1,6 +1,5 @@
-
 /* Fonts CSS */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,500|Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i|Roboto:300,400,500');
 
 body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #414549; }
 
@@ -40,16 +39,14 @@ section a:hover { color: #2DADFF; }
 section a::before { padding-right: 1vw; }
 
 p {
+  line-height: 1.7rem;
+  letter-spacing: 0.014rem;
+  word-spacing: -0.02rem;
   margin: 0;
   vertical-align: baseline;
 }
 
-main p {
-  line-height: 1.7rem;
-  letter-spacing: 0.014rem;
-  word-spacing: -0.02rem;
-  margin-bottom: 1rem;
-}
+main p { margin-bottom: 1rem; }
 
 span, .extra-info a {
   font-family: 'Roboto Mono', monospace;
@@ -76,6 +73,11 @@ blockquote { margin: 0 0 0.5rem; }
 figcaption::before {
   content: "— ";
   padding-right: .3em;
+}
+
+.black-title {
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 /* Main CSS */
@@ -134,12 +136,16 @@ oscuro - 00adbf
   box-shadow: 0px 3px 4px 0px #666;
 }
 
-footer {
-  bottom: 3vh;
-  display: none;
+footer { display: none; }
+
+footer ul {
+  display: inline-block;
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+  vertical-align: top;
 }
 
-footer li { display: inline-block; }
+footer li { display: block; }
 
 
 h1, h2 { margin: 0; text-align: center; }
@@ -157,9 +163,7 @@ Disabled text: 26% #000000
 
 #elDate {
   display: block;
-  padding-top: 1rem;
-  margin: 4rem 0 6rem;
-  border-top: 4px solid #4285f4;
+  padding: 1rem 0 2rem;
 }
 
 
@@ -192,9 +196,9 @@ Disabled text: 26% #000000
 
   body { display: block; }
 
-  header, main {
+  header, main, footer {
     width: calc(100% - 4rem);
-    margin: 2rem;
+    margin: 2rem 2rem 5rem;
   }
 
   nav { display: none; }
@@ -225,7 +229,7 @@ Disabled text: 26% #000000
 
 }
 
-@media (min-width: 630px) { main { width: calc(100% - 33%) } }
+@media (min-width: 630px) { main, footer { width: calc(100% - 33%) } }
 
 @media (min-width: 780px) {
 
@@ -261,6 +265,10 @@ Disabled text: 26% #000000
     vertical-align: top;
   }
 
+  footer {
+    width: 488px;
+    margin-left: calc(250px + 1.3rem);
+  }
 
 
   /* meter en el DOM un DIV.photo cuando el view sea mayor de 780px */
@@ -293,4 +301,4 @@ Disabled text: 26% #000000
 
 }
 
-@media (min-width: 878px) { main { width:586px; } }
+@media (min-width: 878px) { main, footer { width:586px; } }
