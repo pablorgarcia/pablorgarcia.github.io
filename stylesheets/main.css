@@ -75,10 +75,7 @@ figcaption::before {
   padding-right: .3em;
 }
 
-.black-title {
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
+.black-title { font-weight: 400; }
 
 /* Main CSS */
 html { height: 100%; }
