@@ -140,14 +140,11 @@ footer { display: none; }
 
 footer ul {
   display: inline-block;
-  width: calc(50% - 1rem);
-  margin-right: 1rem;
   margin-top: 1rem;
   vertical-align: top;
 }
 
 footer li { display: block; }
-
 
 h1, h2 { margin: 0; text-align: center; }
 
@@ -168,6 +165,9 @@ Disabled text: 26% #000000
   border-bottom: 1px solid #efefef;
 }
 
+.footer-col-1 { width: calc(40% - 1rem); margin-right: 1rem; }
+.footer-col-2 { width: calc(20% - 1rem); margin-right: 1rem; }
+.footer-col-3 { width: 40%; }
 
 @media (min-width: 450px) {
 
