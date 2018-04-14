@@ -51,7 +51,7 @@ main p { margin-bottom: 1rem; }
 span, .extra-info a {
   font-family: 'Roboto Mono', monospace;
   font-size: 0.9rem;
-  line-height: 1.8rem;
+  line-height: 1rem;
   color: #5f6368;
 }
 
@@ -162,9 +162,8 @@ Disabled text: 26% #000000
   border-bottom: 1px solid #efefef;
 }
 
-.footer-col-1 { width: calc(40% - 1rem); margin-right: 1rem; }
-.footer-col-2 { width: calc(20% - 1rem); margin-right: 1rem; }
-.footer-col-3 { width: 40%; }
+.footer-col-1 { width: calc(50% - 1rem); margin-right: 1rem; }
+.footer-col-2 { width: calc(30% - 1rem); margin-right: 1rem; }
 
 @media (min-width: 450px) {
 
@@ -235,7 +234,7 @@ Disabled text: 26% #000000
   h1 {
     line-height: 2rem;
     text-align: left;
-    font-size: 32px;
+    font-size: 1.9rem;
     margin-top: 1.3rem;
     margin-right: 0;
     letter-spacing: -0.96px;
@@ -243,7 +242,7 @@ Disabled text: 26% #000000
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     text-align: left;
     margin-bottom: 1rem;
@@ -279,8 +278,7 @@ Disabled text: 26% #000000
 
   .extra-info {
     display: block;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    padding: 1rem 0;
     border-top: 1px solid #efefef;
   }
 
