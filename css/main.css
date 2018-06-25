@@ -4,6 +4,9 @@
   --tint-color: #999;
   --hover-color: #ff008ad4;
   --quite-color: #ccc;
+  --terminal-color: #33ff33;
+  --terminal-link-color: #ffb000;
+  --terminal-bg-color: #282828;
   --background-color: #fff;
 
   --font-size: 22px;
@@ -32,7 +35,8 @@ time {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: var(--font-size);
   line-height: var(--font-line-height);
-  font-weight: 400;
+  word-spacing: 0.02rem;
+  letter-spacing: 0.009rem;
   color: var(--text-color);
 }
 
@@ -55,6 +59,10 @@ time {
   font-size: calc(var(--font-size) * 0.8);
   color: var(--text-quite-color);
 }
+p,
+time,
+blockquote,
+figcaption { font-weight: 300; }
 
 h1 em,
 h2 em {
@@ -71,6 +79,21 @@ h2 a {
 h1 a:hover,
 h2 a:hover {
   text-decoration: none;
+}
+h1::selection,
+p::selection,
+time::selection,
+blockquote::selection,
+figcaption::selection {
+  color: var(--terminal-color);
+  background-color: var(--terminal-bg-color);
+}
+a::selection {
+  color: var(--terminal-link-color);
+  background-color: var(--terminal-bg-color);
+}
+a:hover::selection {
+  color: var(--hover-color);
 }
 
 /* Paragraphs */
