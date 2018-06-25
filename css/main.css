@@ -81,18 +81,25 @@ h2 a:hover {
   text-decoration: none;
 }
 h1::selection,
+h1::-moz-selection,
 p::selection,
+p::-moz-selection,
 time::selection,
+time::-moz-selection,
 blockquote::selection,
-figcaption::selection {
+blockquote::-moz-selection,
+figcaption::selection,
+figcaption::-moz-selection {
   color: var(--terminal-color);
   background-color: var(--terminal-bg-color);
 }
-a::selection {
+a::selection,
+a::-moz-selection {
   color: var(--terminal-link-color);
   background-color: var(--terminal-bg-color);
 }
-a:hover::selection {
+a:hover::selection,
+a:hover::-moz-selection {
   color: var(--hover-color);
 }
 
