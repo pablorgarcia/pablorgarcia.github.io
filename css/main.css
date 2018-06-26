@@ -55,6 +55,7 @@ h2 {
   font-size: calc(var(--font-size) * 0.8);
   line-height: calc(var(--font-line-height) * 1.1);
 }
+span,
 time {
   font-size: calc(var(--font-size) * 0.8);
   color: var(--text-quite-color);
@@ -63,6 +64,8 @@ p,
 time,
 blockquote,
 figcaption { font-weight: 300; }
+
+time { padding-right: 0.5rem; }
 
 h1 em,
 h2 em {
