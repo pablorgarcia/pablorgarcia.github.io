@@ -9,17 +9,14 @@ const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July',
 
 // Format the string for display it
 let space = '';
+let point = '.';
 currentMonth < 10 ? space = '-0' : space = '-';
-let currentDate = `${month[currentMonth]} ${currentYear}`;
-let attDate = `${currentYear}${space}${currentMonth+1}`;
+const currentDate = `${month[currentMonth]} ${currentYear}${point}`;
+const attDate = `${currentYear}${space}${currentMonth+1}`;
 
-// Create the <time> element
-let time = document.createElement('time');
+const time = document.getElementsByTagName('time')[0];
 
 // Adding the attribute and the text on <time> element
 time.setAttribute('datatime', attDate);
 time.textContent = currentDate;
 
-// Append the <time> element to the HTML
-let lastElementMain = document.getElementById('currentDate');
-lastElementMain.appendChild(time);
