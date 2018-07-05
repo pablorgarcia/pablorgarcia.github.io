@@ -1,7 +1,7 @@
 # pablorgarcia.github.io
 _My personal website. Just a simple presentation card._
 
-**Created with pure JavaScript and CSS**
+**Created with pure JavaScript, HTML5 and CSS**
 
 Results of PageSpeed Insights at 31/03/2017:
 - SmartPhone speed: 92/100
