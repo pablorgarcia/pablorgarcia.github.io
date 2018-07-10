@@ -1,9 +1,8 @@
 :root {
   --text-color: #222;
   --text-quite-color: #888;
-  --link-color: #f44336;
-  --hover-color: #03a9f4;
-  --quite-color: #ccc;
+  --link-color: #03A9F4;
+  --hover-color: #0000ff;
   --terminal-color: #33ff33;
   --terminal-link-color: #ffb000;
   --terminal-bg-color: #282828;
@@ -155,6 +154,13 @@ a:hover {
 svg:hover {
   fill: var(--hover-color);
 }
+.about {
+  color: #E91E63;
+}
+.about:hover {
+  color: #FF0000;
+}
+
 
 /* Blockquotes */
 blockquote {
