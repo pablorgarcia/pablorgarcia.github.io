@@ -54,8 +54,7 @@ h2 {
   font-size: calc(var(--font-size) * 0.9);
   line-height: calc(var(--font-line-height) * 1.1);
 }
-span,
-time {
+.info {
   font-size: calc(var(--font-size) * 0.8);
   color: var(--text-secundary-color);
 }
@@ -77,8 +76,13 @@ h2 a:hover {
   text-decoration: none;
 }
 
-/* Paragraphs */
-#currentDate { margin-top: 0; }
+.note::before {
+  content: "—";
+}
+
+.note::after {
+  content: "—";
+}
 
 /* Links */
 a {
@@ -164,5 +168,6 @@ article,
 footer {
   padding: 0 calc(var(--margin) * 1.5);
 }
+.info { font-size: calc(var(--font-size) * 0.8); }
 
 }
