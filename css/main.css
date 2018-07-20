@@ -76,14 +76,6 @@ h2 a:hover {
   text-decoration: none;
 }
 
-.note::before {
-  content: "—";
-}
-
-.note::after {
-  content: "—";
-}
-
 /* Links */
 a {
   color: var(--link-color);
@@ -168,6 +160,5 @@ article,
 footer {
   padding: 0 calc(var(--margin) * 1.5);
 }
-.info { font-size: calc(var(--font-size) * 0.8); }
 
 }
