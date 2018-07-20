@@ -67,43 +67,18 @@ figcaption { font-weight: 300; }
 
 time { padding-right: 0.5rem; }
 
-h1 em,
-h2 em {
-  font-style: normal;
-  opacity: 0.3;
-  white-space: nowrap;
-}
-h1 a,
 h2 a {
   text-decoration: none;
   box-shadow: none;
   color: var(--text-color);
-  font-weight: 900;
+  font-weight: 700;
 }
-h1 a:hover,
 h2 a:hover {
   text-decoration: none;
 }
 
 /* Paragraphs */
-strong {
-  font-weight: 900;
-}
-em {
-  font-style: italic;
-}
 #currentDate { margin-top: 0; }
-
-/* Lists */
-ul {
-  margin: var(--margin) auto;
-  padding: 0;
-  list-style: none;
-  max-width: var(--max-width);
-}
-ul > li {
-  text-indent: -21px;
-}
 
 /* Links */
 a {
@@ -124,24 +99,12 @@ a:hover {
 svg:hover {
   fill: var(--hover-color);
 }
-.about {
-  color: #E91E63;
-}
-.about:hover {
-  color: #FF0000;
-}
-
 
 /* Blockquotes */
 blockquote {
   margin: 0 0 0.5rem;
 }
 
-code {
-  display: inline-block;
-  margin: 0;
-  color: #222;
-}
 pre {
   display: inline-block;
   padding: 0.2rem 0.5rem;
@@ -151,12 +114,6 @@ pre {
   letter-spacing: 0;
   word-spacing: 0;
   font-size: calc(var(--font-size) * 0.75);
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 /* Figure */
