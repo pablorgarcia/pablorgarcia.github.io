@@ -54,7 +54,8 @@ h2 {
   font-size: calc(var(--font-size) * 0.9);
   line-height: calc(var(--font-line-height) * 1.1);
 }
-.info {
+.info,
+.info time {
   font-size: calc(var(--font-size) * 0.8);
   color: var(--text-secundary-color);
 }
@@ -70,7 +71,7 @@ h2 a {
   text-decoration: none;
   box-shadow: none;
   color: var(--text-color);
-  font-weight: 700;
+  font-weight: 500;
 }
 h2 a:hover {
   text-decoration: none;
