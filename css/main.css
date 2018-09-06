@@ -67,6 +67,8 @@ time,
 blockquote,
 figcaption { font-weight: 300; }
 
+b { font-weight: 500; }
+
 time { padding-right: 0.5rem; }
 
 h2 a {
