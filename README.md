@@ -2,13 +2,8 @@
 _My personal website. Just a simple presentation card._
 
 **Created with pure JavaScript, HTML5 and CSS**
+![png](images/_images4readme/js.png) ![png](images/_images4readme/html5.png) ![png](images/_images4readme/css.png)
 
-Results of PageSpeed Insights at 31/03/2017:
-- SmartPhone speed: 92/100
-- Desk computer speed: 95/100
-
-If you want to have your own site version, would be great y motivador make a fork in the project. I'd love to read your version.
+If you want to have your own site version, feel free to fork it :)
 
 Cheers!
-
-![png](images/_images4readme/js.png) ![png](images/_images4readme/html5.png) ![png](images/_images4readme/css.png)
