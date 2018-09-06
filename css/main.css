@@ -1,4 +1,6 @@
 :root {
+  --bg-blue: #E3FBFF;
+  --bg-white: #FCFFFF;
   --text-color: #293030;
   --text-secundary-color: #302C29;
   --link-color: #009cdc;
@@ -26,7 +28,7 @@
 body {
   margin: 0;
   padding: calc(var(--margin) * 3) 0 var(--margin);
-  background-color: #E3FBFF;
+  background-color: var(--bg-blue);
 }
 body,
 h1,
@@ -117,7 +119,7 @@ pre {
 figure {
   font-style: italic;
   color: #293030;
-  background-color: #fff;
+  background-image: linear-gradient(to bottom right, var(--bg-white), transparent);
   padding: 1rem 1.4rem;
   margin: var(--margin) auto;
   max-width: var(--max-width);
