@@ -15,6 +15,7 @@
   --tag-purple-text: #cdbfe3;
 
   --font-size: 18px;
+  --font-size-small: 13px;
   --font-line-height: 32px;
 
   --margin: 32px;
@@ -66,6 +67,12 @@ a,
 time,
 blockquote,
 figcaption { font-weight: 300; }
+
+.highlights {
+  text-transform: uppercase;
+  font-size: var(--font-size-small);
+  font-weight: 900;
+}
 
 b { font-weight: 500; }
 
