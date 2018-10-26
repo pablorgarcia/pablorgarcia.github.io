@@ -1,4 +1,4 @@
-console.log("👋 HELLO PARTNET");
+console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
 // New obj Date and get the month and year from the browser
 const date = new Date();
 const currentMonth = date.getMonth();
