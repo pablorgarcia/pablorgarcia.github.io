@@ -30,6 +30,8 @@ body {
   margin: 0;
   padding: calc(var(--margin) * 3) 0 var(--margin);
   background-color: var(--bg-blue);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body,
 h1,
@@ -68,10 +70,10 @@ time,
 blockquote,
 figcaption { font-weight: 300; }
 
-.highlights {
+.small-title {
   text-transform: uppercase;
   font-size: var(--font-size-small);
-  font-weight: 900;
+  font-weight: 500;
 }
 
 b { font-weight: 500; }
@@ -122,6 +124,7 @@ pre {
   letter-spacing: 0;
   word-spacing: 0;
   font-size: calc(var(--font-size) * 0.75);
+  text-transform: uppercase;
 }
 
 /* Figure */
