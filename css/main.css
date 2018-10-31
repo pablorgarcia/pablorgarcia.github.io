@@ -13,6 +13,7 @@
   --tag-cyan-text: #282c34;
   --tag-purple: #7952B3;
   --tag-purple-text: #cdbfe3;
+  --tag-white: #fff;
 
   --font-size: 18px;
   --font-size-small: 13px;
@@ -115,10 +116,20 @@ blockquote {
   margin: 0 0 0.5rem;
 }
 
+.tags-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: space-around;
+}
+
 pre {
-  display: inline-block;
+  /* display: inline-block; */
+  width: auto;
   padding: 0.2rem 0.5rem;
-  margin: 0 0.25rem;
+  margin: 0 0.2rem 0.2rem 0;
   line-height: 1rem;
   overflow: auto;
   letter-spacing: 0;
@@ -167,6 +178,10 @@ footer {
 .tag-purple {
   background-color: var(--tag-purple);
   color: var(--tag-purple-text);
+}
+
+.tag-white {
+  background-color: var(--tag-white);
 }
 
 @media (max-width: 700px) and (orientation: portrait) {
