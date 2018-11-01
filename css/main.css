@@ -30,7 +30,7 @@
 
 :root .at-night {
   --bg-color: #000C14;
-  --title-color: #F2CC01;
+  --title-color: #F280D0;
   --text-color: #944EB2;
   --text-secundary-color: #225588;
   --link-color: #F280D0;
@@ -38,21 +38,32 @@
   --bg-quote: #051336;
   --text-quote: #22A944;
   --tag-languages: #060621;
-  --tag-languages-text: #22A944;
+  --tag-languages-text: #F2CC01;
   --tag-front: #060621;
-  --tag-front-text: #22A944;
+  --tag-front-text: #F2CC01;
   --tag-back: #060621;
-  --tag-back-text: #22A944;
+  --tag-back-text: #F2CC01;
   --tag-environment: #060621;
-  --tag-environment-text: #22A944;
+  --tag-environment-text: #F2CC01;
   --tag-research: #060621;
-  --tag-research-text: #22A944;
+  --tag-research-text: #F2CC01;
   --icon-color: #944EB2;
-  --icon-hover-color: #F280D0;
+  --icon-hover-color: #BBBBBB;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.fade-effect {
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
 }
 
 body {
@@ -130,8 +141,8 @@ a {
   color: var(--link-color);
   text-decoration: none;
   cursor: pointer;
-  transition-delay: 0s;
-  transition-duration: 0.18s;
+  transition-delay: 0.11s;
+  transition-duration: 0.24s;
   transition-property: all;
   transition-timing-function: line;
 }
@@ -144,6 +155,10 @@ a:hover {
 }
 svg:hover {
   fill: var(--icon-hover-color);
+  transition-delay: 0.11s;
+  transition-duration: 0.24s;
+  transition-property: all;
+  transition-timing-function: line;
 }
 
 /* Blockquotes */
@@ -222,9 +237,9 @@ footer {
 
 @media (max-width: 700px) and (orientation: portrait) {
 
-article,
-footer {
-  padding: 0 calc(var(--margin) * 1.5);
-}
+  article,
+  footer {
+    padding: 0 calc(var(--margin) * 1.5);
+  }
 
 }
