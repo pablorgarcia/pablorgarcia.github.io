@@ -118,19 +118,17 @@ figcaption { font-weight: 300; }
 
 b { font-weight: 500; }
 
-time { padding-right: 0.5rem; }
-
 h2 a {
   text-decoration: none;
   box-shadow: none;
-  color: var(--text-color);
+  color: var(--icon-color);
   font-weight: 500;
 }
 h2 a:hover {
   text-decoration: none;
 }
 .at-night h2 a {
-  color: var(--title-color);
+  color: var(--text-color);
 }
 .at-night h2 a:hover {
   color: var(--hover-color);
@@ -185,6 +183,19 @@ pre {
   word-spacing: 0;
   font-size: calc(var(--font-size) * 0.75);
   text-transform: uppercase;
+}
+
+.two-lines-max {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-lines-max span {
+  display: block;
+}
+
+.two-lines-max span:first-child {
+  padding-right: 0.5rem;
 }
 
 /* Figure */
