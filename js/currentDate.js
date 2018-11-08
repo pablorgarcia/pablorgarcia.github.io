@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentMonth = date.getMonth();
   const currentYear = date.getFullYear();
 
+  // Mounts set
   const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   // Format the string for display it
@@ -15,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentDate = `${month[currentMonth]} ${currentYear}${point}`;
   const attDate = `${currentYear}${space}${currentMonth+1}`;
 
-  const time = document.getElementsByTagName('time')[0];
-
   // Adding the attribute and the text on <time> element
+  const time = document.getElementsByTagName('time')[0];
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
 
