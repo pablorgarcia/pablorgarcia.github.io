@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Format the string for display it
   let space = '';
-  let point = '.';
   currentMonth < 10 ? space = '-0' : space = '-';
-  const currentDate = `${month[currentMonth]} ${currentYear}${point}`;
+  const currentDate = `${month[currentMonth]} ${currentYear}`;
   const attDate = `${currentYear}${space}${currentMonth+1}`;
 
   // Adding the attribute and the text on <time> element
