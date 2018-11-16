@@ -155,10 +155,9 @@ a:hover {
   color: var(--hover-color);
 }
 
-/* .icon {
-  margin-right: 0.2rem;
-  fill: var(--icon-color);
-} */
+article a:focus {
+  outline: 2px ridge var(--link-color);
+}
 
 .material-icons {
   font-size: var(--font-size);
@@ -201,10 +200,13 @@ a:hover {
   background-color: var(--link-color);
   color: var(--bg-color);
 }
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--primary:focus {
   /* background-image: linear-gradient(to bottom right, var(--btn-bg-primary--hover), transparent); */
   background-color: var(--btn-bg-primary--hover);
   color: var(--bg-color);
+  border-color: var(--btn-bg-primary--hover);
+  outline: none;
 }
 
 .btn--secondary {
@@ -213,10 +215,13 @@ a:hover {
   color: var(--link-color);
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.btn--secondary:focus {
   /* background-image: linear-gradient(to bottom right, var(--btn-bg-secondary-hover), transparent); */
   background-color: var(--btn-bg-secondary-hover);
-  color: var(--link-color);
+  color: var(--btn-bg-primary--hover);
+  border-color: var(--btn-bg-primary--hover);
+  outline: none;
 }
 
 .space-top {
