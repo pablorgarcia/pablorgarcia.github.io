@@ -201,7 +201,8 @@ article a:focus {
   color: var(--bg-color);
 }
 .btn--primary:hover,
-.btn--primary:focus {
+.btn--primary:focus,
+.btn--primary:active {
   /* background-image: linear-gradient(to bottom right, var(--btn-bg-primary--hover), transparent); */
   background-color: var(--btn-bg-primary--hover);
   color: var(--bg-color);
@@ -216,7 +217,8 @@ article a:focus {
 }
 
 .btn--secondary:hover,
-.btn--secondary:focus {
+.btn--secondary:focus,
+.btn--secondaryw {
   /* background-image: linear-gradient(to bottom right, var(--btn-bg-secondary-hover), transparent); */
   background-color: var(--btn-bg-secondary-hover);
   color: var(--btn-bg-primary--hover);
