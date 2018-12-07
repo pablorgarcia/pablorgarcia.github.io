@@ -9,8 +9,6 @@ The layout styles changes depending on the hour of the day that is accessed. Fro
 
 To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS.
 
---
-
 ## Performance
 
 Google page speed test results:
