@@ -14,7 +14,7 @@ To manage both layouts are using CSS native variables, `var(some-property)`, in 
 Google page speed test results:
 
 [developers.google.com/pagespeed/pablorgarcia.github.io](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablorgarcia.github.io&tab=mobile)
-- 98% Mobile
+- 99% Mobile
 - 100% Descktop
 
 If you want to have your own site version, feel free to fork it 🙂
