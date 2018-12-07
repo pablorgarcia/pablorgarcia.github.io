@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.getElementsByTagName('body')[0];
 
   // add at-day or at-night class depending on the current hour
-  if (currentHour >= 7 && currentHour < 21) {
+  if (currentHour >= 8 && currentHour < 21) {
     body.classList.add('at-day');
   } else {
     body.classList.add('at-night');
