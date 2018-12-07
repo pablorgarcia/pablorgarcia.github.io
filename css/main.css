@@ -329,3 +329,29 @@ footer {
   }
 
 }
+
+
+/* Scroll-bar */
+body {
+  scrollbar-face-color: transparent;
+  scrollbar-track-color: transparent;
+  scrollbar-highlight-color: transparent;
+  scrollbar-arrow-color: transparent;
+  scrollbar-shadow-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  height: 6px;
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-quote);
+  outline: none;
+}
+
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
