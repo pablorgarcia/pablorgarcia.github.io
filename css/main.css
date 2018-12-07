@@ -158,10 +158,12 @@ article a:focus {
   outline: 2px ridge var(--link-color);
 }
 
-.material-icons {
-  font-size: var(--font-size);
-  vertical-align: text-bottom;
-  padding-right: var(--space-between);
+svg {
+  width: var(--font-size);
+  height: var(--font-size);
+  vertical-align: middle;
+  margin-right: var(--space-between);
+  fill: var(--text-color);
 }
 
 .button-container {
@@ -319,11 +321,6 @@ footer {
 .tag-research {
   background-color: var(--tag-research);
   color: var(--tag-research-text);
-}
-
-svg {
-  vertical-align: middle;
-  margin-right: 0.5rem;
 }
 
 @media (max-width: 700px) and (orientation: portrait) {
