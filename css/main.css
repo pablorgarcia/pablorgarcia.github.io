@@ -321,6 +321,11 @@ footer {
   color: var(--tag-research-text);
 }
 
+svg {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
 @media (max-width: 700px) and (orientation: portrait) {
 
   article,
