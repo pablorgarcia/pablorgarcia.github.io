@@ -12,8 +12,8 @@ To manage both layouts are using CSS native variables, `var(some-property)`, in 
 ## Performance
 
 Google page speed test results:
-[GitHub](http://github.com)
-https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablorgarcia.github.io&tab=mobile
+
+[developers.google.com/pagespeed/pablorgarcia.github.io](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablorgarcia.github.io&tab=mobile)
 - 98% Mobile
 - 100% Descktop
 
