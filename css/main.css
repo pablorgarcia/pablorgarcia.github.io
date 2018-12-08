@@ -149,6 +149,9 @@ a:hover {
 .links-container a {
   color: var(--link-color);
 }
+.links-container a:hover {
+  color: var(--hover-color);
+}
 .links-container a:first-child {
   margin-right: var(--space-between);
 }
