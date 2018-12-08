@@ -60,22 +60,6 @@
   --btn-bg-secondary-hover: #001F33;
 }
 
-/* body {
-  cursor: url(../images/cursor/cursor-day.png);
-} */
-
-/* For fadein effect */
-/* .hidden{
-  visibility: hidden;
-}
-
-.fade-effect {
-  transition-delay: 0s;
-  transition-duration: 0.4s;
-  transition-property: all;
-  transition-timing-function: line;
-} */
-
 /* Generals */
 * {
   box-sizing: border-box;
