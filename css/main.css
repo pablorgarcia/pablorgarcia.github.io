@@ -342,6 +342,10 @@ footer {
     padding: 0 calc(var(--margin) * 1.5);
   }
 
+  .links-container a {
+    display: block;
+  }
+
 }
 
 
