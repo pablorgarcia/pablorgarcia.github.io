@@ -87,7 +87,8 @@ time {
 /* Headings */
 h1,
 h2,
-h3 {
+h3,
+.links-container a {
   font-family: monospace;
   font-size: calc(var(--font-size) * 0.75);
   color: var(--text-color);
@@ -101,6 +102,10 @@ h4 {
   margin: calc(var(--margin) / 2) 0 calc(var(--margin) / 4) 0;
 }
 
+address {
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -108,7 +113,10 @@ p,
 a,
 time,
 blockquote,
-figcaption { font-weight: 300; }
+figcaption,
+.links-container a {
+  font-weight: 300;
+}
 
 h4,
 b {
@@ -138,7 +146,15 @@ a:hover {
   color: var(--hover-color);
 }
 
-article a:focus {
+.links-container a {
+  color: var(--link-color);
+}
+.links-container a:first-child {
+  margin-right: var(--space-between);
+}
+
+main a:focus,
+.links-container a:focus {
   outline: 2px ridge var(--link-color);
 }
 
@@ -269,12 +285,14 @@ figcaption::before {
   padding-right: var(--space-right);
 }
 
-article,
-footer {
+main,
+footer,
+.links-container {
   max-width: var(--max-width);
 }
 
-article {
+main,
+.links-container {
   margin: 0 auto;
 }
 
@@ -309,8 +327,9 @@ footer {
 
 @media (max-width: 700px) and (orientation: portrait) {
 
-  article,
-  footer {
+  main,
+  footer,
+  .links-container {
     padding: 0 calc(var(--margin) * 1.5);
   }
 
