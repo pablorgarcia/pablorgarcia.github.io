@@ -334,7 +334,7 @@ footer {
   color: var(--tag-research-text);
 }
 
-@media (max-width: 700px) and (orientation: portrait) {
+@media (max-width: 760px) and (orientation: portrait) {
 
   main,
   footer,
