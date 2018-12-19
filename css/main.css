@@ -306,7 +306,8 @@ main,
 }
 
 footer {
-  margin: calc(var(--margin) * 2) auto calc(var(--margin) * 6);
+  /* margin: calc(var(--margin) * 2) auto calc(var(--margin) * 6); */
+  margin: calc(var(--margin) * 2) auto 0;
 }
 
 .tag-languages {

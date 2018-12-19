@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
 
+  // Make the contact div same height that the screen height
+  const contactHeight = window.innerHeight - 36 - 32 - 16; // 36: section.links-container, 32: body padding-bottom, 16: contact margin-top
+  document.getElementById('contact').style.height = contactHeight + 'px';
+
 });
 
 console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
