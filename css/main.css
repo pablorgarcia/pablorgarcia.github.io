@@ -310,6 +310,10 @@ footer {
   margin: calc(var(--margin) * 2) auto 0;
 }
 
+address {
+  height: calc(100vh - 36px - 48px - var(--margin)); /* 36: section height, 48: h4 height + margin-top, --margin: body padding-bottom */
+}
+
 .tag-languages {
   background-color: var(--tag-languages);
   color: var(--tag-languages-text);
