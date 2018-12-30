@@ -1,13 +1,14 @@
-/* Colour variables */
+/* Main variables */
 :root {
   --font-size: 18px;
   --font-size-small: 13px;
   --font-line-height: 32px;
   --margin: 32px;
+  --space-lateral: 1.4rem;
   --space-between: 0.5rem;
   --max-width: 640px;
 }
-
+/* Colour variables */
 :root .at-day {
   --bg-color: #E3FBFF;
   --text-color: #293030;
@@ -300,7 +301,7 @@ figure {
   font-style: italic;
   color: var(--text-quote);
   background-image: linear-gradient(to bottom right, var(--bg-quote), transparent);
-  padding: 1rem 1.4rem;
+  padding: 1rem var(--space-lateral);
   margin: var(--margin) auto;
   max-width: var(--max-width);
 }
@@ -364,7 +365,7 @@ address {
 
   main,
   footer {
-    padding: 0 calc(var(--margin) * 1.5);
+    padding: 0 var(--space-lateral);
   }
 
   address {
