@@ -48,6 +48,8 @@
     --icon-color: #293030;
     --btn-bg-primary--hover: #00B5FF;
     --btn-bg-secondary-hover: #ffffff;
+    --selection-bg: #000;
+    --selection-text: #fff;
   }
   
   :root .at-night {
@@ -71,6 +73,25 @@
     --icon-color: #944EB2;
     --btn-bg-primary--hover: #F4CAE8;
     --btn-bg-secondary-hover: #001F33;
+    --selection-bg: #fff;
+    --selection-text: #000;
+  }
+
+  ::selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+  }
+
+  ::-moz-selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+  }
+
+  .button-container::selection {
+    background: transparent;
+  }
+  .button-container::-moz-selection {
+    background: transparent;
   }
   
   /* Generals */
@@ -159,7 +180,7 @@
   }
   
   h4,
-  p b {
+  b {
     font-weight: 500;
   }
   
