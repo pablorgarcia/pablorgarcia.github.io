@@ -20,11 +20,11 @@
     --max-width: 640px;
     --contact-height: calc(100vh - var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--marginX2));
     /* --contact-height calc
-    100vh - 
-    [h4] var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) -
-    [button-container] var(--marginX1) - var(--marginX2) -
-    [links-bottom] var(--font-line-height) -
-    [body padding bottom] var(--marginX2)
+          100vh - 
+          [h4] var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) -
+          [button-container] var(--marginX1) - var(--marginX2) -
+          [links-bottom] var(--font-line-height) -
+          [body padding bottom] var(--marginX2)
     */
 }
 /* Colour palette */
@@ -91,7 +91,7 @@
 
 body {
   margin: 0;
-  padding: 96px 0 var(--marginX2);/*var(--marginX3) 0 var(--marginX2)*/
+  padding: 96px 0 var(--marginX2);
   background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
