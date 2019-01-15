@@ -50,6 +50,10 @@
   --btn-bg-secondary-hover: #ffffff;
   --selection-bg: #000;
   --selection-text: #fff;
+  --selection-link-bg: #7952B3;
+  --selection-link-bg-hover: #F280D0;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
 }
 
 :root .at-night {
@@ -75,18 +79,15 @@
   --btn-bg-secondary-hover: #001F33;
   --selection-bg: #fff;
   --selection-text: #000;
+  --selection-link-bg: #000;
+  --selection-link-bg-hover: #61dafb;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
 }
 
 /* Generals */
 * {
   box-sizing: border-box;
-}
-
-.button-container::selection {
-  background: transparent;
-}
-.button-container::-moz-selection {
-  background: transparent;
 }
 
 body {
@@ -122,10 +123,33 @@ body::-webkit-scrollbar-corner {
   background: var(--selection-bg);
   color: var(--selection-text);
 }
-
 ::-moz-selection {
   background: var(--selection-bg);
   color: var(--selection-text);
+}
+
+a::selection {
+  background: var(--selection-link-bg);
+  color: var(--selection-link-text);
+}
+a::-moz-selection {
+  background: var(--selection-link-bg);
+  color: var(--selection-link-text);
+}
+a:hover::selection {
+  background: var(--selection-link-bg-hover);
+  color: var(--selection-link-text-hover);
+}
+a:hover::-moz-selection {
+  background: var(--selection-link-bg-hover);
+  color: var(--selection-link-text-hover);
+}
+
+.button-container::selection {
+  background: transparent;
+}
+.button-container::-moz-selection {
+  background: transparent;
 }
 
 body,
