@@ -21,7 +21,7 @@ _My personal website. Just a simple presentation card._
 Google page speed test results:
 
 [developers.google.com/pagespeed/pablorgarcia.github.io](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablorgarcia.github.io&tab=mobile)
-- 99% Mobile
+- 100% Mobile
 - 100% Descktop
 
 If you want to have your own site version, feel free to fork it 🙂
