@@ -1,5 +1,5 @@
 # pablorgarcia.github.io
-_My personal website. Just a simple presentation card._
+_My personal website. A simple presentation card._
 
 [pablorgarcia.github.io](https://pablorgarcia.github.io)
 
@@ -10,6 +10,7 @@ _My personal website. Just a simple presentation card._
 
 ### Features
 
+- Faster as possible.
 - Responsive web design, mobile first.
 - All the content is flexible. To scale it only change the body font size `--font-size-base`.
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
@@ -23,6 +24,6 @@ Google page speed test results:
 - 99% Mobile
 - 100% Descktop
 
-If you want to have your own site version, feel free to fork it 🙂
+If you want to have your own site version, feel free to fork it and go ahead! 🙂
 
 Cheers!
