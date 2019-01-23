@@ -33,12 +33,14 @@
   --text-color: #293030;
   --link-color: #009cdc;
   --hover-color: #1465ff;
-  --bg-quote: #FCFFFF;
-  --text-quote: #293030;
+  --quote-bg: #FCFFFF;
+  --quote-text: #293030;
+  --quote-border: transparent;
   --tag-languages: #f7df1e;
   --tag-languages-text: #333333;
   --tag-front: #61dafb;
   --tag-front-text: #282c34;
+  --tag-languages-border: none;
   --tag-back: #6cc24a;
   --tag-back-text: #215732;
   --tag-environment: #7952B3;
@@ -62,10 +64,12 @@
   --text-color: #944EB2;
   --link-color: #F280D0;
   --hover-color: #BBBBBB;
-  --bg-quote: #051336;
-  --text-quote: #22A944;
+  --quote-bg: #051336;
+  --quote-text: #22A944;
+  --quote-border: #18762F;
   --tag-languages: #060621;
   --tag-languages-text: #F2CC01;
+  --tag-languages-border: #726100;
   --tag-front: #060621;
   --tag-front-text: #F2CC01;
   --tag-back: #060621;
@@ -109,7 +113,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--bg-quote);
+  background-color: var(--quote-bg);
   outline: none;
 }
 
@@ -344,6 +348,7 @@ pre {
   padding: var(--margin-one-fifth) var(--margin-one-half);
   margin: 0 var(--margin-one-fifth) var(--margin-one-fifth) 0;
   line-height: var(--font-size);
+  border: 1px solid var(--tag-languages-border);
   overflow: auto;
   letter-spacing: 0;
   word-spacing: 0;
@@ -354,10 +359,11 @@ pre {
 /* Figure */
 figure {
   font-style: italic;
-  color: var(--text-quote);
-  background-image: linear-gradient(to bottom right, var(--bg-quote), transparent);
+  color: var(--quote-text);
+  background-image: linear-gradient(to bottom right, var(--quote-bg), transparent);
   padding: var(--marginX1) var(--font-size);
   margin: var(--marginX2) auto;
+  border: 0.05px solid var(--quote-border);
   max-width: var(--max-width);
 }
 
