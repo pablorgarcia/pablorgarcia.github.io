@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.getElementsByTagName('body')[0];
 
   // add at-day or at-night class depending on the current hour
-  (currentHour >= 8 && currentHour < 21) ? body.classList.add('at-day') : body.classList.add('at-night');
+  (currentHour >= 8 && currentHour < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
 
   // Mount for time tag
   // Mounts set

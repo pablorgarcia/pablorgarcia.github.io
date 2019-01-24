@@ -39,9 +39,9 @@
   --quote-border: transparent;
   --tag-languages: #f7df1e;
   --tag-languages-text: #333333;
+  --tag-languages-border: none;
   --tag-front: #61dafb;
   --tag-front-text: #282c34;
-  --tag-languages-border: none;
   --tag-back: #6cc24a;
   --tag-back-text: #215732;
   --tag-environment: #7952B3;
@@ -49,7 +49,7 @@
   --tag-research: #fff;
   --tag-research-text: #293030;
   --icon-color: #293030;
-  --btn-bg-primary--hover: #00B5FF;
+  --btn-bg-primary-hover: #00B5FF;
   --btn-bg-secondary-hover: #ffffff;
   --selection-bg: #000;
   --selection-text: #fff;
@@ -80,7 +80,7 @@
   --tag-research: #060621;
   --tag-research-text: #F2CC01;
   --icon-color: #944EB2;
-  --btn-bg-primary--hover: #F4CAE8;
+  --btn-bg-primary-hover: #F4CAE8;
   --btn-bg-secondary-hover: #001F33;
   --selection-bg: #fff;
   --selection-text: #000;
@@ -88,6 +88,44 @@
   --selection-link-bg-hover: #61dafb;
   --selection-link-text: #fff;
   --selection-link-text-hover: #000;
+}
+
+:root .terminal {
+  --bg-color: #001628;
+  --title-color: #83ba52;
+  --text-color: #f5d67b;
+  --link-color: #ff8a00;
+  --hover-color: #FFAD4C;
+  --quote-bg: #072940;
+  --quote-text: #72e0d1;
+  --quote-border: #31605A;
+  --tag-languages: #060621;
+  --tag-languages-text: #aa7ee1;
+  --tag-languages-border: #4A3761;
+  --tag-front: #060621;
+  --tag-front-text: #aa7ee1;
+  --tag-back: #060621;
+  --tag-back-text: #aa7ee1;
+  --tag-environment: #060621;
+  --tag-environment-text: #aa7ee1;
+  --tag-research: #060621;
+  --tag-research-text: #aa7ee1;
+  --icon-color: #75673B;
+  --btn-bg-primary-hover: #FFAD4C;
+  --btn-bg-secondary-hover: #001F33;
+  --selection-bg: #fff;
+  --selection-text: #000;
+  --selection-link-bg: #000;
+  --selection-link-bg-hover: #61dafb;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
+}
+
+:root .firefox-console {
+  --bg-color: #000C14;
+  --title-color: red;
+  --text-color: purple;
+  --link-color: pink;
 }
 
 /* Generals */
@@ -256,7 +294,7 @@ svg {
   height: var(--font-size);
   vertical-align: middle;
   margin-right: var(--margin-one-half);
-  fill: var(--text-color);
+  fill: var(--icon-color);
 }
 
 .button-container {
@@ -299,9 +337,9 @@ svg {
 .btn--primary:hover,
 .btn--primary:focus,
 .btn--primary:active {
-  background-color: var(--btn-bg-primary--hover);
+  background-color: var(--btn-bg-primary-hover);
   color: var(--bg-color);
-  border-color: var(--btn-bg-primary--hover);
+  border-color: var(--btn-bg-primary-hover);
   outline: none;
 }
 
@@ -312,10 +350,10 @@ svg {
 
 .btn--secondary:hover,
 .btn--secondary:focus,
-.btn--secondaryw {
+.btn--secondary {
   background-color: var(--btn-bg-secondary-hover);
-  color: var(--btn-bg-primary--hover);
-  border-color: var(--btn-bg-primary--hover);
+  color: var(--btn-bg-primary-hover);
+  border-color: var(--btn-bg-primary-hover);
   outline: none;
 }
 
