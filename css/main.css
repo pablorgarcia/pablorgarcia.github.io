@@ -481,16 +481,36 @@ background-color: var(--tag-research);
 color: var(--tag-research-text);
 }
 
+/* animation body background */
+/* .animation-bg {
+  animation: pulse-bg 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse-bg {
+  0% {
+    background-color: #001F3F;
+    color: green;
+  }
+  50% {
+    background-color: #FF4136;
+    color: black;
+  }
+  100% {
+    background-color: #001F3F;
+    color: green;
+  }
+} */
+
 /* Descktop */
 @media (min-width: 760px) {
-/*for scale the size just need change the font-size and everything is scaled in proportion*/
-:root {
-  --font-size: calc(var(--font-size-base) + 0.1vw);
-}
+  /*for scale the size just need change the font-size and everything is scaled in proportion*/
+  :root {
+    --font-size: calc(var(--font-size-base) + 0.1vw);
+  }
 
-main,
-footer {
-  padding: 0;
-}
-
+  main,
+  footer {
+    padding: 0;
+  }
 }
