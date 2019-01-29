@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (date.hour >= 8 && date.year < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
 
   // add animation-bg when DOM content is loaded
-  //body.classList.add('animation-bg');
+  body.classList.add('animation-bg');
 
   // Mount for time tag
   // Mounts set
