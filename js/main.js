@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   date.year = date.getFullYear();
   date.hour = date.getHours();
 
-  // Setting the general styles, at-dat or at-night 
+  // Setting the general styles, at-dat, at-night or terminal class 
   const body = document.getElementsByTagName('body')[0];
 
   // add at-day or at-night class depending on the current hour
   (date.hour >= 8 && date.year < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
 
-  // add animation-bg when DOM content is loaded
-  body.classList.add('animation-bg');
+  // add animation-bg test when DOM content is loaded
+  // body.classList.add('animation-bg');
 
   // Mount for time tag
   // Mounts set

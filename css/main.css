@@ -127,13 +127,6 @@
 --selection-link-text-hover: #000;
 }
 
-/* :root .firefox-console {
---bg-color: #000C14;
---title-color: red;
---text-color: purple;
---link-color: pink;
-} */
-
 /* Generals */
 * {
 box-sizing: border-box;
@@ -481,8 +474,8 @@ background-color: var(--tag-research);
 color: var(--tag-research-text);
 }
 
-/* animation body background */
-.animation-bg {
+/* animation body background test */
+/* .animation-bg {
   animation: pulse-bg 5s infinite;
   animation-direction: alternate;
 }
@@ -514,7 +507,7 @@ color: var(--tag-research-text);
   100% {
     color: #F280D0;
   }
-}
+} */
 
 /* Descktop */
 @media (min-width: 760px) {
