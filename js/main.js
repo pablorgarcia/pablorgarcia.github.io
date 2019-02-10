@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // add animation-bg test when DOM content is loaded
   // body.classList.add('animation-bg');
-
-  // Mount for time tag
+  
+  // Mount for time HTML tag
   // Mounts set
   const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
