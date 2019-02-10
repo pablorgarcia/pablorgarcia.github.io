@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.getElementsByTagName('body')[0];
 
   // add at-day or at-night class depending on the current hour
-  (date.hour >= 8 && date.year < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
+  (date.hour >= 8 && date.hour < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
 
   // add animation-bg test when DOM content is loaded
   // body.classList.add('animation-bg');
