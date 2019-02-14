@@ -6,12 +6,12 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "favicon-1x.png",
+      "src": "icon-face-24px.svg",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "favicon-4x.png",
+      "src": "icon-face-24px.svg",
       "type": "image/png",
       "sizes": "192x192"
     }
