@@ -1,0 +1,19 @@
+{
+  "short_name": "Pablo García: Developer",
+  "name": "Pablo García: Jr. Full-Stack Web developer",
+  "background_color": "#001628",
+  "theme_color": "#293030",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "favicon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "favicon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
