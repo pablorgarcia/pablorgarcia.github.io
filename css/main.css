@@ -447,6 +447,7 @@ margin: var(--marginX6) auto 0;
 
 address {
 height: var(--contact-height);
+min-height: 180px;
 }
 
 .tag-languages {
