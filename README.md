@@ -14,6 +14,7 @@ _My personal website. A simple presentation card._
 - Responsive web design, mobile first.
 - All the content is flexible. to scale all the content of the website just change a CSS variable, the body font size `--font-size-base`.
 - The font size change depending on the space it has available.
+- `<address>` calculates by CSS the browser height to always display it in full screen on all devices.
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `terminal` class on body tag, for the other hours is rendered `at-night` class.
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS.
 
