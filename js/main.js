@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
+ 
   // Getting data info from the browser
   const date = new Date();
   date.month = date.getMonth();
@@ -9,9 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Setting the general styles, at-dat, at-night or terminal class 
   const body = document.getElementsByTagName('body')[0];
+  const head = document.getElementsByTagName('head')[0];
+  const link = document.getElementsByTagName('link')[6];
+  const asyncLink = document.createElement('link');
+  asyncLink.setAttribute('rel', 'stylesheet');
+  head.insertBefore(asyncLink, link);
 
   // add at-day or at-night class depending on the current hour
-  (date.hour >= 8 && date.hour < 21) ? body.classList.add('terminal') : body.classList.add('at-night');
+  if (date.hour >= 8 && date.hour < 21) {
+    asyncLink.setAttribute('href', 'css/terminal.min.css');
+    body.classList.add('terminal');
+  } else {
+    asyncLink.setAttribute('href', 'css/at-night.min.css');
+    body.classList.add('at-night');
+  }
 
   // add animation-bg test when DOM content is loaded
   // body.classList.add('animation-bg');

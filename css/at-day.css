@@ -1,0 +1,33 @@
+/* Setting variables */
+/* Colour palette */
+:root .at-day {
+  --bg-color: #E3FBFF;
+  --text-color: #293030;
+  --text-shadow-color: #FCFFFF;
+  --link-color: #009cdc;
+  --hover-color: #1465ff;
+  --quote-bg: #FCFFFF;
+  --quote-text: #293030;
+  --quote-border: transparent;
+  --quote-box-shadow: none;
+  --tag-languages: #f7df1e;
+  --tag-languages-text: #333333;
+  --tag-languages-border: none;
+  --tag-front: #61dafb;
+  --tag-front-text: #282c34;
+  --tag-back: #6cc24a;
+  --tag-back-text: #215732;
+  --tag-environment: #7952B3;
+  --tag-environment-text: #cdbfe3;
+  --tag-research: #fff;
+  --tag-research-text: #293030;
+  --icon-color: #293030;
+  --btn-bg-primary-hover: #00B5FF;
+  --btn-bg-secondary-hover: #ffffff;
+  --selection-bg: #000;
+  --selection-text: #fff;
+  --selection-link-bg: #7952B3;
+  --selection-link-bg-hover: #F280D0;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
+  }
