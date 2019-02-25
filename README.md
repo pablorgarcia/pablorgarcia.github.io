@@ -11,6 +11,7 @@ _My personal website. A simple presentation card._
 ### Features
 
 - Faster as possible.
+- Great coverage rate in the use of resources.
 - Responsive web design, mobile first.
 - All the content is flexible. to scale all the content of the website just change one CSS variable, the body font size `--font-size-base`.
 - The font size change depending on the space it has available, it will be bigger when it has more space, and on the contrary, it will be smaller when less space is available.
