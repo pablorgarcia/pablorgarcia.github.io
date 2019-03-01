@@ -1,7 +1,7 @@
-# pablorgarcia.github.io
+# pablogarcia.dev
 _My personal website. A simple presentation card._
 
-[pablorgarcia.github.io](https://pablorgarcia.github.io)
+[pablogarcia.dev](https://pablogarcia.dev/)
 
 
 ![License MIT](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)
@@ -23,7 +23,7 @@ _My personal website. A simple presentation card._
 
 Google page speed test results:
 
-[developers.google.com/pagespeed/pablorgarcia.github.io](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablorgarcia.github.io&tab=mobile)
+[developers.google.com/pagespeed/pablogarcia.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablogarcia.dev%2F&tab=mobile)
 - 99% Mobile
 - 100% Descktop
 
