@@ -33,28 +33,28 @@
 
 /* Colour palette */
 :root .terminal {
-  --bg-color: #0a192f;/*ok*/
+  --bg-color: #0A1A21;/*ok*/
   --title-color: #e6f1ff;/*ok*/
-  --text-color: #8892b0;/*ok*/
+  --text-color: #798F99;/*ok*/
   --text-shadow-color: none;
   --link-color: #64ffda;/*ok*/
-  --hover-color: #;
-  --highlighted-bg: #051336;
-  --highlighted-text: #64ffda;/*ok*/
-  --highlighted-border: #2d3952;/*ok*/
+  --hover-color: #4AC8FF;
+  --highlighted-bg: #112933;/*ok*/
+  --highlighted-text: #64ffda;
+  --highlighted-border: #174B61;/*ok*/
   --highlighted-box-shadow: none;
-  --tag-languages: #060621;
-  --tag-languages-text: #f2cc01;
-  --tag-languages-border: #726100;
-  --tag-front: #060621;
-  --tag-front-text: #f2cc01;
-  --tag-back: #060621;
-  --tag-back-text: #f2cc01;
-  --tag-environment: #060621;
-  --tag-environment-text: #f2cc01;
-  --tag-research: #060621;
-  --tag-research-text: #f2cc01;
-  --icon-color: #ccd6f6;/*ok*/
+  --tag-languages: #091419;
+  --tag-languages-text: #20AEEB;
+  --tag-languages-border: #1881AD;
+  --tag-front: #091419;
+  --tag-front-text: #20AEEB;
+  --tag-back: #091419;
+  --tag-back-text: #20AEEB;
+  --tag-environment: #091419;
+  --tag-environment-text: #20AEEB;
+  --tag-research: #091419;
+  --tag-research-text: #20AEEB;
+  --icon-color: #35454C;/*ok*/
   --btn-bg-primary-hover: #f4cae8;
   --btn-bg-secondary-hover: #001f33;
   --selection-bg: #fff;
@@ -259,6 +259,10 @@ figure {
   color: var(--text-color);
 }
 
+b {
+  color: #e6f1ff;
+}
+
 /* Links */
 a {
   color: var(--link-color);
@@ -352,8 +356,7 @@ svg {
 }
 
 .btn--secondary:hover,
-.btn--secondary:focus,
-.btn--secondary {
+.btn--secondary:focus {
   background-color: var(--btn-bg-secondary-hover);
   color: var(--btn-bg-primary-hover);
   border-color: var(--btn-bg-primary-hover);
@@ -370,6 +373,11 @@ svg {
 /* Blockquotes */
 blockquote {
   margin: 0 0 var(--margin-one-half);
+}
+blockquote::before,
+blockquote::after {
+  content: '"';
+  color: var(--highlighted-border);
 }
 
 .tags-container {
@@ -418,6 +426,7 @@ figcaption {
 
 figcaption::before {
   content: "— ";
+  color: var(--highlighted-border);
 }
 
 main,
@@ -468,6 +477,27 @@ address {
 .tag-research {
   background-color: var(--tag-research);
   color: var(--tag-research-text);
+}
+
+a {
+  display: inline-block;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  cursor: pointer;
+  color: rgb(100, 255, 218);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.37em;
+  background-color: rgb(100, 255, 218);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
 /* animation body background test */
