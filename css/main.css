@@ -38,9 +38,9 @@
   --text-color: #798F99;/*ok*/
   --text-shadow-color: none;
   --link-color: #64ffda;/*ok*/
-  --hover-color: #4AC8FF;
+  --hover-color: #B0FFEC;/*ok*/
   --highlighted-bg: #112933;/*ok*/
-  --highlighted-text: #64ffda;
+  --highlighted-text: #64ffda;/*ok*/
   --highlighted-border: #174B61;/*ok*/
   --highlighted-box-shadow: none;
   --tag-languages: #091419;
@@ -55,7 +55,7 @@
   --tag-research: #091419;
   --tag-research-text: #20AEEB;
   --icon-color: #35454C;/*ok*/
-  --btn-bg-primary-hover: #f4cae8;
+  --btn-bg-primary-hover: #B0FFEC;/*ok*/
   --btn-bg-secondary-hover: #001f33;
   --selection-bg: #fff;
   --selection-text: #000;
