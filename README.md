@@ -8,6 +8,9 @@ _My personal website. A simple presentation card._
 
 ## Created with HTML5, CSS3, Vanilla JavaScript and 💛
 
+![Screenshot](images/readme/screenshot.png)
+
+
 ### Features
 
 - Faster as possible.
