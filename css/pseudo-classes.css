@@ -1,0 +1,98 @@
+/* Scroll-bar */
+body::-webkit-scrollbar {
+    height: 6px;
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--highlighted-bg);
+    outline: none;
+}
+
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* Selected text */
+::selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+    text-shadow: none;
+}
+
+a::selection {
+    background: var(--selection-link-bg);
+    color: var(--selection-link-text);
+    text-shadow: none;
+}
+
+a::-moz-selection {
+    background: var(--selection-link-bg);
+    color: var(--selection-link-text);
+    text-shadow: none;
+}
+
+a:hover::selection {
+    background: var(--selection-link-bg-hover);
+    color: var(--selection-link-text-hover);
+}
+
+a:hover::-moz-selection {
+    background: var(--selection-link-bg-hover);
+    color: var(--selection-link-text-hover);
+}
+
+.button-container::selection {
+    background: transparent;
+}
+
+.button-container::-moz-selection {
+    background: transparent;
+}
+
+/* Hover, focus & active */
+a:hover {
+    color: var(--hover-color);
+}
+
+.links-bottom a:hover {
+    color: var(--hover-color);
+}
+
+main a:focus,
+.links-bottom a:focus {
+    outline: 2px ridge var(--link-color);
+}
+
+.terminal .btn:hover,
+.terminal .btn:focus,
+.terminal .btn:active {
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.5),
+    0 9px 18px 0 rgba(250, 250, 250, 0.6),
+    0 2px 6px 2px rgba(250, 250, 250, 0.4);
+}
+
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:active {
+    background-color: var(--btn-bg-primary-hover);
+    color: var(--bg-color);
+    border-color: var(--btn-bg-primary-hover);
+    outline: none;
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+    background-color: var(--btn-bg-secondary-hover);
+    color: var(--btn-bg-primary-hover);
+    border-color: var(--btn-bg-primary-hover);
+    outline: none;
+}

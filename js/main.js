@@ -10,12 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setting the general styles, at-dat, at-night or terminal class 
   const body = document.getElementsByTagName('body')[0];
 
-  // add at-day or at-night class depending on the current hour
-  if (date.hour >= 8 && date.hour < 21) {
-    body.classList.add('terminal');
-  } else {
-    body.classList.add('at-night');
-  }
+  // Add at-day or at-night class depending on the current hour
+  date.hour >= 8 && date.hour < 21 ? body.classList.add('terminal') : body.classList.add('at-night');
 
   // add animation-bg test when DOM content is loaded
   // body.classList.add('animation-bg');
@@ -34,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const time = document.getElementsByTagName('time')[0];
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
+
+  // Adding asynchronous pseudo-classes style for performance optimize
+  const head = document.getElementsByTagName('head')[0];
+  const link = document.getElementsByTagName('link')[7];
+  const asyncLink = document.createElement('link');
+  asyncLink.setAttribute('rel', 'stylesheet');
+  asyncLink.setAttribute('href', 'css/pseudo-classes.min.css');
+  head.insertBefore(asyncLink, link);
 
 });
 
