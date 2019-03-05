@@ -31,14 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
 
-  // Adding asynchronous pseudo-classes style for performance optimize
-  const head = document.getElementsByTagName('head')[0];
-  const link = document.getElementsByTagName('link')[7];
-  const asyncLink = document.createElement('link');
-  asyncLink.setAttribute('rel', 'stylesheet');
-  asyncLink.setAttribute('href', 'css/pseudo-classes.min.css');
-  head.insertBefore(asyncLink, link);
-
 });
 
 console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
