@@ -18,7 +18,9 @@ _My personal website. A simple presentation card._
 - On `<address>` is calculated by CSS the browser height to always display it in full screen on all devices.
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `terminal` class on body tag, for the other hours is rendered `at-night` class.
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS but with pure CSS3.
+
 ![Screenshot](images/readme/screenshot.png)
+
 
 ### Performance
 
