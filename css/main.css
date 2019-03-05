@@ -32,7 +32,7 @@
 }
 
 /* Colour palette */
-:root .terminal {
+:root .at-day {
   --bg-color: #0A1A21;/*ok*/
   --title-color: #e6f1ff;/*ok*/
   --text-color: #798F99;/*ok*/
@@ -528,14 +528,14 @@ main a:focus,
 .links-bottom a:focus {
   outline: 2px ridge var(--link-color);
 }
-
-.terminal .btn:hover,
-.terminal .btn:focus,
-.terminal .btn:active {
+/*
+.at-day .btn:hover,
+.at-day .btn:focus,
+.at-day .btn:active {
   box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.5),
   0 9px 18px 0 rgba(250, 250, 250, 0.6),
   0 2px 6px 2px rgba(250, 250, 250, 0.4);
-}
+}*/
 
 .btn--primary:hover,
 .btn--primary:focus,
