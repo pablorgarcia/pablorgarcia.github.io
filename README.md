@@ -16,7 +16,7 @@ _My personal website. A simple presentation card._
 - All the content is flexible. to scale all the content of the website just change one CSS variable, the body font size `--font-size-base`.
 - The font size change depending on the space it has available, it will be bigger when it has more space, and on the contrary, it will be smaller when less space is available.
 - On `<address>` is calculated by CSS the browser height to always display it in full screen on all devices.
-- The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `terminal` class on body tag, for the other hours is rendered `at-night` class.
+- The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS but with pure CSS3.
 
 ![Screenshot](images/readme/screenshot.png)
@@ -26,7 +26,7 @@ _My personal website. A simple presentation card._
 
 Google page speed test results:
 
-[developers.google.com/pagespeed/pablogarcia.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablogarcia.dev%2F&tab=mobile)
+[developers.google.com/pagespeed/pablogarcia.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablogarcia.dev&tab=mobile)
 - 99% Mobile
 - 100% Descktop
 
