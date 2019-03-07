@@ -198,10 +198,6 @@ b {
   color: var(--title-color);
 }
 
-h2 {
-    color: var(--icon-color);
-}
-
 address {
     font-style: normal;
 }
