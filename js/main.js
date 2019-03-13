@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
  
-  // Hides browser address bar when load
-  setTimeout(() => { window.scroll(0, 1) }, 0);
-
 });
 
 console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
