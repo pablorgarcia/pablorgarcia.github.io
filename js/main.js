@@ -13,14 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add at-day or at-night class depending on the current hour
   date.hour >= 8 && date.hour < 21 ? body.classList.add('at-day') : body.classList.add('at-night');
 
-  // add animation-bg test when DOM content is loaded
-  // body.classList.add('animation-bg');
-  
-  // Mount for time HTML tag
   // Mounts set
   const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-  // Format the string for display it
+  // Format the string for display the mount on time HTML tag
   let space = '';
   date.month < 10 ? space = '-0' : space = '-';
   const currentDate = `${month[date.month]} ${date.year}`;
@@ -30,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const time = document.getElementsByTagName('time')[0];
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
+ 
+  // Hides browser address bar when load
+  setTimeout(() => { window.scroll(0, 1) }, 0);
 
 });
 
