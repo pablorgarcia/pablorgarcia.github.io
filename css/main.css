@@ -33,15 +33,15 @@
 
 /* Colour palette */
 :root .at-day {
-  --bg-color: #0A1A21;/*ok*/
-  --title-color: #e6f1ff;/*ok*/
-  --text-color: #798F99;/*ok*/
+  --bg-color: #0A1A21;
+  --title-color: #e6f1ff;
+  --text-color: #798F99;
   --text-shadow-color: none;
-  --link-color: #64ffda;/*ok*/
-  --hover-color: #B0FFEC;/*ok*/
-  --highlighted-bg: #112933;/*ok*/
-  --highlighted-text: #64ffda;/*ok*/
-  --highlighted-border: #174B61;/*ok*/
+  --link-color: #64ffda;
+  --hover-color: #B0FFEC;
+  --highlighted-bg: #112933;
+  --highlighted-text: #64ffda;
+  --highlighted-border: #174B61;
   --highlighted-box-shadow: none;
   --tag-languages: #091419;
   --tag-languages-text: #20AEEB;
@@ -54,8 +54,8 @@
   --tag-environment-text: #20AEEB;
   --tag-research: #091419;
   --tag-research-text: #20AEEB;
-  --icon-color: #35454C;/*ok*/
-  --btn-bg-primary-hover: #B0FFEC;/*ok*/
+  --icon-color: #35454C;
+  --btn-bg-primary-hover: #B0FFEC;
   --btn-bg-secondary-hover: #001f33;
   --selection-bg: #fff;
   --selection-text: #000;
@@ -67,19 +67,19 @@
 
 /* Colour palette */
 :root .at-night {
-  --bg-color: #221a10;/*ok*/
+  --bg-color: #221a10;
   --title-color: #d83554;
-  --text-color: #9e734d;/*ok*/
+  --text-color: #9e734d;
   --text-shadow-color: #001c33;
-  --link-color: #86b0af;/*ok*/
-  --hover-color: #ffad4c;/*ok*/
-  --highlighted-bg: #1F1509;/*ok*/
-  --highlighted-text: #869b55;/*ok*/
-  --highlighted-border: #ad6880;/*ok*/
-  --highlighted-box-shadow: #1F1509;/*ok*/
+  --link-color: #86b0af;
+  --hover-color: #ffad4c;
+  --highlighted-bg: #1F1509;
+  --highlighted-text: #869b55;
+  --highlighted-border: #ad6880;
+  --highlighted-box-shadow: #1F1509;
   --tag-languages: #12140B;
-  --tag-languages-text: #f7cd43;/*ok*/
-  --tag-languages-border: #869b55;/*ok*/
+  --tag-languages-text: #f7cd43;
+  --tag-languages-border: #869b55;
   --tag-front: #12140B;
   --tag-front-text: #f7cd43;
   --tag-back: #12140B;
@@ -387,22 +387,23 @@ address {
 a {
   display: inline-block;
   text-decoration-skip-ink: auto;
-  position: relative;
   cursor: pointer;
   color: var(--link-color);
   text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  line-height: calc(var(--font-line-height) - 1px);
 }
-
+/* hover line under links */
 a::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 1px;
-  position: relative;
-  bottom: 0.37em;
-  background-color: rgb(100, 255, 218);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--hover-color);
+    transition: width .25s;
+}
+a:hover::after {
+    width: 100%;
+    transition: width .15s;
 }
 
 /* animation body background test */
@@ -524,14 +525,6 @@ main a:focus,
 .links-bottom a:focus {
   outline: 2px ridge var(--link-color);
 }
-/*
-.at-day .btn:hover,
-.at-day .btn:focus,
-.at-day .btn:active {
-  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.5),
-  0 9px 18px 0 rgba(250, 250, 250, 0.6),
-  0 2px 6px 2px rgba(250, 250, 250, 0.4);
-}*/
 
 .btn--primary:hover,
 .btn--primary:focus,
