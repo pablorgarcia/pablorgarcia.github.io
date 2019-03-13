@@ -391,10 +391,10 @@ a {
   color: var(--link-color);
   text-decoration: none;
   line-height: calc(var(--font-line-height) - 1px);
-  overflow: hidden;
 }
 /* hover line under links */
-a::after {
+a::after,
+a:focus::after {
     content: '';
     display: block;
     width: 0;
@@ -402,17 +402,17 @@ a::after {
     background-color: var(--link-color);
     transition: width .25s;
 }
-a:hover::after {
+a:hover::after,
+a:focus::after {
     width: 100%;
-    background-color: var(--hover-color);
     transition: width .15s;
 }
-.links-bottom a::after,
-.links-bottom a:hover::after {
+.btn::after,
+.btn:hover::after {
     width: 0;
+    height: 0;
     background-color: none;
 }
-
 
 /* animation body background test */
 /* .animation-bg {
@@ -523,19 +523,6 @@ a:hover::-moz-selection {
 /* Hover, focus & active */
 a:hover {
   color: var(--hover-color);
-}
-
-a:focus {
-    background-color: white;
-    color: black;
-}
-.links-bottom a:focus {
-    background-color: none;
-    color: var(--link-color);
-}
-.links-bottom a:focus {
-    background-color: var(--hover-color);
-    color: var(--hover-color);
 }
 
 .links-bottom a:hover {
