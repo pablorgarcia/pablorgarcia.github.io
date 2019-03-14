@@ -533,9 +533,12 @@
   .links-bottom a:focus {
     outline: none;
   }
+
+  .btn:focus {
+    outline: none;
+  }
   
   .btn--primary:hover,
-  .btn--primary:focus,
   .btn--primary:active {
     background-color: var(--btn-bg-primary-hover);
     color: var(--bg-color);
@@ -543,8 +546,7 @@
     outline: none;
   }
   
-  .btn--secondary:hover,
-  .btn--secondary:focus {
+  .btn--secondary:hover {
     background-color: var(--btn-bg-secondary-hover);
     color: var(--btn-bg-primary-hover);
     border-color: var(--btn-bg-primary-hover);
