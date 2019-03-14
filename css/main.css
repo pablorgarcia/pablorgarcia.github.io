@@ -537,14 +537,17 @@ a.btn:hover::after {
 }
 
 .btn--primary:hover,
-.btn--primary:active {
+.btn--primary:active,
+.btn--primary:focus {
   background-color: var(--btn-bg-primary-hover);
   color: var(--bg-color);
   border-color: var(--btn-bg-primary-hover);
   outline: none;
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.btn--secondary:active,
+.btn--secondary:focus {
   background-color: var(--btn-bg-secondary-hover);
   color: var(--btn-bg-primary-hover);
   border-color: var(--btn-bg-primary-hover);
