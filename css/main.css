@@ -8,6 +8,7 @@
   --font-size: var(--font-size-base); /*16px. last version: 18px*/
   --font-size-small: calc(var(--font-size) * 0.81); /*13px*/
   --font-size-contact: calc(var(--font-size) * 0.75); /*12px*/
+  --font-size-cookie: calc(var(--font-size) * 0.64); /*11px*/
   --font-line-height: calc(var(--font-size) * 1.8); /*32px*/
   --font-line-height-contact: calc(var(--font-line-height) * 1.1); /*35px*/
   --marginX1: var(--font-size); /*16px*/
@@ -18,16 +19,14 @@
   --margin-one-fifth: calc(var(--font-size) / 5); /*3.4px*/
   --margin-one-half: calc(var(--font-size) / 2); /*8px*/
   --max-width: 640px;
-  --contact-height: calc(
-    100vh - var(--font-line-height-contact) - var(--marginX1) -
-      var(--margin-one-half) - var(--font-line-height) - var(--marginX2)
-  );
+  --contact-height: calc(100vh - var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--marginX1) - var(--font-size-cookie) - var(--font-size-cookie));
   /* --contact-height calc
         100vh - 
         [h4] var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) -
         [button-container] var(--marginX1) - var(--marginX2) -
         [links-bottom] var(--font-line-height) -
-        [body padding bottom] var(--marginX2)
+        [cookies-text] var(--marginX1)
+        line-height: var(--font-size-cookie);
   */
 }
   
@@ -106,7 +105,7 @@
 
 body {
   margin: 0;
-  padding: var(--marginX6) 0 var(--marginX2);
+  padding: var(--marginX6) 0 0;
   background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -199,7 +198,7 @@ b {
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 /* Links */
@@ -307,9 +306,8 @@ pre {
   font-size: var(--font-size-contact);
   text-transform: uppercase;
 }
-
-  
-pre[title]:hover {
+/* AQUI */
+pre[title]:hover::after {
   content: attr(title);
   white-space: pre-wrap;
   position: fixed;
@@ -322,7 +320,8 @@ pre[title]:hover {
   color: white;
   border: 0.05px solid var(--highlighted-border);
 
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 
+  box-shadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2), 
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -410,6 +409,30 @@ a {
   color: var(--link-color);
   text-decoration: none;
   line-height: calc(var(--font-line-height) - 1px);
+}
+
+.cookies-text {
+  margin: var(--marginX1) 0 0;
+  background-color: black;
+  padding-left: var(--margin-one-half);
+  border-top: 0.05px solid var(--highlighted-border);
+  border-right: 0.05px solid var(--highlighted-border);
+  border-left: 0.05px solid var(--highlighted-border);
+  cursor: text;
+}
+.cookies-text::before {
+  content: '>';
+  color: var(--highlighted-text);
+  vertical-align: middle;
+}
+
+.cookies-text p {
+  display: inline;
+  margin: 0;
+  font-family: monospace;
+  font-size: var(--font-size-cookie);
+  line-height: var(--font-size-cookie);
+  color: var(--text-color);
 }
 
 /* animation body background test */
