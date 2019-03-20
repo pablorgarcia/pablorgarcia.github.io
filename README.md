@@ -28,7 +28,7 @@ Google page speed test results:
 
 [developers.google.com/pagespeed/pablogarcia.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablogarcia.dev&tab=mobile)
 - 99% Mobile
-- 100% Descktop
+- 100% Desktop
 
 If you want to have your own site version, feel free to fork it and go ahead! 🙂
 
