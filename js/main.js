@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
- 
+
+  /* at-day and at-night class */
   // Getting data info from the browser
   const date = new Date();
   date.month = date.getMonth();
@@ -13,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add at-day or at-night class depending on the current hour
   date.hour >= 8 && date.hour < 21 ? body.classList.add('at-day') : body.classList.add('at-night');
 
+
+  /* Current time */
   // Mounts set
   const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -26,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const time = document.getElementsByTagName('time')[0];
   time.setAttribute('datatime', attDate);
   time.textContent = currentDate;
- 
+
 });
 
 console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
