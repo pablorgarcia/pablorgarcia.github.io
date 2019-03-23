@@ -19,15 +19,18 @@
   --margin-one-fifth: calc(var(--font-size) / 5); /*3.4px*/
   --margin-one-half: calc(var(--font-size) / 2); /*8px*/
   --max-width: 640px;
-  --contact-height: calc(100vh - var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--marginX1) - var(--font-size-cookie) - var(--font-size-cookie));
+  --contact-height: calc(
+    100vh - var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) - 
+    var(--font-line-height) - var(--font-line-height) - var(--marginX2)
+  );
   /* --contact-height calc
         100vh - 
         [h4] var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) -
-        [button-container] var(--marginX1) - var(--marginX2) -
         [links-bottom] var(--font-line-height) -
-        [cookies-text] var(--marginX1)
-        line-height: var(--font-size-cookie);
+        [links-bottom] var(--font-line-height) -
+        [body padding bottom] var(--marginX2)
   */
+
 }
   
 /* Colour palette */
@@ -105,7 +108,7 @@
 
 body {
   margin: 0;
-  padding: var(--marginX6) 0 0;
+  padding: var(--marginX6) 0 var(--marginX2);
   background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -409,30 +412,6 @@ a {
   color: var(--link-color);
   text-decoration: none;
   line-height: calc(var(--font-line-height) - 1px);
-}
-
-.cookies-text {
-  margin: var(--marginX1) 0 0;
-  background-color: black;
-  padding-left: var(--margin-one-half);
-  border-top: 0.05px solid var(--highlighted-border);
-  border-right: 0.05px solid var(--highlighted-border);
-  border-left: 0.05px solid var(--highlighted-border);
-  cursor: text;
-}
-.cookies-text::before {
-  content: '>';
-  color: var(--highlighted-text);
-  vertical-align: middle;
-}
-
-.cookies-text p {
-  display: inline;
-  margin: 0;
-  font-family: monospace;
-  font-size: var(--font-size-cookie);
-  line-height: var(--font-size-cookie);
-  color: var(--text-color);
 }
 
 /* animation body background test */
