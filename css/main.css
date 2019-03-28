@@ -312,7 +312,7 @@ pre {
 }
 
 .pop-up {
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -327,11 +327,12 @@ pre {
 
 .pop-up-active {
   position: fixed;
-  left: 20%;
-  top: 10vh;
-  width: 60%;
-  height: 78vh;
-  padding: 1vw;
+  left: 2vw;
+  top: 2vh;
+  display: block;
+  width: 96vw;
+  min-height: 96vh;
+  padding: 3vh 3vw;
   z-index: 1;
   cursor: pointer;
 
@@ -343,12 +344,12 @@ pre {
 }
 .pop-up-disabled {
   position: fixed;
-  left: 20%;
-  top: 10vh;
-  width: 60%;
-  height: 78vh;
-  padding: 1vw;
-  z-index: -10;
+  left: 2vw;
+  top: 2vw;
+  width: 96vw;
+  height: 100vw;
+  padding: 3vw;
+  z-index: -1;
 
   animation: toHide 0.5s 1;
   animation-timing-function: ease;
@@ -356,7 +357,6 @@ pre {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-
 .pop-up-active::before {
   content: 'More info: ';
 }
