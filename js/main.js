@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* at-day and at-night class */
@@ -35,10 +34,38 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the pop up div
   const popUpElement = document.getElementById('pop-up');
 
-  const showPopUp = (eventTarget) => {
+  const createHeaderTerminal = (eventTarget) => {
+    const headerTerminal = document.createElement('span');
+    const buttonRed = document.createElement('span');
+    const buttonYellow = document.createElement('span');
+    const buttonGreen = document.createElement('span');
+    const titleElement = document.createElement('pre');
+    const terminalTitle = document.createTextNode(eventTarget.textContent);
+    headerTerminal.setAttribute('class', 'header-terminal');
+    buttonRed.setAttribute('class', 'button-terminal-red');
+    buttonYellow.setAttribute('class', 'button-terminal-yellow');
+    buttonGreen.setAttribute('class', 'button-terminal-green');
+    titleElement.setAttribute('class', 'terminal-title');
+    titleElement.appendChild(terminalTitle);
+    popUpElement.appendChild(headerTerminal);
+    headerTerminal.appendChild(buttonRed);
+    headerTerminal.appendChild(buttonYellow);
+    headerTerminal.appendChild(buttonGreen);
+    headerTerminal.appendChild(titleElement);
+  }
+
+  const createtextPopUp = (eventTarget) => {
+    const pElement = document.createElement('p');
     const popUpText = document.createTextNode(eventTarget.title);
-    popUpElement.appendChild(popUpText);
+    pElement.setAttribute('data-name', eventTarget.textContent);
     popUpElement.setAttribute('class', 'pop-up pop-up-active');
+    popUpElement.appendChild(pElement);
+    pElement.appendChild(popUpText);
+  }
+
+  const showPopUp = (eventTarget) => {
+    createHeaderTerminal(eventTarget);
+    createtextPopUp(eventTarget);
   };
 
   const hidePopUp = () => {
