@@ -66,11 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const showPopUp = (eventTarget) => {
     createHeaderTerminal(eventTarget);
     createtextPopUp(eventTarget);
+    body.style.overflow = 'hidden';
   };
 
   const hidePopUp = () => {
     popUpElement.setAttribute('class', 'pop-up pop-up-disabled');
     popUpElement.textContent = '';
+    body.removeAttribute('style');
   };
 
   // Listen to title attribute clicks
