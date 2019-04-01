@@ -333,6 +333,8 @@ pre:hover {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  white-space: normal;
+  text-overflow: ellipsis;
   border-radius: 8px 8px 0 0;
   background: #E0E8F0;
   padding-left: 10px;
@@ -350,14 +352,14 @@ pre:hover {
 .button-terminal-green { background: #3BB662; }
 
 .terminal-title {
-  flex-grow: 5;
-  padding: 0;
+  padding: 0 var(--margin-one-half);
   margin: 0;
   border: 0;
 }
 .terminal-title::before {
-  content: 'pablo@garcía:';
-  padding: 0 var(--margin-one-half);
+  content: 'pablo@garcia.dev:';
+  text-shadow: none;
+  padding: 0 var(--margin-one-half) 0 0;
 }
 pre.terminal-title:hover {
   background: none;
@@ -365,11 +367,11 @@ pre.terminal-title:hover {
 
 .pop-up-active {
   position: fixed;
-  left: 2vw;
-  top: 2vh;
+  left: 4vw;
+  top: 4vh;
   display: block;
-  width: 96vw;
-  min-height: 96vh;
+  width: 92vw;
+  height: 92vh;
   padding: 0;
   z-index: 1;
   cursor: pointer;
@@ -382,11 +384,11 @@ pre.terminal-title:hover {
 }
 .pop-up-disabled {
   position: fixed;
-  left: 2vw;
-  top: 2vw;
-  width: 96vw;
-  height: 100vw;
-  padding: 3vw;
+  left: 4vw;
+  top: 4vw;
+  width: 92vw;
+  height: 92vw;
+  padding: 0;
   z-index: -1;
 
   animation: toHide 0.5s 1;

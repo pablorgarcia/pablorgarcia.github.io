@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the pop up div
   const popUpElement = document.getElementById('pop-up');
 
+  // Create a new 'header terminal' pop up when it will be called
   const createHeaderTerminal = (eventTarget) => {
     const headerTerminal = document.createElement('span');
     const buttonRed = document.createElement('span');
@@ -54,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     headerTerminal.appendChild(titleElement);
   }
 
-  const createtextPopUp = (eventTarget) => {
+  // Create a pop up text
+  const createTextPopUp = (eventTarget) => {
     const pElement = document.createElement('p');
     const popUpText = document.createTextNode(eventTarget.title);
     pElement.setAttribute('data-name', eventTarget.textContent);
@@ -63,12 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
     pElement.appendChild(popUpText);
   }
 
+  // Call the header terminal pop up and text pop up
   const showPopUp = (eventTarget) => {
     createHeaderTerminal(eventTarget);
-    createtextPopUp(eventTarget);
+    createTextPopUp(eventTarget);
     body.style.overflow = 'hidden';
   };
 
+  // Remove all pop up content
   const hidePopUp = () => {
     popUpElement.setAttribute('class', 'pop-up pop-up-disabled');
     popUpElement.textContent = '';
