@@ -315,7 +315,7 @@ pre:hover {
 }
 
 .pop-up {
-  overflow: hidden;
+  overflow: auto;
   color: #969696;
   background-color: #262626;
   border: 0.05px solid var(--highlighted-border);
@@ -413,6 +413,7 @@ pre.terminal-title:hover {
   font-weight: 400;
   opacity: 0;
   animation: terminalCursor 0.7s infinite;
+  color: white;
 }
 
 @keyframes toShow {
