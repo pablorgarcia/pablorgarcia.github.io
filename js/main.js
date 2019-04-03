@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bodyTerminal.setAttribute('class', 'body-terminal');
 
     const pHost = document.createElement('p');
-    const textHost = document.createTextNode('pablo@garcia.dev');
+    const textHost = document.createTextNode('pablogarcia.dev');
     pHost.appendChild(textHost);
     pHost.setAttribute('class', 'terminal-host');
     bodyTerminal.appendChild(pHost);
