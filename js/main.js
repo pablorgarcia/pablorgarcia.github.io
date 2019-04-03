@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the pop up div
   const popUpElement = document.getElementById('pop-up');
 
-  // Create a new 'header terminal' pop up when it will be called
+  // Create a 'header terminal' pop up when it will be called
   const createHeaderTerminal = (eventTarget) => {
     const headerTerminal = document.createElement('span');
     const buttonRed = document.createElement('span');
@@ -53,22 +53,48 @@ document.addEventListener('DOMContentLoaded', () => {
     headerTerminal.appendChild(buttonYellow);
     headerTerminal.appendChild(buttonGreen);
     headerTerminal.appendChild(titleElement);
-  }
+  };
 
-  // Create a pop up text
-  const createTextPopUp = (eventTarget) => {
-    const pElement = document.createElement('p');
-    const popUpText = document.createTextNode(eventTarget.title);
-    pElement.setAttribute('data-name', eventTarget.textContent);
+  // Create a body content pop up
+  const createBodyTerminal = (eventTarget) => {
+    const bodyTerminal = document.createElement('div');
+    bodyTerminal.setAttribute('class', 'body-terminal');
+
+    const pHost = document.createElement('p');
+    const textHost = document.createTextNode('pablo@garcia.dev');
+    pHost.appendChild(textHost);
+    pHost.setAttribute('class', 'terminal-host');
+    bodyTerminal.appendChild(pHost);
+
+    const pfirstArrow = document.createElement('p');
+    bodyTerminal.appendChild(pfirstArrow);
+    pfirstArrow.setAttribute('class', 'first-arrow');
+
+    const pPath = document.createElement('p');
+    const textPath = document.createTextNode(eventTarget.textContent);
+    bodyTerminal.appendChild(pPath);
+    pPath.appendChild(textPath);
+    pPath.setAttribute('class', 'terminal-path');
+
+    const pSecondArrow = document.createElement('p');
+    bodyTerminal.appendChild(pSecondArrow);
+    pSecondArrow.setAttribute('class', 'second-arrow');
+
+    const pText = document.createElement('p');
+    const contentText = document.createTextNode(eventTarget.title);
+    bodyTerminal.appendChild(pText);
+    pText.setAttribute('data-name', eventTarget.textContent);
+    pText.setAttribute('class', 'terminal-content');
+    pText.appendChild(contentText);
+
+    popUpElement.appendChild(bodyTerminal);
     popUpElement.setAttribute('class', 'pop-up pop-up-active');
-    popUpElement.appendChild(pElement);
-    pElement.appendChild(popUpText);
-  }
+  };
 
   // Call the header terminal pop up and text pop up
   const showPopUp = (eventTarget) => {
     createHeaderTerminal(eventTarget);
-    createTextPopUp(eventTarget);
+    createBodyTerminal(eventTarget);
     body.style.overflow = 'hidden';
   };
 
