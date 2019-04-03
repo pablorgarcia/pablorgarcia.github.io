@@ -495,7 +495,7 @@ pre.terminal-title:hover {
 }
 .pop-up-active .terminal-host, 
 .pop-up-active .terminal-path {
-  white-space: normal;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .pop-up-active .terminal-host {
@@ -524,13 +524,13 @@ pre.terminal-title:hover {
 }
 .first-arrow {
   border-left: 10px solid var(--bg-first-arrow);
-  border-top: 12px solid var(--bg-second-arrow);
-  border-bottom: 11px solid var(--bg-second-arrow);
+  border-top: 11px solid var(--bg-second-arrow);
+  border-bottom: 10px solid var(--bg-second-arrow);
 }
 .second-arrow {
   border-left: 10px solid var(--bg-second-arrow);
   border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 .pop-up-active .terminal-content {
   padding: 0 var(--margin-one-half);
@@ -600,6 +600,17 @@ pre.terminal-title:hover {
   main,
   footer {
     padding: 0;
+  }
+
+  .first-arrow {
+    border-left: 10px solid var(--bg-first-arrow);
+    border-top: 12px solid var(--bg-second-arrow);
+    border-bottom: 11px solid var(--bg-second-arrow);
+  }
+  .second-arrow {
+    border-left: 10px solid var(--bg-second-arrow);
+    border-top: 12px solid transparent;
+    border-bottom: 11px solid transparent;
   }
 }
 
