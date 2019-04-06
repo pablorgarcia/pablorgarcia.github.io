@@ -45,6 +45,8 @@ This website using [Gulp.js](https://gulpjs.com/) to manage the run task like mi
 }
 ```
 
+In the App folder are the development files to work with Gulp. The public minify files are on Src folder, `index.html` calls these public files.
+
 Check the `gulpfile.js` file on root for more info.
 
 
