@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /app/
+Disallow: gulpfile.js
+Sitemap: https://pablogarcia.dev/sitemap.xml
