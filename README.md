@@ -31,6 +31,24 @@ Google page speed test results:
 - 99% Mobile
 - 100% Desktop
 
+
+### Run task [optional]
+This website using [Gulp.js](https://gulpjs.com/) to manage the run task like minify the JS and the CSS files. The dependencies that are using on the `package.json`:
+
+`
+"devDependencies": {
+  "gulp": "^4.0.0",
+  "gulp-minify": "^3.1.0",
+  "gulp-clean-css": "^4.0.0",
+  "gulp-rename": "^1.4.0"
+}
+`
+
+Check the `gulpfile.js` file on root for more info.
+
+
+### Hey! support
+
 If you want to have your own site version, feel free to fork it and go ahead! 🙂
 
 Cheers!
