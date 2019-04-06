@@ -20,7 +20,7 @@ _My personal website. A simple presentation card._
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS but with pure CSS3.
 - All contents that have `title` attribute will generate a pop up with the text attribute to show more information about, if you want to change this info only need to modify the `title` attribute on HTML.
 
-![Screenshot](images/readme/screenshot.png)
+![Screenshot](src/images/readme/screenshot.png)
 
 
 ### Performance
