@@ -16,6 +16,12 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Dependency directory
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
 # System Files
 .DS_Store
 Thumbs.db
