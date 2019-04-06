@@ -1,12 +1,14 @@
 # pablogarcia.dev
 _My personal website. A simple presentation card._
 
+![License MIT](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)
+
 [pablogarcia.dev](https://pablogarcia.dev/)
 
 
-![License MIT](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)
-
 ## Created with HTML5, CSS3, Vanilla JavaScript and 💛
+
+![Screenshot](src/images/readme/screenshot.png)
 
 ### Features
 
@@ -19,8 +21,7 @@ _My personal website. A simple presentation card._
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS but with pure CSS3.
 - All contents that have `title` attribute will generate a pop up with the text attribute to show more information about, if you want to change this info only need to modify the `title` attribute on HTML.
-
-![Screenshot](src/images/readme/screenshot.png)
+- SEO optimized.
 
 
 ### Performance
@@ -35,19 +36,19 @@ Google page speed test results:
 ### Run task [optional]
 This website using [Gulp.js](https://gulpjs.com/) to manage the run task like minify the JS and the CSS files. The dependencies that are using on the `package.json`:
 
-`
+```
 "devDependencies": {
   "gulp": "^4.0.0",
   "gulp-minify": "^3.1.0",
   "gulp-clean-css": "^4.0.0",
   "gulp-rename": "^1.4.0"
 }
-`
+```
 
 Check the `gulpfile.js` file on root for more info.
 
 
-### Hey! support
+### Hey! support me
 
 If you want to have your own site version, feel free to fork it and go ahead! 🙂
 
