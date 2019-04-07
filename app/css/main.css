@@ -19,13 +19,10 @@
   --margin-one-fifth: calc(var(--font-size) / 5); /*3.4px*/
   --margin-one-half: calc(var(--font-size) / 2); /*8px*/
   --max-width: 640px;
-  --contact-height: calc(
-    100vh - var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) - 
-    var(--font-line-height) - var(--font-line-height) - var(--marginX2)
-  );
+  --contact-height: calc(100vh - var(--font-line-height) - var(--marginX1) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--font-line-height) - var(--marginX2) - var(--font-line-height));
   /* --contact-height calc
         100vh - 
-        [h4] var(--font-line-height-contact) - var(--marginX1) - var(--margin-one-half) -
+        [h4] var(--font-line-height) - var(--marginX1) - var(--margin-one-half) -
         [links-bottom] var(--font-line-height) -
         [links-bottom] var(--font-line-height) -
         [body padding bottom] var(--marginX2)
@@ -397,6 +394,20 @@ a {
   color: var(--link-color);
   text-decoration: none;
   line-height: calc(var(--font-line-height) - 1px);
+}
+
+a.icon {
+  
+}
+
+a.icon:focus::after, 
+a.icon:hover::after {
+  width: 0;
+  transition: none;
+}
+
+.icon:hover svg {
+  fill: var(--hover-color);
 }
 
 .pop-up {
