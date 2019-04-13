@@ -8,7 +8,7 @@ _My personal website. A simple presentation card._
 
 ## Created with HTML5, CSS3, Vanilla JavaScript and 💛
 
-![Screenshot](src/images/readme/screenshot.png)
+![Screenshot](public/images/readme/screenshot.png)
 
 ### Features
 
