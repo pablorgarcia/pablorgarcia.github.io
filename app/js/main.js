@@ -105,18 +105,18 @@ document.addEventListener('DOMContentLoaded', () => {
     body.removeAttribute('style');
   };
 
+  // Popup is active or disabled variable
+  let popUpIsActive = 0;
   // Listen to title attribute clicks
   document.addEventListener('click', (event) => {
-    if (!event.target.hasAttribute('title')) {
+    if (popUpIsActive === 1) {
+      popUpIsActive = 0;
       hidePopUp();
-    } else {
-      if (popUpElement.textContent != '') {
-        hidePopUp();
-      } else {
-        showPopUp(event.target);
-      }
     }
-
+    if (event.target.hasAttribute('title') && popUpIsActive === 0) {
+      popUpIsActive = 1;
+      showPopUp(event.target);
+    }
   }, false);
 
 });
