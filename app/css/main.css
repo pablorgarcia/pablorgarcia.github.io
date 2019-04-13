@@ -216,6 +216,14 @@ a {
   transition-timing-function: line;
 }
 
+svg {
+  width: var(--font-size);
+  height: var(--font-size);
+  vertical-align: middle;
+  margin-right: var(--margin-one-half);
+  fill: var(--icon-color);
+}
+
 .links-bottom {
   cursor: default;
 }
@@ -224,12 +232,9 @@ a {
   color: var(--link-color);
 }
 
-svg {
-  width: var(--font-size);
-  height: var(--font-size);
-  vertical-align: middle;
-  margin-right: var(--margin-one-half);
-  fill: var(--icon-color);
+.links-bottom a svg {
+  height: 28px;
+  width: 28px;
 }
 
 .button-container {
@@ -611,6 +616,11 @@ pre.terminal-title:hover {
   main,
   footer {
     padding: 0;
+  }
+
+  .links-bottom a svg {
+    height: 24px;
+    width: 24px;
   }
 
   .first-arrow {
