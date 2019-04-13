@@ -396,10 +396,6 @@ a {
   line-height: calc(var(--font-line-height) - 1px);
 }
 
-a.icon {
-  
-}
-
 a.icon:focus::after, 
 a.icon:hover::after {
   width: 0;
