@@ -216,12 +216,12 @@ a {
   transition-timing-function: line;
 }
 
-.links-bottom a {
-  color: var(--link-color);
+.links-bottom {
+  cursor: default;
 }
 
-.links-bottom a:first-child {
-  margin-right: var(--margin-one-half);
+.links-bottom a {
+  color: var(--link-color);
 }
 
 svg {
@@ -396,14 +396,18 @@ a {
   line-height: calc(var(--font-line-height) - 1px);
 }
 
-a.icon:focus::after, 
-a.icon:hover::after {
-  width: 0;
-  transition: none;
+.icon svg {
+  fill: var(--link-color);
 }
 
 .icon:hover svg {
   fill: var(--hover-color);
+}
+
+a.icon:focus::after, 
+a.icon:hover::after {
+  width: 0;
+  transition: none;
 }
 
 .pop-up {
