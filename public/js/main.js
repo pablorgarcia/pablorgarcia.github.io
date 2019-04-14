@@ -33,15 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Show and hide the pop up div */
   // Get the pop up div
   const popUpElement = document.getElementById('pop-up');
+  const popUpShadowElement = document.getElementById('pop-up-shadow');
 
   // Create a 'header terminal' pop up when it will be called
-  const createHeaderTerminal = (eventTarget) => {
+  const createHeaderTerminal = () => {
     const headerTerminal = document.createElement('span');
     const buttonRed = document.createElement('span');
     const buttonYellow = document.createElement('span');
     const buttonGreen = document.createElement('span');
     const titleElement = document.createElement('pre');
-    const terminalTitle = document.createTextNode(eventTarget.textContent);
+    const terminalTitle = document.createTextNode('pablogarcia.dev');
     headerTerminal.setAttribute('class', 'header-terminal');
     buttonRed.setAttribute('class', 'button-terminal-red');
     buttonYellow.setAttribute('class', 'button-terminal-yellow');
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bodyTerminal.setAttribute('class', 'body-terminal');
 
     const pHost = document.createElement('p');
-    const textHost = document.createTextNode('pablogarcia.dev');
+    const textHost = document.createTextNode('Specialties');
     pHost.appendChild(textHost);
     pHost.setAttribute('class', 'terminal-host');
     bodyTerminal.appendChild(pHost);
@@ -91,15 +92,21 @@ document.addEventListener('DOMContentLoaded', () => {
     popUpElement.setAttribute('class', 'pop-up pop-up-active');
   };
 
+  const createPopUpShadow = () => {
+    popUpShadowElement.setAttribute('class', 'pop-up-shadow');
+  };
+
   // Call the header terminal pop up and text pop up
   const showPopUp = (eventTarget) => {
-    createHeaderTerminal(eventTarget);
+    createPopUpShadow();
+    createHeaderTerminal();
     createBodyTerminal(eventTarget);
     body.style.overflow = 'hidden';
   };
 
   // Remove all pop up content
   const hidePopUp = () => {
+    popUpShadowElement.setAttribute('class', '');
     popUpElement.setAttribute('class', 'pop-up pop-up-disabled');
     popUpElement.textContent = '';
     body.removeAttribute('style');
