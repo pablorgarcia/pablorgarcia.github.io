@@ -12,7 +12,7 @@ const path = {
 gulp.task('minify-js', () => {
   return gulp.src(path.js)
     .pipe(minifyJS())
-    .pipe(gulp.dest('src/js'));
+    .pipe(gulp.dest('public/js'));
 });
 
 // CSS main minified
@@ -20,7 +20,7 @@ gulp.task('minify-css', () => {
   return gulp.src(path.css)
     .pipe(cleanCSS())
     .pipe(rename('main.min.css')) 
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest('public/css'));
 });
 
 // Listening to changes
