@@ -565,8 +565,7 @@ pre.terminal-title:hover {
   display: inline;
   padding: 0 var(--margin-one-half);
 }
-time::after,
-.pop-up-active .terminal-content::after {
+.cursor-for-last-text::after {
   content: '|';
   font-weight: 400;
   opacity: 0;
