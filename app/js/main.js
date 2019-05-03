@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentText = document.createTextNode(eventTarget.title);
     bodyTerminal.appendChild(pText);
     pText.setAttribute('data-name', eventTarget.textContent);
-    pText.setAttribute('class', 'terminal-content');
+    pText.setAttribute('class', 'terminal-content cursor-for-last-text');
     pText.appendChild(contentText);
 
     popUpElement.appendChild(bodyTerminal);
