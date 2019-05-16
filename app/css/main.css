@@ -39,7 +39,7 @@
   --link-color: #64ffda;
   --hover-color: #B0FFEC;
   --highlighted-bg: #112933;
-  --highlighted-text: #e6f1ff;
+  --highlighted-text: #64ffda;
   --highlighted-border: #174B61;
   --highlighted-box-shadow: none;
   --tag-languages: #091419;
@@ -67,8 +67,45 @@
   --selection-link-text-hover: #000;
 }
 
-/* Colour palette */
+/* Cyberpunk colour palette */
 :root .at-night {
+  --bg-color: #000117;
+  --title-color: #f0f482;
+  --text-color: #207561;
+  --text-shadow-color: #001c33;
+  --link-color: #ff5aa5;
+  --hover-color: #f0f482;
+  --highlighted-bg: #401629;
+  --highlighted-text: #f0f482;
+  --highlighted-border: #613041;
+  --highlighted-box-shadow: #1F1509;
+  --tag-languages: #12140B;
+  --tag-languages-text: #f0f482;
+  --tag-languages-border: #2321b2;
+  --tag-front: #12140B;
+  --tag-front-text: #f0f482;
+  --tag-back: #12140B;
+  --tag-back-text: #f0f482;
+  --tag-environment: #12140B;
+  --tag-environment-text: #f0f482;
+  --tag-research: #12140B;
+  --tag-research-text: #f0f482;
+  --icon-color: #75673b;
+  --btn-bg-primary-hover: #f0f482;
+  --btn-bg-secondary-hover: #291C36;
+  --bg-first-arrow: RoyalBlue;
+  --bg-second-arrow: GreenYellow;
+  --bg-pop-up-shadow: #221a10;
+  --selection-bg: #fff;
+  --selection-text: #000;
+  --selection-link-bg: #000;
+  --selection-link-bg-hover: #61dafb;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
+}
+
+/* OLD Colour palette */
+/*:root .at-night {
   --bg-color: #221a10;
   --title-color: #d83554;
   --text-color: #9e734d;
@@ -102,7 +139,7 @@
   --selection-link-bg-hover: #61dafb;
   --selection-link-text: #fff;
   --selection-link-text-hover: #000;
-}
+}*/
 
 /* Generals */
 * {
@@ -429,12 +466,12 @@ a.icon:hover::after {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .pop-up-shadow {
-  position: fixed;
-  top: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.85;
   background-color:var(--bg-pop-up-shadow);
 }
 
@@ -565,7 +602,7 @@ pre.terminal-title:hover {
   display: inline;
   padding: 0 var(--margin-one-half);
 }
-.cursor-for-last-text::after {
+.pop-up-active .terminal-content::after {
   content: '|';
   font-weight: 400;
   opacity: 0;
@@ -586,6 +623,27 @@ pre.terminal-title:hover {
 	0% { opacity: 1; }
 	50% { opacity: 0; }
 	100% { opacity: 1; }
+}
+
+#changeStyle {
+  background: red;
+  width: var(--marginX3);
+  height: var(--marginX3);
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.button-at-day, 
+.button-at-night,
+.button-terminal-linux,
+.button-terminal-power-shell {
+  background: deepskyblue;
+  width: var(--marginX3);
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /* animation body background test */
