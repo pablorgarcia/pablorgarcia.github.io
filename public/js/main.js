@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   date.year = date.getFullYear();
   date.hour = date.getHours();
 
+
   // Setting the general styles, at-dat, at-night or terminal class 
   const body = document.getElementsByTagName('body')[0];
 
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentText = document.createTextNode(eventTarget.title);
     bodyTerminal.appendChild(pText);
     pText.setAttribute('data-name', eventTarget.textContent);
-    pText.setAttribute('class', 'terminal-content');
+    pText.setAttribute('class', 'terminal-content cursor-for-last-text');
     pText.appendChild(contentText);
 
     popUpElement.appendChild(bodyTerminal);
@@ -128,4 +129,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-console.log("👋 HELLO PARTNET. Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io :)");
+console.log("HELLO PARTNET\nFeel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io\n👋😄");
