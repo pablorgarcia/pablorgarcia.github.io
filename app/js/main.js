@@ -125,8 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
       popUpIsActive = 1;
       showPopUp(event.target);
     }
+    if (event.target.hasAttribute('href')) {
+      ga('send', 'event', 'Home', 'click', event.target.name);
+    }
   }, false);
-
 });
 
 console.log('%cHELLO PARTNET', 'font-size: 15px; color: #86DE74; text-shadow: 1px 2px #395E31;');
