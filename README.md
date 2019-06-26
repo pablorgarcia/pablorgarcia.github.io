@@ -32,6 +32,14 @@ Google page speed test results:
 - 99% Mobile
 - 100% Desktop
 
+Average of Network results:
+- 11 request
+- 61.3 KB transferred
+- 107 KB resources
+- Finish: 191 ms
+- DOMContentLoaded: 60 ms
+- Load: 180 ms
+
 
 ### Run task [optional]
 This website using [Gulp.js](https://gulpjs.com/) to manage the run task like minify the JS and the CSS files. The dependencies that are using on the `package.json`:
