@@ -131,6 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, false);
 });
 
-console.log('%cHELLO PARTNET', 'font-size: 15px; color: #86DE74; text-shadow: 1px 2px #395E31;');
-console.log('%cFeel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io', 'font-size: 13px; color: #1485CC; text-shadow: 1px 2px #08324D;');
+console.log('%cHELLO PARTNET', 'font-size: 15px; color: #86DE74; text-shadow: 1px 1px #395E31;');
+console.log('%cFeel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io', 'font-size: 13px; color: #1485CC; text-shadow: 1px 1px #08324D;');
 console.log('👋😄');
