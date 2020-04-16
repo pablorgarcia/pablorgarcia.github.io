@@ -39,7 +39,7 @@
   --link-color: #64ffda;
   --hover-color: #B0FFEC;
   --highlighted-bg: #112933;
-  --highlighted-text: #4FE1E8; /*#64ffda*/
+  --highlighted-text: #4FE1E8;
   --highlighted-border: #174B61;
   --highlighted-box-shadow: none;
   --tag-languages: #091419;
@@ -78,7 +78,7 @@
   --highlighted-bg: #401629;
   --highlighted-text: #f0f482;
   --highlighted-border: #613041;
-  --highlighted-box-shadow: #1F1509;
+  --highlighted-box-shadow: #000117;
   --tag-languages: #12140B;
   --tag-languages-text: #f0f482;
   --tag-languages-border: #2321b2;
@@ -368,7 +368,7 @@ figure {
   margin: var(--marginX2) auto;
   border: 0.05px solid var(--highlighted-border);
   max-width: var(--max-width);
-  box-shadow: inset 3px 3px 0 var(--highlighted-box-shadow);
+  box-shadow: inset 1px 1px 7px var(--highlighted-box-shadow);
 }
 
 figcaption {
