@@ -30,8 +30,47 @@
 
 }
   
-/* Colour palette */
+/* Game Boy colour palette */
 :root .at-day {
+  --bg-color: #daf8db;
+  --title-color: #4e8861;
+  --text-color: #5d916a;
+  --text-shadow-color: none;
+  --link-color: #000b01;
+  --hover-color: #000b01;
+  --highlighted-bg: transparent;
+  --highlighted-text: #5d916a;
+  --highlighted-border: #a2d9af;
+  --highlighted-box-shadow: none;
+  --tag-languages: transparent;
+  --tag-languages-text: #5d916a;
+  --tag-languages-border: #4e8861;
+  --tag-front: transparent;
+  --tag-front-text: #5d916a;
+  --tag-back: transparent;
+  --tag-back-text: #5d916a;
+  --tag-environment: transparent;
+  --tag-environment-text: #5d916a;
+  --tag-research: transparent;
+  --tag-research-text: #5d916a;
+  --icon-color: #4e8861;
+  --btn-bg-primary-hover: #e1fee1;
+  --btn-text-primary-hover: #313832;
+  --btn-bg-secondary-hover: #e1fee1;
+  --btn-text-secondary-hover: #313832;
+  --bg-first-arrow: RoyalBlue;
+  --bg-second-arrow: #C2D551;
+  --bg-pop-up-shadow: #0A1A21;
+  --selection-bg: #fff;
+  --selection-text: #000;
+  --selection-link-bg: #000;
+  --selection-link-bg-hover: #61dafb;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
+}
+
+/* Terminal colour palette */
+:root .at-night {
   --bg-color: #0A1A21;
   --title-color: #e6f1ff;
   --text-color: #798F99;
@@ -55,7 +94,9 @@
   --tag-research-text: #20AEEB;
   --icon-color: #35454C;
   --btn-bg-primary-hover: #B0FFEC;
+  --btn-text-primary-hover: #313832;
   --btn-bg-secondary-hover: #001f33;
+  --btn-text-secondary-hover: #b0ffec;
   --bg-first-arrow: RoyalBlue;
   --bg-second-arrow: #C2D551;
   --bg-pop-up-shadow: #0A1A21;
@@ -68,6 +109,7 @@
 }
 
 /* Cyberpunk colour palette */
+/*
 :root .at-night {
   --bg-color: #000117;
   --title-color: #f0f482;
@@ -92,44 +134,9 @@
   --tag-research-text: #f0f482;
   --icon-color: #75673b;
   --btn-bg-primary-hover: #f0f482;
+  --btn-text-primary-hover: #000117;
   --btn-bg-secondary-hover: #291C36;
-  --bg-first-arrow: RoyalBlue;
-  --bg-second-arrow: GreenYellow;
-  --bg-pop-up-shadow: #221a10;
-  --selection-bg: #fff;
-  --selection-text: #000;
-  --selection-link-bg: #000;
-  --selection-link-bg-hover: #61dafb;
-  --selection-link-text: #fff;
-  --selection-link-text-hover: #000;
-}
-
-/* OLD Colour palette */
-/*:root .at-night {
-  --bg-color: #221a10;
-  --title-color: #d83554;
-  --text-color: #9e734d;
-  --text-shadow-color: #001c33;
-  --link-color: #86b0af;
-  --hover-color: #ffad4c;
-  --highlighted-bg: #1F1509;
-  --highlighted-text: #869b55;
-  --highlighted-border: #ad6880;
-  --highlighted-box-shadow: #1F1509;
-  --tag-languages: #12140B;
-  --tag-languages-text: #f7cd43;
-  --tag-languages-border: #869b55;
-  --tag-front: #12140B;
-  --tag-front-text: #f7cd43;
-  --tag-back: #12140B;
-  --tag-back-text: #f7cd43;
-  --tag-environment: #12140B;
-  --tag-environment-text: #f7cd43;
-  --tag-research: #12140B;
-  --tag-research-text: #f7cd43;
-  --icon-color: #75673b;
-  --btn-bg-primary-hover: #ffad4c;
-  --btn-bg-secondary-hover: #1F1509;
+  --btn-text-secondary-hover: #000117;
   --bg-first-arrow: RoyalBlue;
   --bg-second-arrow: GreenYellow;
   --bg-pop-up-shadow: #221a10;
@@ -140,6 +147,7 @@
   --selection-link-text: #fff;
   --selection-link-text-hover: #000;
 }*/
+
 
 /* Generals */
 * {
@@ -300,7 +308,7 @@ svg {
   vertical-align: middle;
 
   transition-delay: 0s;
-  transition-duration: 0.24s;
+  transition-duration: 0.14s;
   transition-property: all;
   transition-timing-function: line;
 }
@@ -760,6 +768,7 @@ a:hover::-moz-selection {
 /* Hover, focus & active */
 a:hover {
   color: var(--hover-color);
+  background-size: 4px 50px;
 }
 
 .links-bottom a:hover {
@@ -798,7 +807,7 @@ a.btn:hover::after {
 .btn--primary:active,
 .btn--primary:focus {
   background-color: var(--btn-bg-primary-hover);
-  color: var(--bg-color);
+  color: var(--btn-text-primary-hover); /*--btn-text-primary-hover --bg-color*/
   border-color: var(--btn-bg-primary-hover);
   outline: none;
 }
@@ -807,7 +816,7 @@ a.btn:hover::after {
 .btn--secondary:active,
 .btn--secondary:focus {
   background-color: var(--btn-bg-secondary-hover);
-  color: var(--btn-bg-primary-hover);
+  color: var(--btn-text-secondary-hover); /*--btn-bg-primary-hover*/
   border-color: var(--btn-bg-primary-hover);
   outline: none;
 }
