@@ -19,12 +19,13 @@
   --margin-one-fifth: calc(var(--font-size) / 5); /*3.4px*/
   --margin-one-half: calc(var(--font-size) / 2); /*8px*/
   --max-width: 640px;
-  --contact-height: calc(100vh - var(--font-line-height) - var(--marginX1) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--font-line-height) - var(--marginX2) - var(--font-line-height));
+  --contact-height: calc(100vh - var(--font-line-height) - var(--marginX1) - var(--marginX1) - var(--margin-one-half) - var(--font-line-height) - var(--font-line-height) - var(--marginX2) - var(--font-line-height) - var(--margin-one-half));
   /* --contact-height calc
         100vh - 
         [h4] var(--font-line-height) - var(--marginX1) - var(--margin-one-half) -
         [links-bottom] var(--font-line-height) -
         [links-bottom] var(--font-line-height) -
+        [links-bottom margin-top-icon] var(--margin-one-half) - 
         [body padding bottom] var(--marginX2)
   */
 
@@ -282,6 +283,10 @@ svg {
 .links-bottom a svg {
   height: 24px;
   width: 24px;
+}
+
+.links-bottom .icon {
+  margin-top: var(--margin-one-half);
 }
 
 .button-container {
@@ -632,7 +637,7 @@ pre.terminal-title:hover {
 	50% { opacity: 0; }
 	100% { opacity: 1; }
 }
-
+/*
 #changeStyle {
   background: red;
   width: var(--marginX3);
@@ -652,7 +657,7 @@ pre.terminal-title:hover {
   padding: 5px;
   border-radius: 50%;
   display: inline-block;
-}
+}*/
 
 /* animation body background test */
 /* .animation-bg {
@@ -697,6 +702,11 @@ pre.terminal-title:hover {
   footer {
     padding: 0;
   }
+/*
+  .links-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }*/
 }
 
 /* Pseudo classes */
