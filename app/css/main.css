@@ -8,7 +8,6 @@
   --font-size: var(--font-size-base); /*16px. last version: 18px*/
   --font-size-small: calc(var(--font-size) * 0.81); /*13px*/
   --font-size-contact: calc(var(--font-size) * 0.75); /*12px*/
-  --font-size-cookie: calc(var(--font-size) * 0.64); /*11px*/
   --font-line-height: calc(var(--font-size) * 1.8); /*32px*/
   --font-line-height-contact: calc(var(--font-line-height) * 1.1); /*35px*/
   --marginX1: var(--font-size); /*16px*/
@@ -256,6 +255,11 @@ svg {
 .links-bottom a svg {
   height: 24px;
   width: 24px;
+}
+
+.links-bottom [name='Cookie-link'],
+.links-bottom [name='Sitemap-link'] {
+  margin-right: var(--margin-one-half);
 }
 
 .links-bottom .icon {
