@@ -55,7 +55,12 @@ This website using [Gulp.js](https://gulpjs.com/) to manage the run task like mi
 
 In the App folder are the development files to work. Gulp will work the App folder and publish them minified in the Public folder. `index.html` calls these public files to show only minified files.
 
-Check the `gulpfile.js` file on root for more info.
+Quick Start with [Gulp.js](https://gulpjs.com/docs/en/getting-started/quick-start).
+
+Run the gulp command in your project directory:
+`gulp`
+
+Check the `gulpfile.js` file on root to check the task configurated for this project.
 
 
 ### Hey! fork it if you want
