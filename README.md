@@ -15,7 +15,7 @@ _My personal website. A simple presentation card._
 - Loads as fast as possible.
 - Great coverage rate in the use of resources.
 - Responsive web design, mobile first.
-- All the content is flexible. to scale all the content of the website just change one CSS variable, the body font size `--font-size-base`.
+- All the content is flexible to scale all the content of the website just change one CSS variable, the body font size `--font-size-base`.
 - The font size change depending on the space it has available, it will be bigger when it has more space, and on the contrary, it will be smaller when less space is available.
 - On `<address>` is calculated by CSS the browser height to always display it in full screen on all devices.
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
@@ -53,7 +53,7 @@ This website using [Gulp.js](https://gulpjs.com/) to manage the run task like mi
 }
 ```
 
-In the App folder are the development files to work with Gulp. The public minify files are on Src folder, `index.html` calls these public files.
+In the App folder are the development files to work. Gulp will work the App folder and publish them minified in the Public folder. `index.html` calls these public files to show only minified files.
 
 Check the `gulpfile.js` file on root for more info.
 
