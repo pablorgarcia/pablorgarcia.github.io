@@ -58,8 +58,8 @@ In the App folder are the development files to work with Gulp. The public minify
 Check the `gulpfile.js` file on root for more info.
 
 
-### Hey! support me
+### Hey! fork it if you want
 
-If you want to have your own site version, feel free to fork it and go ahead! 🙂
+If you want to have your own site version, this is MIT licensed. Feel free to fork it and go ahead! 🙂
 
 Cheers!
