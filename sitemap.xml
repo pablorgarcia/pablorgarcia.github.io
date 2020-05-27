@@ -7,27 +7,9 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://pablogarcia.dev/README.md</loc>
-    <lastmod>2020-05-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pablogarcia.dev/sitemap.xml</loc>
     <lastmod>2019-04-29</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pablogarcia.dev/LICENSE.md</loc>
-    <lastmod>2020-05-12</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://pablogarcia.dev/COOKIE_POLICY.md</loc>
-    <lastmod>2019-04-06</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.2</priority>
   </url>
 </urlset> 
