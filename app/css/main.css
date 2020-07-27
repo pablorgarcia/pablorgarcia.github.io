@@ -32,32 +32,35 @@
   
 /* Game Boy colour palette */
 :root .at-day {
-  --bg-color: #daf8db;
-  --title-color: #4e8861;
-  --text-color: #5d916a;
+  --bg-color: #e0f8cf; /* #daf8db */
+  --title-color: #306850; /* #4e8861 */
+  --text-color: #306850; /*#5d916a */
   --text-shadow-color: none;
-  --link-color: #000b01;
-  --hover-color: #000b01;
+  --link-color: #071821; /* #000b01 */
+  --hover-color: #071821; /* #000b01 */
   --highlighted-bg: transparent;
-  --highlighted-text: #5d916a;
-  --highlighted-border: #a2d9af;
+  --highlighted-text: #306850; /* #5d916a */
+  --highlighted-border: #86c06c; /* #a2d9af */
   --highlighted-box-shadow: none;
   --tag-text: #5d916a;
   --tag-border: #4e8861;
   --icon-color: #4e8861;
-  --btn-bg-primary-hover: #e1fee1;
+  --btn-bg-primary-hover: #fff; /* #e1fee1 */
   --btn-text-primary-hover: #313832;
-  --btn-bg-secondary-hover: #e1fee1;
-  --btn-text-secondary-hover: #313832;
+  --btn-bg-secondary-hover: #fff; /* #e1fee1 */
+  --btn-text-secondary-hover: #86c06c; /* #313832 */
   --bg-first-arrow: RoyalBlue;
   --bg-second-arrow: #C2D551;
-  --bg-pop-up-shadow: #0A1A21;
   --selection-bg: #fff;
   --selection-text: #000;
   --selection-link-bg: #000;
   --selection-link-bg-hover: #61dafb;
   --selection-link-text: #fff;
   --selection-link-text-hover: #000;
+  --pop-up-bg: #071821;
+  --pop-up-text: #e0f8cf;
+  --pop-up-border: #86c06c;
+  --pop-up-bg-shadow: #306850;
 }
 
 /* Terminal colour palette */
@@ -81,13 +84,16 @@
   --btn-text-secondary-hover: #b0ffec;
   --bg-first-arrow: RoyalBlue;
   --bg-second-arrow: #C2D551;
-  --bg-pop-up-shadow: #0A1A21;
   --selection-bg: #fff;
   --selection-text: #000;
   --selection-link-bg: #000;
   --selection-link-bg-hover: #61dafb;
   --selection-link-text: #fff;
   --selection-link-text-hover: #000;
+  --pop-up-bg: #262626;
+  --pop-up-text: #798F99;
+  --pop-up-border: #174B61;
+  --pop-up-bg-shadow: #0A1A21;
 }
 
 /* Cyberpunk colour palette */
@@ -424,8 +430,7 @@ a.icon:hover::after {
 
 .pop-up {
   overflow: hidden;
-  color: #969696;
-  background-color: #262626;
+  background-color: var(--link-color); /* #262626 */
   border: 0.05px solid var(--highlighted-border);
   border-radius: 8px 8px 0 0;
   box-shadow:
@@ -440,7 +445,7 @@ a.icon:hover::after {
   width: 100vw;
   height: 100vh;
   opacity: 0.85;
-  background-color:var(--bg-pop-up-shadow);
+  background-color: var(--pop-up-bg-shadow);
 }
 
 .pop-up-active {
@@ -569,6 +574,7 @@ pre.terminal-title:hover {
 .pop-up-active .terminal-content {
   display: inline;
   padding: 0 var(--margin-one-half);
+  color: var(--bg-color); /* #969696 */
 }
 .pop-up-active .terminal-content::after {
   content: '|';
