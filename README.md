@@ -23,6 +23,7 @@ _My personal website. A simple presentation card._
 - All contents that have `title` attribute will generate a pop up with the text attribute to show more information about, if you want to change this info only need to modify the `title` attribute on HTML.
 - The tag name from the links are used to analyze traffic with google analytics.
 - SEO optimized.
+- Cookie manager
 
 
 ### Performance
