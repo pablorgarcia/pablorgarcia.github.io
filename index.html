@@ -35,15 +35,19 @@
 <meta name=”twitter:description” content="I'm Jr Full-Stack web developer building Front-End Web Apps with Angular and React" />
 <meta name="twitter:creator" content="@HeyPablete" />
 <link rel="canonical" href="https://pablogarcia.dev" />
-<link rel="manifest" href="manifest.json" />
+<!--link rel="manifest" href="manifest.json" /-->
 <link rel="shortcut icon" href="public/images/icons/favicon.ico" />
 <link rel="icon" sizes="192x192" href="public/images/icons/favicon.png" />
 <link rel="apple-touch-startup-image" href="public/images/icons/favicon.png" />
 <link rel="stylesheet" href="public/css/fonts.min.css" />
-<link rel="stylesheet" href="public/css/main.min.css" />
+
+<link rel="stylesheet" href="app/css/main.css" />
+<!--link rel="stylesheet" href="public/css/main.min.css" /-->
 <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
-<script src="public/js/main-min.js"></script>
-<script src="public/js/analytics-min.js" async></script>
+
+<!--script src="public/js/main.min.js"></script-->
+<script src="app/js/main.js"></script>
+
 <title>Pablo García: Jr. Full-Stack Web developer</title>
 </head>
 <body>
@@ -119,6 +123,13 @@
 
 </footer>
 
+<div class="hidden-cookie-message" id="cookie-message">
+  <p>This site uses cookies to analyze traffic.</p>
+  <ul>
+    <li id="cookie-detail">More details</li>
+    <li id="cookie-ok">Ok</li>
+  </ul>
+</div>
 
 <div id="pop-up"></div>
 <div id="pop-up-shadow"></div>
