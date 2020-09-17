@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, false);
 
-  /* Cookies manager */
+  /* Cookie manager */
   // Showing the Cookie message
   const cookieMsg = document.getElementById('cookie-message');
   cookieMsg.setAttribute('class', 'show-cookie-message');
