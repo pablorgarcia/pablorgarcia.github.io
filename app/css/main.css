@@ -201,12 +201,15 @@ h1,
 h2,
 h3,
 p,
-a,
 time,
 blockquote,
 figcaption,
 .links-bottom a {
   font-weight: 300;
+}
+
+a {
+  font-weight: 400;
 }
 
 h4,
