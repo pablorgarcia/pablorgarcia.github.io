@@ -130,33 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, false);
 
-  /* Cookie manager */
-  // Showing the Cookie message
-  const cookieMsg = document.getElementById('cookie-message');
-  cookieMsg.setAttribute('class', 'show-cookie-message');
-
-  // Setting the analitycs script
-  const analitycsScript = document.createElement('script');
-  analitycsScript.setAttribute('src', 'public/js/analytics-min.js');
-  analitycsScript.setAttribute('async', '');
-
-  // Listening the Cookie Detail
-  const cookieDetail = document.getElementById('cookie-detail');
-  cookieDetail.addEventListener('click', (event) => {
-    window.open('https://github.com/pablorgarcia/pablorgarcia.github.io/blob/master/COOKIE_POLICY.md', '_blank');
-  });
-
-  // Listening the Cookie Ok
-  const cookieOk = document.getElementById('cookie-ok');
-  cookieOk.addEventListener('click', (event) => {
-    // Adding the Analitycs script
-    document.head.appendChild(analitycsScript); // <script src="public/js/analytics-min.js" async></script>
-    // Animation out and remove all the cookieMsg div
-    cookieMsg.setAttribute('class', 'done-cookie-message hidden-cookie-message');
-    setTimeout(() => { body.removeChild(cookieMsg) }, 500);
-  });
-
-
 });
 
 console.log('%cHELLO PARTNET', 'font-size: 15px; color: #395E31;');
