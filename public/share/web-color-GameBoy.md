@@ -1,4 +1,7 @@
+# Game boy colors palette
+=======================
 
+Original colors from:
 https://www.gbstudio.dev/docs/backgrounds/
 
 
@@ -18,4 +21,3 @@ https://www.gbstudio.dev/docs/backgrounds/
 #306850
 #86c06c
 #e0f8cf
-
