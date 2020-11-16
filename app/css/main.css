@@ -790,13 +790,23 @@ main a:focus,
   outline: none;
 }
 
+main a:hover,
+main a:focus {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+
 /* hover line under links */
 a::after,
 a:focus::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: var(--link-color);
     transition: width .25s;
 }
