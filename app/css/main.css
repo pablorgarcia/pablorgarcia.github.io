@@ -32,23 +32,23 @@
   
 /* Game Boy colour palette */
 :root .at-day {
-  --bg-color: #e0f8cf; /* #daf8db */
-  --title-color: #306850; /* #4e8861 */
-  --text-color: #306850; /*#5d916a */
+  --bg-color: #e0f8cf;
+  --title-color: #306850;
+  --text-color: #306850;
   --text-shadow-color: none;
-  --link-color: #071821; /* #000b01 */
-  --hover-color: #071821; /* #000b01 */
+  --link-color: #071821;
+  --hover-color: #071821;
   --highlighted-bg: transparent;
-  --highlighted-text: #306850; /* #5d916a */
-  --highlighted-border: #86c06c; /* #a2d9af */
+  --highlighted-text: #306850;
+  --highlighted-border: #86c06c;
   --highlighted-box-shadow: none;
   --tag-text: #5d916a;
   --tag-border: #4e8861;
   --icon-color: #4e8861;
-  --btn-bg-primary-hover: #fff; /* #e1fee1 */
+  --btn-bg-primary-hover: #fff;
   --btn-text-primary-hover: #313832;
-  --btn-bg-secondary-hover: #fff; /* #e1fee1 */
-  --btn-text-secondary-hover: #86c06c; /* #313832 */
+  --btn-bg-secondary-hover: #fff;
+  --btn-text-secondary-hover: #86c06c;
   --bg-first-arrow: RoyalBlue;
   --bg-second-arrow: #C2D551;
   --selection-bg: #fff;
@@ -151,7 +151,7 @@ h4,
 p,
 a,
 time {
-  font-family: "Roboto Mono", monospace;
+  font-family: "JetBrains Mono", monospace; /* previous version: "Roboto Mono", monospace */
   font-size: var(--font-size);
   line-height: var(--font-line-height);
   color: var(--text-color);
@@ -162,7 +162,7 @@ h1,
 h2,
 h3,
 .links-bottom a {
-  font-family: monospace;
+  font-family: "JetBrains Mono", monospace; /* previous version: monospace */
   font-size: var(--font-size-contact);
   color: var(--text-color);
   text-transform: uppercase;
@@ -698,6 +698,7 @@ pre.terminal-title:hover {
 @media (min-width: 760px) {
   /*for scale the size just need change the font-size and everything is scaled in proportion*/
   :root {
+    --font-size-base: 15px;
     --font-size: calc(var(--font-size-base) + 0.1vw);
   }
 
