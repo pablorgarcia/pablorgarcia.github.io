@@ -38,6 +38,8 @@
   --text-shadow-color: none;
   --link-color: #071821;
   --hover-color: #071821;
+  --hover-color-gradient-start: #ff8a00;
+  --hover-color-gradient-end: #e52e71;
   --highlighted-bg: transparent;
   --highlighted-text: #306850;
   --highlighted-border: #86c06c;
@@ -63,14 +65,52 @@
   --pop-up-bg-shadow: #306850;
 }
 
-/* Terminal colour palette */
+/* Game Boy night colour palette */
 :root .at-night {
+  --bg-color: #1F1F1F;
+  --title-color: #C4CFA1;
+  --text-color: #8B956D;
+  --text-shadow-color: none;
+  --link-color: #FFFFFF;
+  --hover-color: #D27FF5;
+  --hover-color-gradient-start: #D27FF5;
+  --hover-color-gradient-end: #E9CAF7;
+  --highlighted-bg: none;
+  --highlighted-text: #C4CFA1;
+  --highlighted-border: #4D533C;
+  --highlighted-box-shadow: none;
+  --tag-text: #fff;
+  --tag-border: #363130;
+  --icon-color: #566B5C;
+  --btn-bg-primary-hover: #D27FF5;
+  --btn-text-primary-hover: #1A1A1A;
+  --btn-bg-secondary-hover: #1A1A1A;
+  --btn-text-secondary-hover: #fff;
+  --bg-first-arrow: RoyalBlue;
+  --bg-second-arrow: #C2D551;
+  --selection-bg: #fff;
+  --selection-text: #000;
+  --selection-link-bg: #000;
+  --selection-link-bg-hover: #61dafb;
+  --selection-link-text: #fff;
+  --selection-link-text-hover: #000;
+  --pop-up-bg: #262626;
+  --pop-up-text: #798F99;
+  --pop-up-border: #174B61;
+  --pop-up-bg-shadow: #0A1A21;
+}
+
+/*
+/* Terminal colour palette 
+:root .at-night {#8B956D
   --bg-color: #0A1A21;
   --title-color: #e6f1ff;
   --text-color: #798F99;
   --text-shadow-color: none;
   --link-color: #64ffda;
   --hover-color: #B0FFEC;
+  --hover-color-gradient-start: #ff8a00;
+  --hover-color-gradient-end: #e52e71;
   --highlighted-bg: #112933;
   --highlighted-text: #4FE1E8;
   --highlighted-border: #174B61;
@@ -94,7 +134,7 @@
   --pop-up-text: #798F99;
   --pop-up-border: #174B61;
   --pop-up-bg-shadow: #0A1A21;
-}
+}*/
 
 /* Cyberpunk colour palette */
 /*
@@ -105,6 +145,8 @@
   --text-shadow-color: #001c33;
   --link-color: #ff5aa5;
   --hover-color: #f0f482;
+  --hover-color-gradient-start: #f0f482;
+  --hover-color-gradient-end: #f0f482;
   --highlighted-bg: #401629;
   --highlighted-text: #f0f482;
   --highlighted-border: #613041;
@@ -793,7 +835,7 @@ main a:focus,
 
 main a:hover,
 main a:focus {
-  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  background: linear-gradient(90deg, var(--hover-color-gradient-start), var(--hover-color-gradient-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
