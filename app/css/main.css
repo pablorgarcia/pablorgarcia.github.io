@@ -62,7 +62,7 @@
   --pop-up-bg: #071821;
   --pop-up-text: #e0f8cf;
   --pop-up-border: #86c06c;
-  --pop-up-bg-shadow: #306850;
+  --pop-up-bg-shadow: #33382F;
 }
 
 /* Game Boy night colour palette */
@@ -97,7 +97,7 @@
   --pop-up-bg: #262626;
   --pop-up-text: #798F99;
   --pop-up-border: #174B61;
-  --pop-up-bg-shadow: #0A1A21;
+  --pop-up-bg-shadow: #0F0F0F;
 }
 
 /*
@@ -566,7 +566,7 @@ a.icon:hover::after {
 
 .pop-up {
   overflow: hidden;
-  background-color: var(--link-color); /* #262626 */
+  background-color: var(--pop-up-bg);
   border: 0.05px solid var(--highlighted-border);
   border-radius: 8px 8px 0 0;
   box-shadow:
