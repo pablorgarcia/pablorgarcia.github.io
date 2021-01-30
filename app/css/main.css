@@ -40,7 +40,7 @@
   --hover-color: #071821;
   --hover-color-gradient-start: #ff8a00;
   --hover-color-gradient-end: #e52e71;
-  --highlighted-bg: transparent;
+  --highlighted-bg: #FCFAC4; /*transparent;*/
   --highlighted-text: #306850;
   --highlighted-border: #86c06c;
   --highlighted-box-shadow: none;
@@ -75,7 +75,7 @@
   --hover-color: #D27FF5;
   --hover-color-gradient-start: #D27FF5;
   --hover-color-gradient-end: #E9CAF7;
-  --highlighted-bg: none;
+  --highlighted-bg: #0F0E0F;
   --highlighted-text: #C4CFA1;
   --highlighted-border: #4D533C;
   --highlighted-box-shadow: none;
@@ -295,6 +295,10 @@ svg {
   fill: var(--icon-color);
 }
 
+.highlighted-bg {
+  background-color: var(--highlighted-bg);
+}
+
 .links-bottom {
   cursor: default;
 }
@@ -407,7 +411,6 @@ pre:hover {
 figure {
   font-style: italic;
   color: var(--highlighted-text);
-  background-image: linear-gradient(to bottom right, var(--highlighted-bg), transparent);
   padding: var(--marginX1) var(--font-size);
   margin: var(--marginX2) auto;
   border: 0.05px solid var(--highlighted-border);
@@ -761,7 +764,7 @@ body::-webkit-scrollbar,
 
 body::-webkit-scrollbar-thumb,
 .pop-up-active::-webkit-scrollbar-thumb {
-  background-color: var(--highlighted-bg);
+  background-color: transparent;
   outline: none;
 }
 
