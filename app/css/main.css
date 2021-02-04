@@ -650,6 +650,7 @@ a.icon:hover::after {
   padding: 0 0 0 var(--margin-one-half);
   margin: 0;
   border: 0;
+  color: var(--highlighted-text);
 }
 pre.terminal-title:hover {
   background: none;
@@ -713,7 +714,7 @@ pre.terminal-title:hover {
 .pop-up-active .terminal-content {
   display: inline;
   padding: 0 var(--margin-one-half);
-  color: var(--bg-color); /* #969696 */
+  color: var(--pop-up-text); /* #969696 */
 }
 .pop-up-active .terminal-content::after {
   content: '|';
