@@ -654,6 +654,7 @@ a.icon:hover::after {
 }
 pre.terminal-title:hover {
   background: none;
+  color: inherit;
 }
 
 .body-terminal {
