@@ -7,12 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   date.year = date.getFullYear();
   date.hour = date.getHours();
 
+  // Getting Config Nav tags
+  const configNav = document.getElementById('configNav');
+  const menuButton = document.getElementById('menu-button');
+  const closeButtonMenu = document.getElementById('closeNav');
 
-  // Setting the general styles, at-dat, at-night or terminal class 
+  // Setting the general styles, at-dat, at-night or terminal class
   const body = document.getElementsByTagName('body')[0];
-
-  // Add at-day or at-night class depending on the current hour
-  date.hour >= 8 && date.hour < 21 ? body.classList.add('at-day') : body.classList.add('at-night');
+  let buttonThemeChecked = document.getElementById('myCheck').checked;
+  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 
   /* Current time */
@@ -129,6 +132,57 @@ document.addEventListener('DOMContentLoaded', () => {
       ga('send', 'event', 'Home', 'click', event.target.name);
     }
   }, false);
+
+
+  // Open the config nav
+  openConfigNav = () => {
+    configNav.style.width = '250px';
+    configNav.setAttribute('class', 'configNav show-config-nav');
+    closeButtonMenu.setAttribute('class', 'bt-close show-config-nav');
+    menuButton.style.width = '249px';
+    menuButton.setAttribute('class', 'bt-menu show-menu-button');
+  }
+  // Close the config nav
+  closeConfigNav = () => {
+    configNav.style.width = '0';
+    configNav.setAttribute('class', 'configNav hide-config-nav hide-config-elements');
+    closeButtonMenu.setAttribute('class', 'bt-close hide-config-nav hide-config-elements');
+    menuButton.style.width = '115px';
+    menuButton.setAttribute('class', 'bt-menu hide-menu-button');
+  }
+
+
+  // If the user interface prefers Dark mode on his browser
+  if (prefersDarkScheme.matches) {
+    // Active the dark mode
+    document.getElementById("myCheck").checked = true;
+    body.classList.add('at-night');
+    buttonThemeChecked = true;
+  } else {
+    // Add at-day or at-night class depending on the current hour
+    if (date.hour >= 8 && date.hour < 21) {
+      document.getElementById("myCheck").checked = false;
+      body.classList.add('at-day');
+      buttonThemeChecked = false;
+    } else {
+      document.getElementById("myCheck").checked = true;
+      body.classList.add('at-night');
+      buttonThemeChecked = true;
+    }
+  }
+
+  /* Day and night button */
+  onColorLayoutChangeButton = () => {
+    if (buttonThemeChecked) {
+      document.getElementById("myCheck").checked = false;
+      body.setAttribute('class', 'at-day');
+      buttonThemeChecked = false;
+    } else {
+      document.getElementById("myCheck").checked = true;
+      body.setAttribute('class', 'at-night');
+      buttonThemeChecked = true;
+    }
+  };
 
 });
 

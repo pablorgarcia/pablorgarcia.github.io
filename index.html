@@ -48,6 +48,39 @@
 </head>
 <body>
 
+<header>
+  <div class="box-header">
+    <div class="bt-menu" id="menu-button" onclick="openConfigNav()">
+        <div class="ico-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <span class="has-tablet">MENU</span>
+      </div>
+      <div onclick="closeConfigNav()" id="closeNav" class="bt-close hide-config-elements">CLOSE</div>
+  </div>
+  <div id="configNav" class="configNav hide-config-elements">
+    <ul>
+      <li>
+        <div class="switch-container">
+          <b>Light mode</b>
+          <label class="switch">
+            <input id="myCheck" type="checkbox" onclick="onColorLayoutChangeButton()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </li>
+      <!--li>
+        <a>Languajes</a>
+      </li>
+      <li>
+        <a>Languajes</a>
+      </li-->
+    </ul>
+  </div>
+</header>
+
 <main>
   <p><b>Hey</b>! I’m <b>Pablo García</b> a <span class="highlighted-bg">Jr Full-Stack Web Developer</span> graduate from <a href="https://www.ironhack.com/en" name="Ironhack-link" target="_blank">Ironhack</a> with experience <span class="highlighted-bg">building Front-End Web Apps</span> with Angular and React.</p>
   <p>I'm from <span class="highlighted-bg">Madrid, Spain</span> where I'm living today, and before I've also lived in San Francisco, California; Sao Paulo, Brazil and Lyon, France.</p>
