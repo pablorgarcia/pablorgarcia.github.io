@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
   date.hour = date.getHours();
 
   // Getting Config Nav tags
-  const configNav = document.getElementById('configNav');
-  const menuButton = document.getElementById('menu-button');
-  const closeButtonMenu = document.getElementById('closeNav');
+  const buttonsNav = document.getElementById('buttonsNav');
+  const openButton = document.getElementById('openButton');
+  const closeButton = document.getElementById('closeButton');
+  const navElem = document.getElementById('navElem');
 
   // Setting the general styles, at-dat, at-night or terminal class
   const body = document.getElementsByTagName('body')[0];
@@ -134,21 +135,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }, false);
 
 
-  // Open the config nav
-  openConfigNav = () => {
-    configNav.style.width = '250px';
-    configNav.setAttribute('class', 'configNav show-config-nav');
-    closeButtonMenu.setAttribute('class', 'bt-close show-config-nav');
-    menuButton.style.width = '249px';
-    menuButton.setAttribute('class', 'bt-menu show-menu-button');
+  // Open the menu
+  openMenuNav = () => {
+    navElem.setAttribute('class', 'menu show-menu');
+    openButton.setAttribute('class', 'hide-button');
+    closeButton.setAttribute('class', 'close-button show-button');
+    buttonsNav.setAttribute('onclick', 'closeMenuNav()');
   }
-  // Close the config nav
-  closeConfigNav = () => {
-    configNav.style.width = '0';
-    configNav.setAttribute('class', 'configNav hide-config-nav hide-config-elements');
-    closeButtonMenu.setAttribute('class', 'bt-close hide-config-nav hide-config-elements');
-    menuButton.style.width = '115px';
-    menuButton.setAttribute('class', 'bt-menu hide-menu-button');
+  // Close the menu
+  closeMenuNav = () => {
+    navElem.setAttribute('class', 'hide-menu hiding');
+    closeButton.setAttribute('class', 'hide-button');
+    openButton.setAttribute('class', 'open-button show-button');
+    buttonsNav.setAttribute('onclick', 'openMenuNav()');
   }
 
 
