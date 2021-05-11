@@ -13,8 +13,38 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pablogarcia.dev/notes/angular</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>year</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pablogarcia.dev/notes/git</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>year</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pablogarcia.dev/notes/css-flexbox</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>year</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pablogarcia.dev/notes/vim</loc>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>year</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://pablogarcia.dev/open-access-manifesto</loc>
-    <lastmod>2021-02-15</lastmod>
+    <lastmod>2021-05-11</lastmod>
+    <changefreq>year</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pablogarcia.dev/notes/books</loc>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>year</changefreq>
     <priority>0.5</priority>
   </url>
