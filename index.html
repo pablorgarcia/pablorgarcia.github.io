@@ -44,24 +44,6 @@
 <link rel="stylesheet prefetch" href="public/css/fonts.min.css" as="styles" />
 <script src="public/js/main-min.js"></script>
 <!--script src="public/js/analytics-min.js" as="script"></script-->
-
-<script type="text/javascript">
-  function downloadJSAtOnload() {
-    const element = document.createElement("script");
-    element.src = "public/js/analytics-min.js";
-    document.body.appendChild(element);
-  }
-  if (window.addEventListener) {
-    window.addEventListener("load", downloadJSAtOnload, false);
-  }
-  else if (window.attachEvent) {
-    window.attachEvent("onload", downloadJSAtOnload);
-  }
-  else {
-    window.onload = downloadJSAtOnload;
-  } 
-</script>
-
 <title>Pablo García: Jr Full-Stack Web developer</title>
 </head>
 <body>
@@ -192,5 +174,15 @@
 <!-- HELLO PARTNET -->
 <!-- Feel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io -->
 <!-- 👋😄 -->
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+    const element = document.createElement("script");
+    element.src = "public/js/analytics-min.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener) { window.addEventListener("load", downloadJSAtOnload, false); } 
+  else if (window.attachEvent) { window.attachEvent("onload", downloadJSAtOnload); } 
+  else { window.onload = downloadJSAtOnload; } 
+</script>
 </body>
 </html>
