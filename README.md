@@ -30,7 +30,7 @@ _My personal website. A simple presentation card._
 Google page speed test results:
 
 [developers.google.com/pagespeed/pablogarcia.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpablogarcia.dev&tab=mobile)
-- 99% Mobile
+- 100% Mobile
 - 100% Desktop
 
 Average of Network results:
