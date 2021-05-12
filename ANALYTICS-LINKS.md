@@ -8,12 +8,12 @@ LinkedIn
 - /?in=info
 
 Github profile
-- /?g=profile
-- /?g=aboutme
+- /?gt=profile
+- /?gt=aboutme
 
 Github pablorgarcia.io
-- /?g=readme
-- /?g=master
+- /?gt=readme
+- /?gt=master
 
 CodePen
 /?cp=profile
