@@ -375,7 +375,7 @@ figcaption {
 }
 
 figcaption::before {
-  content: "� ";
+  content: "— ";
   color: var(--highlighted-border);
 }
 
