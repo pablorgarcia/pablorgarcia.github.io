@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pablogarcia.dev</loc>
-    <lastmod>2021-01-30</lastmod>
+    <lastmod>2022-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://pablogarcia.dev/notes</loc>
-    <lastmod>2020-11-16</lastmod>
+    <lastmod>2022-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pablogarcia.dev/notes/angular</loc>
-    <lastmod>2021-05-11</lastmod>
+    <lastmod>2022-05-23</lastmod>
     <changefreq>year</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pablogarcia.dev/notes/git</loc>
-    <lastmod>2021-05-11</lastmod>
+    <lastmod>2022-05-23</lastmod>
     <changefreq>year</changefreq>
     <priority>0.5</priority>
   </url>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://pablogarcia.dev/sitemap.xml</loc>
-    <lastmod>2021-02-15</lastmod>
+    <lastmod>2022-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
