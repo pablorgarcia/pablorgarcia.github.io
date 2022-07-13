@@ -21,7 +21,6 @@ node_modules
 
 # Dependency file
 package-lock.json
-package.json
 
 # Debug log from npm
 npm-debug.log

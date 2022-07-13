@@ -1,0 +1,43 @@
+{
+  "name": "pablogarcia.dev",
+  "version": "1.0.0",
+  "description": "Pablo Garcia presentation card",
+  "main": "main.js",
+  "author": "Pablo Garcia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablorgarcia/pablorgarcia.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pablorgarcia/pablorgarcia.github.io/issues"
+  },
+  "homepage": "https://github.com/pablorgarcia/pablorgarcia.github.io#readme",
+  "keywords": [
+    "javascript",
+    "html5",
+    "css3",
+    "personal-website",
+    "responsive-web-design",
+    "js",
+    "html",
+    "css",
+    "gulp",
+    "performance",
+    "pagespeed",
+    "mit-license",
+    "gameboy",
+    "console",
+    "terminal-theme",
+    "css-variable",
+    "vanilla-javascript",
+    "vanila-js",
+    "vanilajs"
+  ],
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
