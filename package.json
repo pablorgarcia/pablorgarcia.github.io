@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Pablo Garcia presentation card",
   "main": "main.js",
-  "author": "Pablo Garcia",
+  "author": "Pablo Garcia<pablo.garcia.dev@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
