@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonYellow = document.createElement('span');
     const buttonGreen = document.createElement('span');
     const titleElement = document.createElement('pre');
-    const terminalTitle = document.createTextNode('pablogarcia.dev');
+    const terminalTitle = document.createTextNode('pablorgarcia.github.io');
     headerTerminal.setAttribute('class', 'header-terminal');
     buttonRed.setAttribute('class', 'button-terminal-red');
     buttonYellow.setAttribute('class', 'button-terminal-yellow');

@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /app/
 Disallow: gulpfile.js
-Sitemap: https://pablogarcia.dev/sitemap.xml
+Sitemap: https://pablorgarcia.github.io/sitemap.xml
