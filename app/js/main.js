@@ -1,190 +1,188 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   /* at-day and at-night class */
   // Getting data info from the browser
-  const date = new Date();
-  date.month = date.getMonth();
-  date.year = date.getFullYear();
-  date.hour = date.getHours();
+  const date = new Date()
+  date.month = date.getMonth()
+  date.year = date.getFullYear()
+  date.hour = date.getHours()
 
   // Getting Config Nav tags
-  const buttonsNav = document.getElementById('buttonsNav');
-  const openButton = document.getElementById('openButton');
-  const closeButton = document.getElementById('closeButton');
-  const navElem = document.getElementById('navElem');
+  const buttonsNav = document.getElementById('buttonsNav')
+  const openButton = document.getElementById('openButton')
+  const closeButton = document.getElementById('closeButton')
+  const navElem = document.getElementById('navElem')
 
   // Setting the general styles, at-dat, at-night or terminal class
-  const body = document.getElementsByTagName('body')[0];
-  let buttonThemeChecked = document.getElementById('myCheck').checked;
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
+  const body = document.getElementsByTagName('body')[0]
+  let buttonThemeChecked = document.getElementById('myCheck').checked
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 
   /* Current time */
   // Mounts set
-  const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const month = ['January', 'February', 'March', 'April', 'March', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
   // Format the string for display the mount on time HTML tag
-  let space = '';
-  date.month < 10 ? space = '-0' : space = '-';
-  const currentDate = `${month[date.month]} ${date.year}`;
-  const attDate = `${date.year}${space}${date.month+1}`;
+  let space = ''
+  date.month < 10 ? space = '-0' : space = '-'
+  const currentDate = `${month[date.month]} ${date.year}`
+  const attDate = `${date.year}${space}${date.month + 1}`
 
   // Adding the attribute and the text on <time> element
-  const time = document.getElementsByTagName('time')[0];
-  time.setAttribute('datatime', attDate);
-  time.textContent = currentDate;
-
+  const time = document.getElementsByTagName('time')[0]
+  time.setAttribute('datatime', attDate)
+  time.textContent = currentDate
 
   /* Show and hide the pop up div */
   // Get the pop up div
-  const popUpElement = document.getElementById('pop-up');
-  const popUpShadowElement = document.getElementById('pop-up-shadow');
+  const popUpElement = document.getElementById('pop-up')
+  const popUpShadowElement = document.getElementById('pop-up-shadow')
 
   // Create a 'header terminal' pop up when it will be called
   const createHeaderTerminal = () => {
-    const headerTerminal = document.createElement('span');
-    const buttonRed = document.createElement('span');
-    const buttonYellow = document.createElement('span');
-    const buttonGreen = document.createElement('span');
-    const titleElement = document.createElement('pre');
-    const terminalTitle = document.createTextNode('pablorgarcia.github.io');
-    headerTerminal.setAttribute('class', 'header-terminal');
-    buttonRed.setAttribute('class', 'button-terminal-red');
-    buttonYellow.setAttribute('class', 'button-terminal-yellow');
-    buttonGreen.setAttribute('class', 'button-terminal-green');
-    titleElement.setAttribute('class', 'terminal-title');
-    titleElement.appendChild(terminalTitle);
-    popUpElement.appendChild(headerTerminal);
-    headerTerminal.appendChild(buttonRed);
-    headerTerminal.appendChild(buttonYellow);
-    headerTerminal.appendChild(buttonGreen);
-    headerTerminal.appendChild(titleElement);
-  };
+    const headerTerminal = document.createElement('span')
+    const buttonRed = document.createElement('span')
+    const buttonYellow = document.createElement('span')
+    const buttonGreen = document.createElement('span')
+    const titleElement = document.createElement('pre')
+    const terminalTitle = document.createTextNode('pablorgarcia.github.io')
+    headerTerminal.setAttribute('class', 'header-terminal')
+    buttonRed.setAttribute('class', 'button-terminal-red')
+    buttonYellow.setAttribute('class', 'button-terminal-yellow')
+    buttonGreen.setAttribute('class', 'button-terminal-green')
+    titleElement.setAttribute('class', 'terminal-title')
+    titleElement.appendChild(terminalTitle)
+    popUpElement.appendChild(headerTerminal)
+    headerTerminal.appendChild(buttonRed)
+    headerTerminal.appendChild(buttonYellow)
+    headerTerminal.appendChild(buttonGreen)
+    headerTerminal.appendChild(titleElement)
+  }
 
   // Create a body content pop up
   const createBodyTerminal = (eventTarget) => {
-    const bodyTerminal = document.createElement('div');
-    bodyTerminal.setAttribute('class', 'body-terminal');
+    const bodyTerminal = document.createElement('div')
+    bodyTerminal.setAttribute('class', 'body-terminal')
 
-    const pHost = document.createElement('p');
-    const textHost = document.createTextNode('Specialties');
-    pHost.appendChild(textHost);
-    pHost.setAttribute('class', 'terminal-host');
-    bodyTerminal.appendChild(pHost);
+    const pHost = document.createElement('p')
+    const textHost = document.createTextNode('Specialties')
+    pHost.appendChild(textHost)
+    pHost.setAttribute('class', 'terminal-host')
+    bodyTerminal.appendChild(pHost)
 
-    const pfirstArrow = document.createElement('p');
-    bodyTerminal.appendChild(pfirstArrow);
-    pfirstArrow.setAttribute('class', 'first-arrow');
+    const pfirstArrow = document.createElement('p')
+    bodyTerminal.appendChild(pfirstArrow)
+    pfirstArrow.setAttribute('class', 'first-arrow')
 
-    const pPath = document.createElement('p');
-    const textPath = document.createTextNode(eventTarget.textContent);
-    bodyTerminal.appendChild(pPath);
-    pPath.appendChild(textPath);
-    pPath.setAttribute('class', 'terminal-path');
+    const pPath = document.createElement('p')
+    const textPath = document.createTextNode(eventTarget.textContent)
+    bodyTerminal.appendChild(pPath)
+    pPath.appendChild(textPath)
+    pPath.setAttribute('class', 'terminal-path')
 
-    const pSecondArrow = document.createElement('p');
-    bodyTerminal.appendChild(pSecondArrow);
-    pSecondArrow.setAttribute('class', 'second-arrow');
+    const pSecondArrow = document.createElement('p')
+    bodyTerminal.appendChild(pSecondArrow)
+    pSecondArrow.setAttribute('class', 'second-arrow')
 
-    const pText = document.createElement('p');
-    const contentText = document.createTextNode(eventTarget.title);
-    bodyTerminal.appendChild(pText);
-    pText.setAttribute('data-name', eventTarget.textContent);
-    pText.setAttribute('class', 'terminal-content cursor-for-last-text');
-    pText.appendChild(contentText);
+    const pText = document.createElement('p')
+    const contentText = document.createTextNode(eventTarget.title)
+    bodyTerminal.appendChild(pText)
+    pText.setAttribute('data-name', eventTarget.textContent)
+    pText.setAttribute('class', 'terminal-content cursor-for-last-text')
+    pText.appendChild(contentText)
 
-    popUpElement.appendChild(bodyTerminal);
-    popUpElement.setAttribute('class', 'pop-up pop-up-active');
-  };
+    popUpElement.appendChild(bodyTerminal)
+    popUpElement.setAttribute('class', 'pop-up pop-up-active')
+  }
 
   const createPopUpShadow = () => {
-    popUpShadowElement.setAttribute('class', 'pop-up-shadow');
-  };
+    popUpShadowElement.setAttribute('class', 'pop-up-shadow')
+  }
 
   // Call the header terminal pop up and text pop up
   const showPopUp = (eventTarget) => {
-    createPopUpShadow();
-    createHeaderTerminal();
-    createBodyTerminal(eventTarget);
-    body.style.overflow = 'hidden';
-  };
+    createPopUpShadow()
+    createHeaderTerminal()
+    createBodyTerminal(eventTarget)
+    body.style.overflow = 'hidden'
+  }
 
   // Remove all pop up content
   const hidePopUp = () => {
-    popUpShadowElement.setAttribute('class', '');
-    popUpElement.setAttribute('class', 'pop-up pop-up-disabled');
-    popUpElement.textContent = '';
-    body.removeAttribute('style');
-  };
+    popUpShadowElement.setAttribute('class', '')
+    popUpElement.setAttribute('class', 'pop-up pop-up-disabled')
+    popUpElement.textContent = ''
+    body.removeAttribute('style')
+  }
 
   // Popup is active or disabled variable
-  let popUpIsActive = 0;
+  let popUpIsActive = 0
   // Listen to title attribute clicks
   document.addEventListener('click', (event) => {
     if (popUpIsActive === 1) {
-      popUpIsActive = 0;
-      hidePopUp();
+      popUpIsActive = 0
+      hidePopUp()
     }
     if (event.target.hasAttribute('title') && popUpIsActive === 0) {
-      popUpIsActive = 1;
-      showPopUp(event.target);
+      popUpIsActive = 1
+      showPopUp(event.target)
     }
     if (event.target.hasAttribute('href')) {
-      ga('send', 'event', 'Home', 'click', event.target.name);
+      // eslint-disable-next-line no-undef
+      ga('send', 'event', 'Home', 'click', event.target.name)
     }
-  }, false);
-
+  }, false)
 
   // Open the menu
+  // eslint-disable-next-line no-undef
   openMenuNav = () => {
-    navElem.setAttribute('class', 'menu show-menu');
-    openButton.setAttribute('class', 'hide-button');
-    closeButton.setAttribute('class', 'close-button show-button');
-    buttonsNav.setAttribute('onclick', 'closeMenuNav()');
+    navElem.setAttribute('class', 'menu show-menu')
+    openButton.setAttribute('class', 'hide-button')
+    closeButton.setAttribute('class', 'close-button show-button')
+    buttonsNav.setAttribute('onclick', 'closeMenuNav()')
   }
   // Close the menu
+  // eslint-disable-next-line no-undef
   closeMenuNav = () => {
-    navElem.setAttribute('class', 'hide-menu hiding');
-    closeButton.setAttribute('class', 'hide-button');
-    openButton.setAttribute('class', 'open-button show-button');
-    buttonsNav.setAttribute('onclick', 'openMenuNav()');
+    navElem.setAttribute('class', 'hide-menu hiding')
+    closeButton.setAttribute('class', 'hide-button')
+    openButton.setAttribute('class', 'open-button show-button')
+    buttonsNav.setAttribute('onclick', 'openMenuNav()')
   }
-
 
   // If the user interface prefers Dark mode on his browser
   if (prefersDarkScheme.matches) {
     // Active the dark mode
-    document.getElementById("myCheck").checked = true;
-    body.classList.add('at-night');
-    buttonThemeChecked = true;
+    document.getElementById('myCheck').checked = true
+    body.classList.add('at-night')
+    buttonThemeChecked = true
   } else {
     // Add at-day or at-night class depending on the current hour
     if (date.hour >= 8 && date.hour < 21) {
-      document.getElementById("myCheck").checked = false;
-      body.classList.add('at-day');
-      buttonThemeChecked = false;
+      document.getElementById('myCheck').checked = false
+      body.classList.add('at-day')
+      buttonThemeChecked = false
     } else {
-      document.getElementById("myCheck").checked = true;
-      body.classList.add('at-night');
-      buttonThemeChecked = true;
+      document.getElementById('myCheck').checked = true
+      body.classList.add('at-night')
+      buttonThemeChecked = true
     }
   }
 
   /* Day and night button */
+  // eslint-disable-next-line no-undef
   onColorLayoutChangeButton = () => {
     if (buttonThemeChecked) {
-      document.getElementById("myCheck").checked = false;
-      body.setAttribute('class', 'at-day');
-      buttonThemeChecked = false;
+      document.getElementById('myCheck').checked = false
+      body.setAttribute('class', 'at-day')
+      buttonThemeChecked = false
     } else {
-      document.getElementById("myCheck").checked = true;
-      body.setAttribute('class', 'at-night');
-      buttonThemeChecked = true;
+      document.getElementById('myCheck').checked = true
+      body.setAttribute('class', 'at-night')
+      buttonThemeChecked = true
     }
-  };
+  }
+})
 
-});
-
-console.log('%cHELLO PARTNET', 'font-size: 15px; color: #395E31;');
-console.log('%cFeel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io', 'font-size: 13px; color: #1485CC; text-shadow: 1px 0 1px #08324D;');
-console.log('👋😄');
+console.log('%cHELLO PARTNET', 'font-size: 15px; color: #395E31;')
+console.log('%cFeel free to fork it on https://github.com/pablorgarcia/pablorgarcia.github.io', 'font-size: 13px; color: #1485CC; text-shadow: 1px 0 1px #08324D;')
+console.log('👋😄')

@@ -41,6 +41,17 @@ Average of Network results:
 - DOMContentLoaded: 60 ms
 - Load: 180 ms
 
+### Dependencies [optional]
+"dependencies": {
+  "gulp-cli": "^2.3.0"
+},
+"devDependencies": {
+  "gulp": "^4.0.2",
+  "standard": "^17.0.0" // https://standardjs.com/
+},
+"eslintConfig": {
+  "extends": "./node_modules/standard/eslintrc.json"
+}
 
 ### Run task [optional]
 This website using [Gulp.js](https://gulpjs.com/) to manage the run task like minify the JS and the CSS files. The dependencies that are using on the `package.json`:
