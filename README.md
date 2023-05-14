@@ -1,5 +1,5 @@
 # pablorgarcia.github.io
-_My personal website. A simple presentation card._
+_A simple presentation card looking like a computer terminal._
 
 ![License MIT](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)
 
@@ -15,7 +15,7 @@ _My personal website. A simple presentation card._
 - Loads as fast as possible.
 - Great coverage rate in the use of resources.
 - Responsive web design, mobile first.
-- All the content is flexible to scale all the content of the website just change one CSS variable, the body font size `--font-size-base`.
+- All the content is flexible to scale all the content of the website just change one CSS variable, the body font size `--font-size`.
 - The font size change depending on the space it has available, it will be bigger when it has more space, and on the contrary, it will be smaller when less space is available.
 - On `<address>` is calculated by CSS the browser height to always display it in full screen on all devices.
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
