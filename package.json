@@ -1,7 +1,7 @@
 {
   "name": "pablorgarcia.github.io",
   "version": "1.0.0",
-  "description": "Pablo Garcia Jr. Full Stack web developer website",
+  "description": "Pablo Garcia Front-end developer website",
   "main": "main.js",
   "author": "Pablo Garcia<pablo.garcia.dev@gmail.com>",
   "license": "MIT",
@@ -14,7 +14,11 @@
   },
   "homepage": "https://github.com/pablorgarcia/pablorgarcia.github.io#readme",
   "keywords": [
+    "typescript",
     "javascript",
+    "next.js",
+    "angular",
+    "react",
     "html5",
     "css3",
     "personal-website",
