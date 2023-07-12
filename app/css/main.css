@@ -1,11 +1,10 @@
 /* Mobile first */
 /* Setting variables */
 :root {
-  /* font-size-base is the key for all the sizes. 
+  /* font-size is the key to chnges all the sizes on the web site. 
   Change the font size just with that, from mobile to desktop.*/
-  --font-size-base: 16px;
+  --font-size: 16px;
 
-  --font-size: var(--font-size-base); /*16px. last version: 18px*/
   --font-size-small: calc(var(--font-size) * 0.81); /*13px*/
   --font-size-contact: calc(var(--font-size) * 0.75); /*12px*/
   --font-line-height: calc(var(--font-size) * 1.8); /*32px*/
