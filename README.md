@@ -21,7 +21,6 @@ _A simple presentation card looking like a computer terminal._
 - The layout styles changes depending on the hour of the day that is accessed. From the 8h until the 20h is rendered `at-day` class on body tag, for the other hours is rendered `at-night` class.
 - To manage both layouts are using CSS native variables, `var(some-property)`, in the same way as SCSS or SASS but with pure CSS3.
 - All contents that have `title` attribute will generate a pop up with the text attribute to show more information about, if you want to change this info only need to modify the `title` attribute on HTML.
-- The tag name from the links are used to analyze traffic with google analytics.
 - SEO optimized.
 
 
